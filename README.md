@@ -11,6 +11,13 @@ This project is designed to showcase the services and portfolio of a creative pr
 - **Landing Page**: A visually appealing landing page with feature intros and a convenient contact form for potential clients or collaborators.
 - **About Us Page**: An informative page providing an introduction to the company, its values, and its team.
 
+## Technologies Used
+
+- **Gulp Builder**: Gulp is utilized for task automation, making the development process more efficient.
+- **SCSS**: SCSS is used for styling, providing a more maintainable and organized approach to CSS.
+- **Jade**: Jade is used as the template engine to streamline HTML markup.
+- **jQuery**: jQuery is utilized for DOM manipulation and enhancing user interaction.
+
 ## Installation
 
 Follow these steps to set up the project locally:
