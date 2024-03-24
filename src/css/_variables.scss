@@ -1,0 +1,48 @@
+$breakpoint-xs: 576px;
+$breakpoint-sm: 768px;
+$breakpoint-md: 992px;
+$breakpoint-lg: 1200px;
+
+$primary-color: #f06138;
+$black-color: #0e0e0e;
+$black-1-color: #131313;
+$white-color: #ffffff;
+$light-color: #cbcbcb;
+// Functions
+@function hexToRGB($hex) {
+  @return red($hex), green($hex), blue($hex);
+}
+
+// Mixins
+@mixin breakpoint($breakpoint) {
+  @media only screen and (max-width: $breakpoint) {
+    @content;
+  }
+}
+
+@mixin screenheight($breakpoint) {
+  @media only screen and (max-height: $breakpoint) {
+    @content;
+  }
+}
+
+@mixin square($size) {
+  width: $size;
+  height: $size;
+}
+
+@mixin flyCenter() {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin sectionMobileHeight() {
+  @include screenheight($breakpoint-xs) {
+    padding: 8rem 0;
+  }
+
+  @include breakpoint($breakpoint-xs) {
+    height: calc(100vh - var(--header-nav-bottom));
+  }
+}

@@ -1,0 +1,37 @@
+section#descriptions {
+  background-color: var(--dark-color);
+  padding: 19.6rem 0;
+
+  .row {
+    display: flex;
+    justify-content: space-between;
+
+    .col-left,
+    .col-right {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      gap: 44px;
+
+      .icon {
+        padding: 0 20px;
+      }
+
+      p {
+        width: 50%;
+      }
+    }
+
+    .col-left {
+      img {
+        width: 72.39px;
+      }
+    }
+
+    .col-right {
+      img {
+        width: 72px;
+      }
+    }
+  }
+}

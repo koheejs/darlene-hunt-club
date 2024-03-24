@@ -1,0 +1,46 @@
+extends ./pages/layout/_layout.jade
+
+block variables
+  - var bodyClass = "home-page"
+
+block content
+  section#hero 
+    .container 
+      .content-wrapper
+        .logo 
+          img(src="./assets/images/logo.png", alt="hunt-club")
+        
+        h1.section-title We are a 
+          strong Creative Production 
+          | Studio
+        
+        p.address based in 
+          span.text-curved Toronto, Saigon & Outer Space 
+        
+        button.circle-button
+          img(src="./assets/images/icon-chevron-down.png", alt="") 
+  
+  section#descriptions
+    .container
+      .row
+        .col-left 
+          .icon
+            img(src="./assets/images/section-description-1.png", alt="")
+          p We partner with visionaries, founders, and C-suite teams that are ready and eager  to collaborate to propel their projects and products forward.  
+        .col-right 
+          .icon
+            img(src="./assets/images/section-description-2.png", alt="")
+          p We are a multi-disciplinary team  of producers, designers, strategists, developers, and artists. Whatever you need, our full-stack team can help.
+  
+
+  section#headline 
+    .container 
+      h2.section-title A Headline About Our 
+        strong Manifestor 
+        | In Short
+      
+      button.black-button.cta ABOUT US
+
+  section#contact-form
+    .container 
+      p COMING SOON...

@@ -1,0 +1,11 @@
+section#headline {
+  background-color: var(--primary-color);
+  padding: 15rem 0;
+
+  .container {
+    .section-title {
+      max-width: 650px;
+      margin-bottom: 4.4rem;
+    }
+  }
+}

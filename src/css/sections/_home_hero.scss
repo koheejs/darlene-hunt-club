@@ -1,0 +1,27 @@
+section#hero {
+  .container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .content-wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4rem;
+  }
+
+  .section-title {
+    max-width: 550px;
+  }
+
+  .address {
+    font-size: 2rem;
+    font-weight: 300;
+    .text-curved {
+      font-size: 3rem;
+    }
+  }
+}

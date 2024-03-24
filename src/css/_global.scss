@@ -1,0 +1,223 @@
+:root {
+  --primary-color: #{$primary-color};
+  --white-color: #{$white-color};
+  --black-color: #{$black-color};
+  --dark-color: #{$black-1-color};
+  --light-color: #{$light-color};
+
+  --header-top: 4rem;
+  --header-height: 10rem;
+  --header-nav-bottom: 40px;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+// Fonts
+@font-face {
+  font-family: 'Jarkata';
+  src: url(../assets/fonts/PlusJakartaSans-Regular.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Jarkata';
+  src: url(../assets/fonts/PlusJakartaSans-Light.ttf) format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Jarkata';
+  src: url(../assets/fonts/PlusJakartaSans-Medium.ttf) format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Jarkata';
+  src: url(../assets/fonts/PlusJakartaSans-Bold.ttf) format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Jarkata';
+  src: url(../assets/fonts/PlusJakartaSans-ExtraBold.ttf) format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Averia';
+  src: url(../assets/fonts/AveriaSerifLibre-Light.ttf) format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Averia';
+  src: url(../assets/fonts/AveriaSerifLibre-Regular.ttf) format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+  @include breakpoint($breakpoint-sm) {
+    font-size: 8px;
+  }
+}
+
+body {
+  font-family: 'Jarkata';
+  line-height: 1.58;
+  font-size: 1.9rem;
+  background-color: var(--black-color);
+  color: var(--white-color);
+  scroll-behavior: smooth;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+
+  &.no-scroll {
+    height: 100%;
+    overflow: hidden;
+  }
+}
+
+body.freeze-body {
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: var(--white-color);
+}
+
+h1 {
+  font-size: 6rem;
+  font-weight: 700;
+  line-height: 0.98;
+
+  @include breakpoint($breakpoint-xs) {
+    font-weight: 500;
+    font-size: 5rem;
+    line-height: 0.86;
+  }
+}
+
+h2 {
+  font-size: 4.6rem;
+  font-weight: 800;
+  line-height: 1.1;
+
+  @include breakpoint($breakpoint-xs) {
+    font-size: 3.4rem;
+  }
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 3rem;
+
+  @include breakpoint($breakpoint-xs) {
+    font-size: 2.8rem;
+  }
+}
+
+strong {
+  font-weight: 700;
+}
+
+button {
+  border: none;
+  color: var(--white-color);
+  outline: none;
+  box-shadow: none;
+  background-color: var(--primary-color);
+  cursor: pointer;
+
+  &.circle-button {
+    @include square(50px);
+    border-radius: 50%;
+  }
+}
+
+input,
+select,
+textarea {
+  font-family: 'Jarkata';
+  &::placeholder {
+    font-family: 'Jarkata';
+  }
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  padding: 0 8rem;
+  max-width: 1920px;
+  margin: 0 auto;
+
+  @include breakpoint($breakpoint-sm) {
+    padding: 0 3rem;
+  }
+}
+
+.cta {
+  height: 5rem;
+  padding: 0 5.2rem;
+  border-radius: 5rem;
+
+  &.black-button {
+    background-color: var(--black-color);
+  }
+}
+
+.section-title {
+  font-size: 6rem;
+  font-weight: 400;
+  strong {
+    font-weight: 700;
+  }
+}
+
+// Utilities
+.self-center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.text-curved {
+  font-family: 'Averia';
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-primary {
+  color: var(--primary-color);
+}
+
+.text-white {
+  color: var(--white-color);
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+.hidden {
+  display: none !important;
+}
