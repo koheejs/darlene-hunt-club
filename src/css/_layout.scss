@@ -1,3 +1,19 @@
+header {
+  position: absolute;
+  inset: 0;
+  padding: 6rem 0;
+
+  .container {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .menu-button {
+    @include square(78px);
+    cursor: pointer;
+  }
+}
+
 .logo {
   img {
     width: 278px;
@@ -7,6 +23,8 @@
 footer {
   background-color: var(--primary-color);
   padding: 12rem 0;
+  border-top-left-radius: 4rem;
+  border-top-right-radius: 4rem;
 
   .container {
     display: flex;

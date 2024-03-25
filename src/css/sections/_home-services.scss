@@ -1,0 +1,56 @@
+section#services {
+  padding: 32rem 0;
+
+  .container {
+    display: flex;
+  }
+
+  .cta {
+    margin-bottom: 4.5rem;
+  }
+
+  .heading {
+    width: 40%;
+  }
+
+  .accordions {
+    width: 60%;
+    display: flex;
+    gap: 5.4rem;
+
+    .accordion-group {
+      flex: 1;
+    }
+
+    .accordion-title {
+      font-family: 'Averia';
+      font-size: 2.8rem;
+      line-height: 2.5;
+      display: flex;
+      justify-content: space-between;
+      cursor: pointer;
+      border-bottom: 1px solid var(--white-color);
+      margin-bottom: 2.8rem;
+    }
+
+    .accordion-content {
+      display: grid;
+      grid-template-rows: 0fr;
+      transition: grid-template-rows 0.3s ease;
+
+      .content {
+        overflow: hidden;
+      }
+
+      p {
+        padding-bottom: 3rem;
+      }
+    }
+
+    .accordion.expanded {
+      .accordion-content {
+        grid-template-rows: 1fr;
+      }
+    }
+  }
+}

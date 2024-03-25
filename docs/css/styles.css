@@ -180,9 +180,14 @@ img {
 .cta.black-button {
   background-color: var(--black-color);
 }
+.cta.outline-button {
+  background-color: transparent;
+  border: 1px solid var(--white-color);
+}
 
 .section-title {
   font-size: 6rem;
+  line-height: 0.98;
   font-weight: 400;
 }
 .section-title strong {
@@ -218,6 +223,21 @@ img {
   display: none !important;
 }
 
+header {
+  position: absolute;
+  inset: 0;
+  padding: 6rem 0;
+}
+header .container {
+  display: flex;
+  justify-content: flex-end;
+}
+header .menu-button {
+  width: 78px;
+  height: 78px;
+  cursor: pointer;
+}
+
 .logo img {
   width: 278px;
 }
@@ -225,6 +245,8 @@ img {
 footer {
   background-color: var(--primary-color);
   padding: 12rem 0;
+  border-top-left-radius: 4rem;
+  border-top-right-radius: 4rem;
 }
 footer .container {
   display: flex;
@@ -251,6 +273,11 @@ footer .navigation-list li {
   line-height: 2.167;
 }
 
+section#hero {
+  background-image: url("../assets/images/bg-home-hero.png");
+  background-size: cover;
+  background-position: center;
+}
 section#hero .container {
   min-height: 100vh;
   display: flex;
@@ -304,6 +331,51 @@ section#descriptions .row .col-right img {
   width: 72px;
 }
 
+section#services {
+  padding: 32rem 0;
+}
+section#services .container {
+  display: flex;
+}
+section#services .cta {
+  margin-bottom: 4.5rem;
+}
+section#services .heading {
+  width: 40%;
+}
+section#services .accordions {
+  width: 60%;
+  display: flex;
+  gap: 5.4rem;
+}
+section#services .accordions .accordion-group {
+  flex: 1;
+}
+section#services .accordions .accordion-title {
+  font-family: "Averia";
+  font-size: 2.8rem;
+  line-height: 2.5;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  border-bottom: 1px solid var(--white-color);
+  margin-bottom: 2.8rem;
+}
+section#services .accordions .accordion-content {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.3s ease;
+}
+section#services .accordions .accordion-content .content {
+  overflow: hidden;
+}
+section#services .accordions .accordion-content p {
+  padding-bottom: 3rem;
+}
+section#services .accordions .accordion.expanded .accordion-content {
+  grid-template-rows: 1fr;
+}
+
 section#headline {
   background-color: var(--primary-color);
   padding: 15rem 0;
@@ -314,5 +386,50 @@ section#headline .container .section-title {
 }
 
 section#contact-form {
-  padding: 10rem 0;
+  padding: 22rem 0;
+}
+section#contact-form .container {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+section#contact-form .heading {
+  flex: 1;
+}
+section#contact-form .heading .section-title {
+  margin-bottom: 4rem;
+}
+section#contact-form .form-wrapper {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+section#contact-form .form-wrapper form {
+  flex: 1;
+  text-align: right;
+  max-width: 56rem;
+}
+section#contact-form .form-wrapper input,
+section#contact-form .form-wrapper select {
+  width: 100%;
+  height: 5rem;
+  line-height: 5rem;
+  font-size: 1.2rem;
+  color: var(--white-color);
+  background-color: transparent;
+  outline: none;
+  border: 0;
+  border-bottom: 1px solid var(--white-color);
+  margin-bottom: 3.8rem;
+}
+section#contact-form .form-wrapper input::placeholder,
+section#contact-form .form-wrapper select::placeholder {
+  color: var(--white-color);
+}
+section#contact-form .form-wrapper input:focus::placeholder,
+section#contact-form .form-wrapper select:focus::placeholder {
+  color: transparent;
+}
+section#contact-form .form-wrapper select {
+  margin-bottom: 4.8rem;
 }

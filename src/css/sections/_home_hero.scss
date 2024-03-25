@@ -1,4 +1,8 @@
 section#hero {
+  background-image: url('../assets/images/bg-home-hero.png');
+  background-size: cover;
+  background-position: center;
+
   .container {
     min-height: 100vh;
     display: flex;

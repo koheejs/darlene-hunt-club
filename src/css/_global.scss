@@ -182,10 +182,16 @@ img {
   &.black-button {
     background-color: var(--black-color);
   }
+
+  &.outline-button {
+    background-color: transparent;
+    border: 1px solid var(--white-color);
+  }
 }
 
 .section-title {
   font-size: 6rem;
+  line-height: 0.98;
   font-weight: 400;
   strong {
     font-weight: 700;
