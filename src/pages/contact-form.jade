@@ -1,0 +1,29 @@
+
+section#contact-form
+  .container 
+    .heading 
+      h2.section-title Let's Work Together
+        br
+        strong Reach Out
+      button.cta EMAIL US
+
+    .form-wrapper 
+      form(method="POST", action="/")
+        .form-group 
+          input(type="text", name="name", placeholder="Name")
+        .form-group 
+          input(type="email", name="email", placeholder="Email Address")
+        .form-group 
+          input(type="text", name="socialId", placeholder="Your Digits, WhatsApp, Imessage")
+        .form-group 
+          input(type="text", name="favoriteBook", placeholder="Your Favorite Book")
+        .form-group
+          select(name="requestType", placeholder="How can we help you?")
+            option(value="") How can we help you?
+            option(value="customerSupport") Customer Support
+            option(value="partnership") Partnership Opportunities
+            option(value="productInformation") Product Information
+            option(value="other") Other
+        button.cta SUBMIT
+
+

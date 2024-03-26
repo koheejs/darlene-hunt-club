@@ -1,0 +1,87 @@
+extends ./pages/layout/_layout.jade
+
+mixin chevronIcon
+  img(src="./assets/images/icon-chevron-down.png", alt="")
+
+block variables
+  - var bodyClass = "about-us-page"
+
+block content
+  section#about-hero
+    .container 
+      h2.section-title
+        strong We are a 
+          br 
+          | Close-Knit, 
+          br 
+          | Well Oiled,
+          br 
+          | Multi-Dimensional,
+          br 
+          | Female-Led,
+          br 
+          | Pizza Loving,
+          br 
+          | Future Forward,
+          br 
+          | Results Oriented,
+          br 
+          | Creative Machine.
+
+
+  section#key-words
+    .container 
+      p.intro With over 10 years of working together, we have worked on a myriad of projects in these worlds:
+
+      .key-words 
+        - list = ["Tech", "Art &Film", "Finance", "Non-Profit", "Animation", "Mergers & Acquisitions", "B2B", "B2C", "Fashion", "Startup", "VFX", "SaaS", "Crypto", "Data"]
+        each word in list
+          .word= word 
+  
+
+  section#partners
+    .container 
+      .partner-list 
+        - list = ['logo-shopley', 'logo-flairairlines', 'logo-newspark', 'logo-desjardins', 'logo-ocad', 'logo-manulife']
+        each partner in list
+          .partner
+            img(src='./assets/images/' + partner + '.png', alt="")
+
+
+  section#problem-solved
+    .container 
+      h2.section-title Problems 
+        strong Solved.
+      p From websites to UI/UX upgrades and compelling content creation you can count us in on your ambitious goals.  We bring an artful eye to every project and  believe there is no concept too complex or grandiose that we can’t find a solution for.
+
+      div
+        button.cta WORK WITH US
+
+
+  section#approach
+    .container 
+      div
+        button.outline-button.cta OUR APPROACH
+
+      h2.section-title
+        strong You Dream it, 
+        | We’ll Build It.
+      
+      .approach-list 
+        .approach 
+          h4 Strategic Thinking
+          p We lead the exploration and discovery of your brand’s essential narrative, conducting thorough research to strategize how to bring it to market.
+        .approach 
+          h4 Creative Production
+          p Our designers work in tandem with producers and developers to craft functional and beautiful digital products. 
+        .approach
+          h4 Project Management
+          p We maintain momentum  throughout project cycles with efficiency, team synergy, and communication at the center of our  ethos. 
+
+
+  include ./pages/contact-form.jade
+
+    
+  
+
+      
