@@ -576,6 +576,13 @@ section#key-words .key-words .word {
 section#key-words .key-words .word:hover {
   background-color: var(--primary-color);
 }
+@media only screen and (max-width: 768px) {
+  section#key-words .key-words .word {
+    font-size: 2rem;
+    padding: 1.6rem 2.8rem;
+    border-width: 2px;
+  }
+}
 
 section#partners {
   background-color: var(--dark-color);
@@ -585,9 +592,18 @@ section#partners .partner-list {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 1rem;
+}
+@media only screen and (max-width: 768px) {
+  section#partners .partner-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+  }
 }
 section#partners .partner-list .partner img {
   height: 100%;
+  object-fit: contain;
 }
 section#partners .partner-list .partner:first-child {
   height: 4rem;
@@ -630,6 +646,12 @@ section#approach .approach-list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 4rem;
+}
+@media only screen and (max-width: 768px) {
+  section#approach .approach-list {
+    grid-template-columns: 1fr;
+    row-gap: 4rem;
+  }
 }
 section#approach .approach-list .approach h4 {
   font-family: "Averia";

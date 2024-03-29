@@ -24,6 +24,12 @@ section#key-words {
       &:hover {
         background-color: var(--primary-color);
       }
+
+      @include breakpoint($breakpoint-sm) {
+        font-size: 2rem;
+        padding: 1.6rem 2.8rem;
+        border-width: 2px;
+      }
     }
   }
 }

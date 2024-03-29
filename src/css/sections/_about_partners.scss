@@ -6,10 +6,18 @@ section#partners {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 1rem;
+
+    @include breakpoint($breakpoint-sm) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 4rem;
+    }
 
     .partner {
       img {
         height: 100%;
+        object-fit: contain;
       }
 
       &:first-child {

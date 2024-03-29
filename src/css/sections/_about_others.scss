@@ -23,6 +23,11 @@ section#approach {
     grid-template-columns: repeat(3, 1fr);
     column-gap: 4rem;
 
+    @include breakpoint($breakpoint-sm) {
+      grid-template-columns: 1fr;
+      row-gap: 4rem;
+    }
+
     .approach {
       h4 {
         font-family: 'Averia';
