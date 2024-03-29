@@ -30,6 +30,12 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @include breakpoint($breakpoint-sm) {
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
   }
 
   .navigation {
@@ -48,6 +54,18 @@ footer {
       &:nth-child(2) {
         h3 {
           margin-bottom: 1.3rem;
+        }
+      }
+    }
+
+    @include breakpoint($breakpoint-sm) {
+      flex-direction: column;
+      gap: 0;
+
+      .block {
+        margin-bottom: 0;
+        h3 {
+          margin: 2.8rem 0;
         }
       }
     }

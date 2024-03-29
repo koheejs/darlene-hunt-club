@@ -6,6 +6,14 @@ section#headline {
     .section-title {
       max-width: 650px;
       margin-bottom: 4.4rem;
+
+      @include breakpoint($breakpoint-sm) {
+        font-size: 3.5rem;
+        font-weight: 600;
+        strong {
+          font-weight: 600;
+        }
+      }
     }
   }
 }

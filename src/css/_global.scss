@@ -37,6 +37,13 @@
 
 @font-face {
   font-family: 'Jarkata';
+  src: url(../assets/fonts/PlusJakartaSans-SemiBold.ttf) format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Jarkata';
   src: url(../assets/fonts/PlusJakartaSans-Bold.ttf) format('truetype');
   font-weight: 700;
   font-style: normal;
@@ -70,9 +77,9 @@
 html {
   font-size: 10px;
   scroll-behavior: smooth;
-  @include breakpoint($breakpoint-sm) {
-    font-size: 8px;
-  }
+  // @include breakpoint($breakpoint-sm) {
+  //   font-size: 8px;
+  // }
 }
 
 body {
@@ -92,6 +99,11 @@ body {
     height: 100%;
     overflow: hidden;
   }
+
+  @include breakpoint($breakpoint-sm) {
+    font-size: 1.6rem;
+    line-height: 1.5625;
+  }
 }
 
 body.freeze-body {
@@ -108,7 +120,7 @@ h1 {
   font-weight: 700;
   line-height: 0.98;
 
-  @include breakpoint($breakpoint-xs) {
+  @include breakpoint($breakpoint-sm) {
     font-weight: 500;
     font-size: 5rem;
     line-height: 0.86;
@@ -120,8 +132,9 @@ h2 {
   font-weight: 800;
   line-height: 1.1;
 
-  @include breakpoint($breakpoint-xs) {
-    font-size: 3.4rem;
+  @include breakpoint($breakpoint-sm) {
+    font-size: 3rem;
+    line-height: 1.1667;
   }
 }
 
@@ -197,6 +210,11 @@ img {
   font-weight: 400;
   strong {
     font-weight: 700;
+  }
+
+  @include breakpoint($breakpoint-sm) {
+    font-size: 3.5rem;
+    line-height: 1.23;
   }
 }
 

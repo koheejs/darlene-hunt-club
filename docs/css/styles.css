@@ -33,6 +33,12 @@
 }
 @font-face {
   font-family: "Jarkata";
+  src: url(../assets/fonts/PlusJakartaSans-SemiBold.ttf) format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Jarkata";
   src: url(../assets/fonts/PlusJakartaSans-Bold.ttf) format("truetype");
   font-weight: 700;
   font-style: normal;
@@ -63,11 +69,6 @@ html {
   font-size: 10px;
   scroll-behavior: smooth;
 }
-@media only screen and (max-width: 768px) {
-  html {
-    font-size: 8px;
-  }
-}
 
 body {
   font-family: "Jarkata";
@@ -85,6 +86,12 @@ body.no-scroll {
   height: 100%;
   overflow: hidden;
 }
+@media only screen and (max-width: 768px) {
+  body {
+    font-size: 1.6rem;
+    line-height: 1.5625;
+  }
+}
 
 body.freeze-body {
   overflow: hidden;
@@ -100,7 +107,7 @@ h1 {
   font-weight: 700;
   line-height: 0.98;
 }
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 768px) {
   h1 {
     font-weight: 500;
     font-size: 5rem;
@@ -113,9 +120,10 @@ h2 {
   font-weight: 800;
   line-height: 1.1;
 }
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 768px) {
   h2 {
-    font-size: 3.4rem;
+    font-size: 3rem;
+    line-height: 1.1667;
   }
 }
 
@@ -195,6 +203,12 @@ img {
 .section-title strong {
   font-weight: 700;
 }
+@media only screen and (max-width: 768px) {
+  .section-title {
+    font-size: 3.5rem;
+    line-height: 1.23;
+  }
+}
 
 .self-center {
   margin-left: auto;
@@ -255,6 +269,13 @@ footer .container {
   justify-content: space-between;
   align-items: center;
 }
+@media only screen and (max-width: 768px) {
+  footer .container {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+}
 footer .navigation {
   display: flex;
   gap: 5.4rem;
@@ -269,6 +290,18 @@ footer .navigation .block h3 {
 }
 footer .navigation .block:nth-child(2) h3 {
   margin-bottom: 1.3rem;
+}
+@media only screen and (max-width: 768px) {
+  footer .navigation {
+    flex-direction: column;
+    gap: 0;
+  }
+  footer .navigation .block {
+    margin-bottom: 0;
+  }
+  footer .navigation .block h3 {
+    margin: 2.8rem 0;
+  }
 }
 footer .navigation-list li {
   font-size: 1.2rem;
@@ -311,6 +344,12 @@ section#descriptions .row {
   display: flex;
   justify-content: space-between;
 }
+@media only screen and (max-width: 768px) {
+  section#descriptions .row {
+    flex-direction: column;
+    gap: 6.5rem;
+  }
+}
 section#descriptions .row .col-left,
 section#descriptions .row .col-right {
   flex: 1;
@@ -326,6 +365,18 @@ section#descriptions .row .col-left p,
 section#descriptions .row .col-right p {
   width: 50%;
 }
+@media only screen and (max-width: 768px) {
+  section#descriptions .row .col-left,
+  section#descriptions .row .col-right {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2.5rem;
+  }
+  section#descriptions .row .col-left p,
+  section#descriptions .row .col-right p {
+    width: 100%;
+  }
+}
 section#descriptions .row .col-left img {
   width: 72.39px;
 }
@@ -336,8 +387,19 @@ section#descriptions .row .col-right img {
 section#services {
   padding: 32rem 0;
 }
+@media only screen and (max-width: 768px) {
+  section#services {
+    padding: 10rem 0;
+  }
+}
 section#services .container {
   display: flex;
+}
+@media only screen and (max-width: 768px) {
+  section#services .container {
+    flex-direction: column;
+    gap: 6.5rem;
+  }
 }
 section#services .cta {
   margin-bottom: 4.5rem;
@@ -345,10 +407,22 @@ section#services .cta {
 section#services .heading {
   width: 40%;
 }
+@media only screen and (max-width: 768px) {
+  section#services .heading {
+    width: 100%;
+  }
+}
 section#services .accordions {
   width: 60%;
   display: flex;
   gap: 5.4rem;
+}
+@media only screen and (max-width: 768px) {
+  section#services .accordions {
+    width: 100%;
+    gap: 0;
+    flex-direction: column;
+  }
 }
 section#services .accordions .accordion-group {
   flex: 1;
@@ -386,6 +460,15 @@ section#headline .container .section-title {
   max-width: 650px;
   margin-bottom: 4.4rem;
 }
+@media only screen and (max-width: 768px) {
+  section#headline .container .section-title {
+    font-size: 3.5rem;
+    font-weight: 600;
+  }
+  section#headline .container .section-title strong {
+    font-weight: 600;
+  }
+}
 
 section#contact-form {
   padding: 22rem 0;
@@ -395,21 +478,46 @@ section#contact-form .container {
   align-items: center;
   gap: 4rem;
 }
+@media only screen and (max-width: 768px) {
+  section#contact-form .container {
+    flex-direction: column;
+  }
+  section#contact-form .container .cta.email {
+    display: none;
+  }
+}
 section#contact-form .heading {
   flex: 1;
 }
 section#contact-form .heading .section-title {
   margin-bottom: 4rem;
 }
+@media only screen and (max-width: 768px) {
+  section#contact-form .heading .section-title {
+    margin-bottom: 0;
+  }
+}
 section#contact-form .form-wrapper {
   flex: 1;
   display: flex;
   justify-content: flex-end;
 }
+@media only screen and (max-width: 768px) {
+  section#contact-form .form-wrapper {
+    flex-direction: column;
+    align-self: stretch;
+  }
+}
 section#contact-form .form-wrapper form {
   flex: 1;
   text-align: right;
   max-width: 56rem;
+}
+@media only screen and (max-width: 768px) {
+  section#contact-form .form-wrapper form {
+    max-width: none;
+    text-align: left;
+  }
 }
 section#contact-form .form-wrapper input,
 section#contact-form .form-wrapper select {

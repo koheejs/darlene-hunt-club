@@ -6,6 +6,11 @@ section#descriptions {
     display: flex;
     justify-content: space-between;
 
+    @include breakpoint($breakpoint-sm) {
+      flex-direction: column;
+      gap: 6.5rem;
+    }
+
     .col-left,
     .col-right {
       flex: 1;
@@ -19,6 +24,15 @@ section#descriptions {
 
       p {
         width: 50%;
+      }
+
+      @include breakpoint($breakpoint-sm) {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2.5rem;
+        p {
+          width: 100%;
+        }
       }
     }
 

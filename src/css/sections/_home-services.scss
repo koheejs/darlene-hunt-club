@@ -1,8 +1,17 @@
 section#services {
   padding: 32rem 0;
 
+  @include breakpoint($breakpoint-sm) {
+    padding: 10rem 0;
+  }
+
   .container {
     display: flex;
+
+    @include breakpoint($breakpoint-sm) {
+      flex-direction: column;
+      gap: 6.5rem;
+    }
   }
 
   .cta {
@@ -11,12 +20,21 @@ section#services {
 
   .heading {
     width: 40%;
+    @include breakpoint($breakpoint-sm) {
+      width: 100%;
+    }
   }
 
   .accordions {
     width: 60%;
     display: flex;
     gap: 5.4rem;
+
+    @include breakpoint($breakpoint-sm) {
+      width: 100%;
+      gap: 0;
+      flex-direction: column;
+    }
 
     .accordion-group {
       flex: 1;
