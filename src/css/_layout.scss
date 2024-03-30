@@ -1,7 +1,12 @@
+// $menu-expanded
+$header-padding: 6rem;
+
 header {
   position: absolute;
-  inset: 0;
-  padding: 6rem 0;
+  top: 0;
+  right: 0;
+  left: 0;
+  padding: $header-padding 0;
 
   .container {
     display: flex;
@@ -11,6 +16,42 @@ header {
   .menu-button {
     @include square(78px);
     cursor: pointer;
+  }
+
+  #navigation {
+    position: absolute;
+    border-radius: 39px;
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    background-color: var(--primary-color);
+    transition: height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+
+    &.expanded {
+      opacity: 1;
+      height: max(calc(100vh - #{$header-padding * 2}), 400px);
+    }
+
+    ul {
+      padding: 10rem 5rem;
+      font-family: 'Averia';
+      font-size: 8rem;
+      line-height: 1;
+    }
+
+    @include breakpoint($breakpoint-sm) {
+      ul {
+        font-size: 5rem;
+        line-height: 1.2;
+      }
+    }
+
+    @include screenheight($breakpoint-xs) {
+      ul {
+        font-size: 5rem;
+        line-height: 1.2;
+      }
+    }
   }
 }
 

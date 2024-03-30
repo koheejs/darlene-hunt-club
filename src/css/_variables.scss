@@ -8,6 +8,9 @@ $black-color: #0e0e0e;
 $black-1-color: #131313;
 $white-color: #ffffff;
 $light-color: #cbcbcb;
+
+$min-height-hero: max(100vh, 600px);
+
 // Functions
 @function hexToRGB($hex) {
   @return red($hex), green($hex), blue($hex);

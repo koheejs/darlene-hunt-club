@@ -1,6 +1,6 @@
 section#about-hero {
   .container {
-    min-height: 100vh;
+    min-height: $min-height-hero;
     display: flex;
     flex-direction: column;
     justify-content: center;
