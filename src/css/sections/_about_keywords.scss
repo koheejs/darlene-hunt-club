@@ -12,11 +12,11 @@ section#key-words {
     gap: 1.6rem;
 
     .word {
-      font-size: 3rem;
+      font-size: 2.4rem;
       font-family: 'Averia';
-      padding: 2rem 3.8rem;
+      padding: 1.6rem 3rem;
       color: var(--white-color);
-      border: 3px solid var(--white-color);
+      border: 2px solid var(--white-color);
       border-radius: 999px;
       cursor: pointer;
       transition: background-color 0.3s;
@@ -27,8 +27,7 @@ section#key-words {
 
       @include breakpoint($breakpoint-sm) {
         font-size: 2rem;
-        padding: 1.6rem 2.8rem;
-        border-width: 2px;
+        padding: 1.1rem 2.2rem;
       }
     }
   }
