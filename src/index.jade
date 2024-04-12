@@ -23,28 +23,36 @@ block content
         .logo 
           img(src="./assets/images/logo.png", alt="hunt-club")
         
-        h1.section-title We are a 
-          strong Creative Production 
-          | Studio
-        
-        p.address based in 
-          span.text-curved Toronto, Saigon &amp; Outer Space 
-        
-        a(href="#descriptions").button.circle-button.scroll-down-button
-          +chevronIcon
+        .intro
+          h1.section-title We are a 
+            strong Creative Production 
+            | Studio
+          
+          p.address based in 
+            span.text-curved Toronto, Saigon &amp; Outer Space 
+          
+          //- a(href="#descriptions").button.circle-button.scroll-down-button
+          //-   +chevronIcon
   
 
   section#descriptions
     .container
       .row
-        .col-left 
-          .icon
-            img(src="./assets/images/section-description-1.png", alt="")
-          p We partner with visionaries, founders, and C-suite teams that are ready and eager  to collaborate to propel their projects and products forward.  
-        .col-right 
-          .icon
-            img(src="./assets/images/section-description-2.png", alt="")
-          p We are a multi-disciplinary team  of producers, designers, strategists, developers, and artists. Whatever you need, our full-stack team can help.
+        .icon
+          img(src="./assets/images/section-description-2.png", alt="")
+        p We are a 
+          strong multi-disciplinary 
+          | team  of producers, designers, strategists, developers, and artists. 
+      .row
+        .icon
+          img(src="./assets/images/section-description-1.png", alt="")
+        p We partner with 
+          strong visionaries
+          | , 
+          strong founders
+          | , and 
+          strong c-suite 
+          | teams focused on propelling their projects and products forward.  
 
 
   section#services 
@@ -65,24 +73,22 @@ block content
           +accordion("Brand & Identity")
             p Crafting identities that resonate and endure, our branding service is about capturing the essence of your company and translating it into a visual and verbal language that speaks to your audience clearly, boldly, and beautifully
           +accordion("Design")
-            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam et error provident amet earum deserunt pariatur odit consequuntur sunt maiores!
-          +accordion("UI / UX")
-            p UI and UX is your product’s voice and face, a make our break first impression. We'll collaborate on creating a user-centric design that's both beautiful and functional. With a pragmatic approach, our goal is always to connect with users intuitively.
+            p We delve deep into your brand's essence to create designs that resonate and engage. Our process is collaborative and iterative, ensuring that what we create reflects your vision and captivates your audience.
+          +accordion("Art direction")
+            p Art direction involves the strategic oversight and creative guidance of the visual elements in a project, ensuring that all aspects of the design and imagery work together cohesively to convey a specific message or feeling.
           +accordion("Full Stack Development")
-            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis sint est amet accusamus officia odio temporibus ipsa quidem hic ex.
+            p Our full-stack development team encompasses both front-end and back-end developers to provide clients with a truly hands-off approach to creating digital solutions (or products). 
         .accordion-group 
           +accordion("Copywriting")
-            p Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi quaerat officia aliquid eos inventore cum nulla nobis nisi quibusdam optio!
+            p Excellent copywriting stands out in a noisy world of generic AI-written content. Which is why we focus on human-centred writing and messaging.  Balancing art and science to craft words in a way that connects, differentiates, persuades and adds value.
           +accordion("Video & Photography")
-            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur accusamus harum tempora iste saepe blanditiis praesentium quisquam facilis ducimus minus?
-          +accordion("UI / UX")
-            p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde commodi saepe in tempore aliquid repellendus, distinctio assumenda minus quod molestias.
+            p Visuals are not only captivating but also memorable. Original photography or a well-crafted video leaves a lasting impression, ensuring your brand remains in the audience's mind long after their initial encounter.
           +accordion("Motion Graphics")
-            p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam beatae libero nemo, suscipit rem quidem consequuntur quisquam magnam aut modi?
+            p Breathe life into your visual creations and capture the users’ imagination with motion graphics. From dynamic infographic to interactive website animation we got you covered.
           +accordion("AI & Tech Consulting")
-            p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam voluptas nesciunt aliquid sed suscipit totam possimus repellat laudantium autem beatae.
+            p You know the possibilities are endless when it comes to utilizing tech/AI to supercharge your business,  but you don’t know where to start? We’ll provide actionable strategies that helps you stay future-ready. 
           +accordion("Data Analytics")
-            p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit deserunt velit labore assumenda id cumque dolorem aperiam iure ea voluptates.
+            p Data Analytics transforms raw data into strategic insights, powering informed decision-making and unveiling opportunities for growth. We use sophisticated analytical tools to interpret trends, patterns, and behaviors, propelling your business towards data-driven success.
 
 
   section#headline 
