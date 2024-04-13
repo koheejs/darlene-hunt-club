@@ -75,7 +75,7 @@ body {
   line-height: 1.58;
   font-size: 1.9rem;
   letter-spacing: -0.01em;
-  background-color: var(--black-color);
+  background-color: #000000;
   color: var(--white-color);
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
@@ -294,7 +294,10 @@ header #navigation ul {
 }
 
 footer {
-  background-color: var(--primary-color);
+  margin-top: -10rem;
+  background-image: url("../assets/images/bg-footer.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
   padding: 12rem 0;
   border-top-left-radius: 4rem;
   border-top-right-radius: 4rem;
@@ -343,11 +346,21 @@ footer .navigation-list li {
   line-height: 2.167;
 }
 
-section#hero {
-  background-image: url("../assets/images/bg-home-hero.png");
+[data-bg-effect] {
+  position: absolute;
+  z-index: -1;
+  inset: 0;
   background-size: cover;
   background-position: center;
+  opacity: 0;
+  margin-top: 20%;
+  transition: all 4s ease-out;
 }
+[data-bg-effect].has-effect {
+  opacity: 1;
+  margin-top: 0;
+}
+
 section#hero .container {
   min-height: max(100vh, 600px);
   display: flex;
@@ -359,6 +372,14 @@ section#hero .content-wrapper {
   justify-content: space-around;
   align-items: center;
   gap: 4rem;
+}
+@media only screen and (max-width: 992px) {
+  section#hero .content-wrapper {
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: flex-start;
+  }
 }
 section#hero .section-title {
   max-width: 550px;
@@ -377,8 +398,15 @@ section#hero .scroll-down-button {
 }
 
 section#descriptions {
-  background-color: var(--dark-color);
+  background-image: url("../assets/images/bg-section-yellow.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
   padding: 19.6rem 0;
+}
+@media only screen and (max-width: 992px) {
+  section#descriptions {
+    padding: 10rem 0;
+  }
 }
 section#descriptions .container {
   display: flex;
@@ -398,6 +426,11 @@ section#descriptions .row p {
   font-size: 5rem;
   line-height: 1.3;
   letter-spacing: -0.02em;
+}
+@media only screen and (max-width: 992px) {
+  section#descriptions .row p {
+    font-size: 3rem;
+  }
 }
 @media only screen and (max-width: 992px) {
   section#descriptions .row {
@@ -507,6 +540,9 @@ section#headline .container .section-title {
 
 section#contact-form {
   padding: 22rem 0;
+  background-image: url("../assets/images/bg-section-orange.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 section#contact-form .container {
   display: flex;
@@ -579,6 +615,11 @@ section#contact-form .form-wrapper select {
   margin-bottom: 4.8rem;
 }
 
+section#about-hero {
+  padding-bottom: 6rem;
+  background-image: url("../assets/images/bg-about-hero.png");
+  background-size: cover;
+}
 section#about-hero .container {
   min-height: max(100vh, 600px);
   display: flex;
@@ -592,10 +633,22 @@ section#about-hero .content-wrapper {
   align-items: center;
   gap: 4rem;
 }
+@media only screen and (max-width: 768px) {
+  section#about-hero .content-wrapper {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+}
 section#about-hero .section-title {
   font-size: 5rem;
   line-height: 1.18;
   letter-spacing: -0.02em;
+}
+@media only screen and (max-width: 768px) {
+  section#about-hero .section-title {
+    font-size: 3rem;
+  }
 }
 
 section#key-words {
@@ -621,7 +674,7 @@ section#key-words .key-words .word {
   transition: background-color 0.3s;
 }
 section#key-words .key-words .word:hover {
-  background-color: var(--primary-color);
+  background-color: #064839;
 }
 @media only screen and (max-width: 768px) {
   section#key-words .key-words .word {
@@ -631,14 +684,15 @@ section#key-words .key-words .word:hover {
 }
 
 section#partners {
-  background-color: var(--dark-color);
   padding: 6.6rem 0;
+  background-image: url("../assets/images/bg-section-green.png");
+  background-size: cover;
 }
 section#partners .partner-list {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
   align-items: center;
-  gap: 1rem;
+  row-gap: 4rem;
 }
 @media only screen and (max-width: 768px) {
   section#partners .partner-list {
@@ -647,27 +701,42 @@ section#partners .partner-list {
     gap: 4rem;
   }
 }
+section#partners .partner-list .partner {
+  text-align: center;
+}
 section#partners .partner-list .partner img {
   height: 100%;
   object-fit: contain;
 }
 section#partners .partner-list .partner:first-child {
-  height: 4rem;
+  height: 3.5rem;
 }
 section#partners .partner-list .partner:nth-child(2) {
-  height: 6rem;
+  height: 5rem;
 }
 section#partners .partner-list .partner:nth-child(3) {
-  height: 3rem;
+  height: 2.6rem;
 }
 section#partners .partner-list .partner:nth-child(4) {
-  height: 4rem;
+  height: 3.4rem;
 }
 section#partners .partner-list .partner:nth-child(5) {
-  height: 7.5rem;
+  height: 6rem;
 }
 section#partners .partner-list .partner:nth-child(6) {
+  height: 4rem;
+}
+section#partners .partner-list .partner:nth-child(7) {
   height: 7rem;
+}
+section#partners .partner-list .partner:nth-child(8) {
+  height: 7rem;
+}
+section#partners .partner-list .partner:nth-child(9) {
+  height: 4rem;
+}
+section#partners .partner-list .partner:nth-child(10) {
+  height: 5rem;
 }
 
 section#problem-solved,
@@ -680,13 +749,19 @@ section#approach .container {
   flex-direction: column;
   gap: 6rem;
 }
+section#problem-solved h4,
+section#approach h4 {
+  line-height: 1;
+}
 
 section#problem-solved p {
   max-width: 72rem;
 }
 
 section#approach {
-  background-color: var(--dark-color);
+  background-image: url("../assets/images/bg-section-orange-2.png");
+  background-size: cover;
+  margin-top: -10rem;
 }
 section#approach .approach-list {
   display: grid;

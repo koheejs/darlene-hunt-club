@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js" integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="../assets/libs/aos/aos.css">
+    <script src="../assets/libs/aos/aos.js"></script>
   </head>
   <body class="home-page">
     <header>
@@ -25,10 +27,11 @@
       </div>
     </header>
     <main id="main">
-      <section id="hero"> 
+      <section id="hero">
+        <div data-bg-effect data-background="../assets/images/bg-home-hero.png"></div>
         <div class="container"> 
           <div class="content-wrapper">
-            <div class="logo"> <img src="./assets/images/logo.png" alt="hunt-club"></div>
+            <div data-aos="fade-up" class="logo"><img src="./assets/images/logo.png" alt="hunt-club"></div>
             <div class="intro">
               <h1 class="section-title">We are a <strong>Creative Production </strong>Studio</h1>
               <p class="address">based in <span class="text-curved">Toronto, Saigon &amp; Outer Space </span></p>
@@ -40,20 +43,20 @@
       <section id="descriptions">
         <div class="container">
           <div class="row">
-            <div class="icon"><img src="./assets/images/section-description-2.png" alt=""></div>
-            <p>We are a <strong>multi-disciplinary </strong>team  of producers, designers, strategists, developers, and artists. </p>
+            <div data-aos="fade-up" class="icon"><img src="./assets/images/section-description-2.png" alt=""></div>
+            <p data-aos="fade-up" data-aos-delay="400">We are a <strong>multi-disciplinary </strong>team  of producers, designers, strategists, developers, and artists. </p>
           </div>
           <div class="row">
-            <div class="icon"><img src="./assets/images/section-description-1.png" alt=""></div>
-            <p>We partner with <strong>visionaries</strong>, <strong>founders</strong>, and <strong>c-suite </strong>teams focused on propelling their projects and products forward.  </p>
+            <div data-aos="fade-up" class="icon"><img src="./assets/images/section-description-1.png" alt=""></div>
+            <p data-aos="fade-up" data-aos-delay="400">We partner with <strong>visionaries</strong>, <strong>founders</strong>, and <strong>c-suite </strong>teams focused on propelling their projects and products forward.  </p>
           </div>
         </div>
       </section>
       <section id="services"> 
         <div class="container"> 
           <div class="heading"> 
-            <button class="outline-button cta">OUR SERVICES</button>
-            <h2 class="section-title">Full Stacked,<br><strong>Full Service.</strong></h2>
+            <button data-aos="fade" class="outline-button cta">OUR SERVICES</button>
+            <h2 data-aos="fade-up" class="section-title">Full Stacked,<br><strong>Full Service.</strong></h2>
           </div>
           <div class="accordions">
             <div class="accordion-group"> 
@@ -186,14 +189,14 @@
       </section>
       <section id="headline"> 
         <div class="container"> 
-          <h2 class="section-title">A Headline About Our <strong>Manifestor </strong>In Short</h2>
+          <h2 data-aos="fade-up" class="section-title">A Headline About Our <strong>Manifestor </strong>In Short</h2>
           <button class="black-button cta">ABOUT US</button>
         </div>
       </section>
       <section id="contact-form">
         <div class="container"> 
           <div class="heading"> 
-            <h2 class="section-title">Let's Work Together<br><strong>Reach Out</strong></h2>
+            <h2 data-aos="fade-up" class="section-title">Let's Work Together<br><strong>Reach Out</strong></h2>
             <button class="cta email">EMAIL US</button>
           </div>
           <div class="form-wrapper"> 
@@ -265,6 +268,6 @@
         </div>
       </footer>
     </main>
-    <script src="./js/app.js"></script>
+    <script src="./js/app.js" type="module" defer></script>
   </body>
 </html>

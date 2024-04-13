@@ -22,7 +22,7 @@ section#key-words {
       transition: background-color 0.3s;
 
       &:hover {
-        background-color: var(--primary-color);
+        background-color: #064839;
       }
 
       @include breakpoint($breakpoint-sm) {

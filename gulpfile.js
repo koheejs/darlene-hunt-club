@@ -5,7 +5,7 @@ const sass = require('gulp-sass')(require('sass'));
 const browserSync = require('browser-sync').create();
 
 const paths = {
-  assetsSrc: ['src/assets/**/*', 'src/js/**.js'],
+  assetsSrc: ['src/assets/**/*', 'src/js/**/**.js'],
   jadeSrc: 'src/**/*.jade',
   sassSrc: 'src/**/*.scss',
   outputDir: 'docs',

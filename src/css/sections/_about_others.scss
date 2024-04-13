@@ -7,6 +7,10 @@ section#approach {
     flex-direction: column;
     gap: 6rem;
   }
+
+  h4 {
+    line-height: 1;
+  }
 }
 
 section#problem-solved {
@@ -16,7 +20,9 @@ section#problem-solved {
 }
 
 section#approach {
-  background-color: var(--dark-color);
+  background-image: url('../assets/images/bg-section-orange-2.png');
+  background-size: cover;
+  margin-top: -10rem;
 
   .approach-list {
     display: grid;

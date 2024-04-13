@@ -1,7 +1,5 @@
 section#hero {
-  background-image: url('../assets/images/bg-home-hero.png');
-  background-size: cover;
-  background-position: center;
+  // background-image: url('../assets/images/bg-home-hero.png');
 
   .container {
     min-height: $min-height-hero;
@@ -12,10 +10,16 @@ section#hero {
   .content-wrapper {
     flex: 1;
     display: flex;
-    // flex-direction: column;
     justify-content: space-around;
     align-items: center;
     gap: 4rem;
+
+    @include breakpoint($breakpoint-md) {
+      flex-direction: column;
+      gap: 2rem;
+      justify-content: center;
+      align-items: flex-start;
+    }
   }
 
   .section-title {

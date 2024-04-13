@@ -17,10 +17,11 @@ block variables
   - var bodyClass = "home-page"
 
 block content
-  section#hero 
+  section#hero
+    div(data-bg-effect data-background="../assets/images/bg-home-hero.png")
     .container 
       .content-wrapper
-        .logo 
+        .logo(data-aos="fade-up")
           img(src="./assets/images/logo.png", alt="hunt-club")
         
         .intro
@@ -38,15 +39,15 @@ block content
   section#descriptions
     .container
       .row
-        .icon
+        .icon(data-aos="fade-up")
           img(src="./assets/images/section-description-2.png", alt="")
-        p We are a 
+        p(data-aos="fade-up", data-aos-delay="400") We are a 
           strong multi-disciplinary 
           | team  of producers, designers, strategists, developers, and artists. 
       .row
-        .icon
+        .icon(data-aos="fade-up")
           img(src="./assets/images/section-description-1.png", alt="")
-        p We partner with 
+        p(data-aos="fade-up", data-aos-delay="400") We partner with 
           strong visionaries
           | , 
           strong founders
@@ -58,8 +59,8 @@ block content
   section#services 
     .container 
       .heading 
-        button.outline-button.cta OUR SERVICES
-        h2.section-title Full Stacked,
+        button.outline-button.cta(data-aos="fade") OUR SERVICES
+        h2.section-title(data-aos="fade-up") Full Stacked,
           br
           strong Full Service.
       .accordions
@@ -93,7 +94,7 @@ block content
 
   section#headline 
     .container 
-      h2.section-title A Headline About Our 
+      h2.section-title(data-aos="fade-up") A Headline About Our 
         strong Manifestor 
         | In Short
       

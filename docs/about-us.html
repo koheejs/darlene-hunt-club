@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js" integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="../assets/libs/aos/aos.css">
+    <script src="../assets/libs/aos/aos.js"></script>
   </head>
   <body class="about-us-page">
     <header>
@@ -28,16 +30,60 @@
       <section id="about-hero">
         <div class="container"> 
           <div class="content-wrapper">
-            <div class="logo"> <img src="./assets/images/logo.png" alt="hunt-club"></div>
+            <div data-aos="fade-up" class="logo"><img src="./assets/images/logo.png" alt="hunt-club"></div>
             <div class="intro">
-              <h2 class="section-title"><strong>We are a </strong><br>Close-Knit, <br><strong>Well Oiled,</strong><br>Multi-Dimensional,<br><strong>Female-Led,</strong><br>Pizza Loving,<br><strong>Future Forward,</strong><br>Results Oriented,<br><strong>Creative Machine.</strong></h2>
+              <h2 class="section-title"><strong data-aos="fade-up">We are a </strong><br><span data-aos="fade-up" data-aos-delay="200">Close-Knit, </span><br><strong data-aos="fade-up" data-aos-delay="400">Well Oiled,</strong><br><span data-aos="fade-up" data-aos-delay="600">Multi-Dimensional,</span><br><strong data-aos="fade-up" data-aos-delay="800">Female-Led,</strong><br><span data-aos="fade-up" data-aos-delay="1000">Pizza Loving,</span><br><strong data-aos="fade-up" data-aos-delay="1200">Future Forward,</strong><br><span data-aos="fade-up" data-aos-delay="1400">Results Oriented,</span><br><strong data-aos="fade-up" data-aos-delay="1600">Creative Machine.</strong></h2>
             </div>
           </div>
         </div>
       </section>
+      <section id="approach">
+        <div class="container"> 
+          <div>
+            <button class="outline-button cta">OUR APPROACH</button>
+          </div>
+          <h2 data-aos="fade-up" class="section-title"><strong>You Dream it, </strong>We’ll Build It.</h2>
+          <div class="approach-list"> 
+            <div data-aos="fade-up" data-aos-delay="800" class="approach"> 
+              <h4>Strategic Thinking</h4>
+              <p>We lead the exploration and discovery of your brand’s essential narrative, conducting thorough research to strategize how to bring it to market.</p>
+            </div>
+            <div data-aos="fade-up" data-aos-delay="1200" class="approach"> 
+              <h4>Creative Production</h4>
+              <p>Our designers work in tandem with producers and developers to craft functional and beautiful digital products. </p>
+            </div>
+            <div data-aos="fade-up" data-aos-delay="1600" class="approach"> 
+              <h4>Project Management</h4>
+              <p>We maintain momentum  throughout project cycles with efficiency, team synergy, and communication at the center of our  ethos. </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="partners">
+        <div class="container"> 
+          <div class="partner-list"> 
+            <div class="partner"><img src="./assets/images/logo-shopley.png" alt=""></div>
+            <div class="partner"><img src="./assets/images/logo-flairairlines.png" alt=""></div>
+            <div class="partner"><img src="./assets/images/logo-newspark.png" alt=""></div>
+            <div class="partner"><img src="./assets/images/logo-desjardins.png" alt=""></div>
+            <div class="partner"><img src="./assets/images/logo-ocad.png" alt=""></div>
+            <div class="partner"><img src="./assets/images/logo-gocxm.png" alt=""></div>
+            <div class="partner"><img src="./assets/images/logo-ibogaine.png" alt=""></div>
+            <div class="partner"><img src="./assets/images/logo-manulife.png" alt=""></div>
+            <div class="partner"><img src="./assets/images/logo-sap.png" alt=""></div>
+            <div class="partner"><img src="./assets/images/logo-twb.png" alt=""></div>
+          </div>
+        </div>
+      </section>
+      <section id="problem-solved">
+        <div class="container"> 
+          <h2 data-aos="fade-up" class="section-title">Problems <strong>Solved.</strong></h2>
+          <p data-aos="fade-up" data-aos-delay="800">From websites to UI/UX upgrades and compelling content creation you can count us in on your ambitious goals.  We bring an artful eye to every project and  believe there is no concept too complex or grandiose that we can’t find a solution for.</p>
+          
+        </div>
+      </section>
       <section id="key-words">
         <div class="container"> 
-          <p class="intro">With over 10 years of working together, we have worked on a myriad of projects in these worlds:</p>
           <div class="key-words"> 
             <div class="word">Tech</div>
             <div class="word">Art &amp;Film</div>
@@ -56,53 +102,10 @@
           </div>
         </div>
       </section>
-      <section id="partners">
-        <div class="container"> 
-          <div class="partner-list"> 
-            <div class="partner"><img src="./assets/images/logo-shopley.png" alt=""></div>
-            <div class="partner"><img src="./assets/images/logo-flairairlines.png" alt=""></div>
-            <div class="partner"><img src="./assets/images/logo-newspark.png" alt=""></div>
-            <div class="partner"><img src="./assets/images/logo-desjardins.png" alt=""></div>
-            <div class="partner"><img src="./assets/images/logo-ocad.png" alt=""></div>
-            <div class="partner"><img src="./assets/images/logo-manulife.png" alt=""></div>
-          </div>
-        </div>
-      </section>
-      <section id="problem-solved">
-        <div class="container"> 
-          <h2 class="section-title">Problems <strong>Solved.</strong></h2>
-          <p>From websites to UI/UX upgrades and compelling content creation you can count us in on your ambitious goals.  We bring an artful eye to every project and  believe there is no concept too complex or grandiose that we can’t find a solution for.</p>
-          <div>
-            <button class="cta">WORK WITH US</button>
-          </div>
-        </div>
-      </section>
-      <section id="approach">
-        <div class="container"> 
-          <div>
-            <button class="outline-button cta">OUR APPROACH</button>
-          </div>
-          <h2 class="section-title"><strong>You Dream it, </strong>We’ll Build It.</h2>
-          <div class="approach-list"> 
-            <div class="approach"> 
-              <h4>Strategic Thinking</h4>
-              <p>We lead the exploration and discovery of your brand’s essential narrative, conducting thorough research to strategize how to bring it to market.</p>
-            </div>
-            <div class="approach"> 
-              <h4>Creative Production</h4>
-              <p>Our designers work in tandem with producers and developers to craft functional and beautiful digital products. </p>
-            </div>
-            <div class="approach">
-              <h4>Project Management</h4>
-              <p>We maintain momentum  throughout project cycles with efficiency, team synergy, and communication at the center of our  ethos. </p>
-            </div>
-          </div>
-        </div>
-      </section>
       <section id="contact-form">
         <div class="container"> 
           <div class="heading"> 
-            <h2 class="section-title">Let's Work Together<br><strong>Reach Out</strong></h2>
+            <h2 data-aos="fade-up" class="section-title">Let's Work Together<br><strong>Reach Out</strong></h2>
             <button class="cta email">EMAIL US</button>
           </div>
           <div class="form-wrapper"> 
@@ -174,6 +177,6 @@
         </div>
       </footer>
     </main>
-    <script src="./js/app.js"></script>
+    <script src="./js/app.js" type="module" defer></script>
   </body>
 </html>
