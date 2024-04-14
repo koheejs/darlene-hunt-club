@@ -1,4 +1,5 @@
 import backgroundImageEffect from './modules/feature-background-effect.js';
+import sectionParallax from './modules/feature-parallax.js';
 
 (function () {
   // Initialize AOS library
@@ -11,6 +12,7 @@ import backgroundImageEffect from './modules/feature-background-effect.js';
   });
 
   backgroundImageEffect();
+  sectionParallax();
 })();
 
 /**
