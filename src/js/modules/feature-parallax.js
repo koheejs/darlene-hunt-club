@@ -9,6 +9,7 @@ function sectionParallax() {
       const scrollY = window.scrollY;
       const updatedMarginTop = originMarginTop + scrollY * speed * -1;
       $section.style.marginTop = `${updatedMarginTop}px`;
+      AOS.refresh();
     });
   });
 }
