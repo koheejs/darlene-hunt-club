@@ -29,6 +29,15 @@ $min-height-hero: max(100vh, 600px);
   }
 }
 
+@mixin sectionBorderRadius() {
+  border-top-left-radius: 10rem;
+  border-top-right-radius: 10rem;
+  @include breakpoint($breakpoint-md) {
+    border-top-left-radius: 4rem;
+    border-top-right-radius: 4rem;
+  }
+}
+
 @mixin square($size) {
   width: $size;
   height: $size;

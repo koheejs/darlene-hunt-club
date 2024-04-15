@@ -68,8 +68,8 @@ footer {
   background-size: 100% 100%;
 
   padding: 12rem 0;
-  border-top-left-radius: 4rem;
-  border-top-right-radius: 4rem;
+
+  @include sectionBorderRadius();
 
   .container {
     display: flex;

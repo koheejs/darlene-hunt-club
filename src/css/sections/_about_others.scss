@@ -25,6 +25,8 @@ section#approach {
   margin-top: -10rem;
   position: relative;
 
+  @include sectionBorderRadius();
+
   .approach-list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
