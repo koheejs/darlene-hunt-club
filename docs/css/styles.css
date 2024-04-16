@@ -390,6 +390,11 @@ section#hero .content-wrapper {
 section#hero .section-title {
   max-width: 550px;
 }
+section#hero .intro {
+  opacity: 0;
+  filter: blur(4px);
+  animation: fade-in 3.5s ease-in-out forwards;
+}
 section#hero .address {
   font-size: 2rem;
   font-weight: 300;
@@ -401,6 +406,12 @@ section#hero .scroll-down-button {
   display: inline-flex;
   justify-content: center;
   align-items: center;
+}
+@keyframes fade-in {
+  100% {
+    opacity: 1;
+    filter: blur(0);
+  }
 }
 
 section#descriptions {
@@ -493,7 +504,7 @@ section#services .heading {
 section#services .accordions {
   width: 60%;
   display: flex;
-  gap: 5.4rem;
+  gap: 4rem;
 }
 @media only screen and (max-width: 992px) {
   section#services .accordions {
@@ -511,13 +522,18 @@ section#services .accordions .accordion-group {
 }
 section#services .accordions .accordion-title {
   font-family: "Averia";
-  font-size: 2.8rem;
+  font-size: 2.6rem;
   line-height: 2.5;
   display: flex;
   justify-content: space-between;
   cursor: pointer;
   border-bottom: 1px solid var(--white-color);
   margin-bottom: 2.8rem;
+}
+section#services .accordions .accordion-title h4 {
+  flex-grow: 1;
+  padding-right: 1rem;
+  text-align: center;
 }
 section#services .accordions .accordion-content {
   display: grid;

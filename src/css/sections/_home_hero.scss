@@ -26,6 +26,12 @@ section#hero {
     max-width: 550px;
   }
 
+  .intro {
+    opacity: 0;
+    filter: blur(4px);
+    animation: fade-in 3.5s ease-in-out forwards;
+  }
+
   .address {
     font-size: 2rem;
     font-weight: 300;
@@ -38,5 +44,12 @@ section#hero {
     display: inline-flex;
     justify-content: center;
     align-items: center;
+  }
+
+  @keyframes fade-in {
+    100% {
+      opacity: 1;
+      filter: blur(0);
+    }
   }
 }
