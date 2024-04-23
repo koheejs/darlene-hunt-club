@@ -1,0 +1,10 @@
+[data-aos='short-fade-up'] {
+  opacity: 0;
+  transform: translateY(35px);
+  transition-property: transform, opacity;
+
+  &.aos-animate {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

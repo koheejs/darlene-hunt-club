@@ -1,5 +1,7 @@
 section#hero {
-  // background-image: url('../assets/images/bg-home-hero.png');
+  [data-bg-effect] {
+    background-attachment: fixed;
+  }
 
   .container {
     min-height: $min-height-hero;
@@ -30,6 +32,7 @@ section#hero {
     opacity: 0;
     filter: blur(4px);
     animation: fade-in 3.5s ease-in-out forwards;
+    animation-delay: 3s;
   }
 
   .address {

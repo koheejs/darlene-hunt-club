@@ -51,11 +51,10 @@ section#services {
       justify-content: space-between;
       cursor: pointer;
       border-bottom: 1px solid var(--white-color);
-      margin-bottom: 2.8rem;
+      padding: 1.4rem 0;
       h4 {
         flex-grow: 1;
         padding-right: 1rem;
-        text-align: center;
       }
     }
 
@@ -69,7 +68,7 @@ section#services {
       }
 
       p {
-        padding-bottom: 3rem;
+        padding: 3rem 0 0;
       }
     }
 

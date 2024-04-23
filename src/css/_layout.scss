@@ -1,6 +1,18 @@
 // $menu-expanded
 $header-padding: 6rem;
 
+.about-us-page {
+  #navigation {
+    background-image: url('../assets/images/menu-about-bg.jpg');
+  }
+}
+
+.home-page {
+  #navigation {
+    background-image: url('../assets/images/menu-home-bg.jpg');
+  }
+}
+
 header {
   position: absolute;
   top: 0;
@@ -16,6 +28,12 @@ header {
   .menu-button {
     @include square(78px);
     cursor: pointer;
+    opacity: 1;
+    transition: opacity 0.3s linear;
+
+    &.expanded {
+      opacity: 0;
+    }
   }
 
   #navigation {
@@ -23,8 +41,9 @@ header {
     border-radius: 39px;
     height: 0;
     opacity: 0;
+    z-index: 1;
     overflow: hidden;
-    background-color: var(--primary-color);
+    background-size: 100% 100%;
     transition: height 0.3s ease-in-out, opacity 0.3s ease-in-out;
 
     &.expanded {

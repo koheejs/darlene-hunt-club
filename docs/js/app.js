@@ -28,11 +28,13 @@ import sectionParallax from './modules/feature-parallax.js';
 
   menuTrigger.addEventListener('click', (event) => {
     navigation.classList.toggle(Classes.menuExpanded);
+    menuTrigger.classList.toggle(Classes.menuExpanded);
   });
 
   document.body.addEventListener('click', (event) => {
     if (event.target !== menuTrigger && !menuTrigger.contains(event.target)) {
       navigation.classList.remove(Classes.menuExpanded);
+      menuTrigger.classList.remove(Classes.menuExpanded);
     }
   });
 })();

@@ -1,16 +1,21 @@
+$background-ratio: 60vw;
+
 [data-bg-effect] {
   position: absolute;
   z-index: -1;
   inset: 0;
-  background-size: cover;
-  background-position: center;
+  background-size: auto 100vw;
+  background-position-x: center;
+  background-position-y: calc(50vh - 10vw);
+  background-repeat: no-repeat;
 
   opacity: 0;
-  margin-top: 20%;
-  transition: all 4s ease-out;
+  transition-duration: 4s;
+  transition-property: opacity, background-position-y;
+  transition-timing-function: cubic-bezier(0.09, 0.09, 0.45, 1);
 
   &.has-effect {
     opacity: 1;
-    margin-top: 0;
+    background-position-y: calc(50vh - 50vw);
   }
 }

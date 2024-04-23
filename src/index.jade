@@ -18,10 +18,10 @@ block variables
 
 block content
   section#hero
-    div(data-bg-effect data-background="./assets/images/bg-home-hero.png")
+    div(data-bg-effect data-background="./assets/images/bg-home-hero.png", data-bg-parallax)
     .container 
       .content-wrapper
-        .logo(data-aos="fade-up")
+        .logo(data-aos="fade-up", data-aos-delay="2000")
           img(src="./assets/images/logo.png", alt="hunt-club")
         
         .intro
@@ -94,7 +94,7 @@ block content
 
   section#headline 
     .container 
-      h2.section-title(data-aos="fade-up") A Headline About Our 
+      h2.section-title(data-aos="short-fade-up") A Headline About Our 
         strong Manifestor 
         | In Short
       
