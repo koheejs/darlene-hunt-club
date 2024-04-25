@@ -446,12 +446,21 @@ section#hero .scroll-down-button {
 }
 
 section#descriptions {
-  background-image: url("../assets/images/bg-section-yellow.png");
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
+  height: 200vh;
   padding: 19.6rem 0;
+  background-image: url("../assets/images/bg-section-yellow.png");
+  background-size: 100% 100vh;
+  background-position-x: center;
+  background-position-y: top;
+  background-repeat: no-repeat;
   border-top-left-radius: 10rem;
   border-top-right-radius: 10rem;
+}
+section#descriptions.bg-bottom {
+  background-position-y: bottom;
+}
+section#descriptions.parallax {
+  background-attachment: fixed;
 }
 @media only screen and (max-width: 992px) {
   section#descriptions {
@@ -473,6 +482,10 @@ section#descriptions .row {
   display: flex;
   flex-direction: column;
   gap: 6.4rem;
+  opacity: 0;
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
 }
 section#descriptions .row .icon {
   padding: 0 20px;

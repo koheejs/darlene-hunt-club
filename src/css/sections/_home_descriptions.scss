@@ -1,9 +1,19 @@
 section#descriptions {
+  height: 200vh;
+  padding: 19.6rem 0;
   background-image: url('../assets/images/bg-section-yellow.png');
-  background-size: 100% 100%;
+  background-size: 100% 100vh;
+  background-position-x: center;
+  background-position-y: top;
   background-repeat: no-repeat;
 
-  padding: 19.6rem 0;
+  &.bg-bottom {
+    background-position-y: bottom;
+  }
+
+  &.parallax {
+    background-attachment: fixed;
+  }
 
   @include sectionBorderRadius();
 
@@ -44,6 +54,13 @@ section#descriptions {
         width: 100%;
       }
     }
+
+    opacity: 0;
+    position: fixed;
+    // left: 0;
+    top: 50%;
+    // width: 100%;
+    transform: translateY(-50%);
   }
 
   &:last-child {
