@@ -76,12 +76,19 @@ header {
       .active,
       :hover {
         font-weight: 800;
-        color: var(--color-menu-active);
+        a {
+          color: var(--color-menu-active);
+        }
       }
     }
 
     .logo {
       padding: 0 4rem 10rem;
+      text-align: center;
+
+      img {
+        width: 20rem;
+      }
     }
   }
 }

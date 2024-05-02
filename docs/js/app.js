@@ -22,6 +22,14 @@ import sectionParallax from './modules/feature-parallax.js';
   const menuTrigger = document.getElementById('trigger-menu');
   const navigation = document.getElementById('navigation');
 
+  const menuItems = navigation.querySelectorAll('.menu-item');
+  menuItems.forEach((item) => {
+    const activePage = item.getAttribute('data-active-page');
+    if (document.body.classList.contains(activePage)) {
+      item.classList.add('active');
+    }
+  });
+
   const Classes = {
     menuExpanded: 'expanded',
   };

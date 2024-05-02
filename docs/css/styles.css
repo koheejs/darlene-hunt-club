@@ -308,10 +308,17 @@ header #navigation ul {
 header #navigation ul .active,
 header #navigation ul :hover {
   font-weight: 800;
+}
+header #navigation ul .active a,
+header #navigation ul :hover a {
   color: var(--color-menu-active);
 }
 header #navigation .logo {
   padding: 0 4rem 10rem;
+  text-align: center;
+}
+header #navigation .logo img {
+  width: 20rem;
 }
 
 .logo img {
