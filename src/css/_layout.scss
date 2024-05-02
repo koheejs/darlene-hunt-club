@@ -1,6 +1,13 @@
 // $menu-expanded
 $header-padding: 6rem;
 
+body {
+  --color-menu-active: #e56916;
+  &.about-us-page {
+    --color-menu-active: #4b93c3;
+  }
+}
+
 .about-us-page {
   #navigation {
     background-image: url('../assets/images/menu-about-bg.jpg');
@@ -31,45 +38,50 @@ header {
     opacity: 1;
     transition: opacity 0.3s linear;
 
+    position: absolute;
+    top: 4rem;
+    right: 4rem;
+
     &.expanded {
       opacity: 0;
     }
   }
 
   #navigation {
-    position: absolute;
     border-radius: 39px;
+    position: absolute;
+    top: 4rem;
+    right: 4rem;
     height: 0;
+    width: 320px;
     opacity: 0;
     z-index: 1;
     overflow: hidden;
     background-size: 100% 100%;
     transition: height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
     &.expanded {
       opacity: 1;
-      height: max(calc(100vh - #{$header-padding * 2}), 400px);
+      height: max(calc(100vh - #{$header-padding}), 400px);
     }
 
     ul {
-      padding: 10rem 5rem;
-      font-family: 'Averia';
-      font-size: 8rem;
-      line-height: 1;
-    }
+      font-size: 5rem;
+      padding: 10rem 4rem 0;
+      line-height: 1.36;
 
-    @include breakpoint($breakpoint-sm) {
-      ul {
-        font-size: 5rem;
-        line-height: 1.2;
+      .active,
+      :hover {
+        font-weight: 800;
+        color: var(--color-menu-active);
       }
     }
 
-    @include screenheight($breakpoint-xs) {
-      ul {
-        font-size: 5rem;
-        line-height: 1.2;
-      }
+    .logo {
+      padding: 0 4rem 10rem;
     }
   }
 }

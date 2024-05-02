@@ -3,6 +3,8 @@ const KEEP_DELTA = 1000;
 
 function sectionParallax() {
   const $section = document.getElementById('descriptions');
+  if (!$section) return;
+
   const row1 = $section.querySelector('.row:nth-child(1)');
   const row2 = $section.querySelector('.row:nth-child(2)');
 
