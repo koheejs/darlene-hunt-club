@@ -43,17 +43,33 @@ function sectionParallax() {
         scrollY <= upperLimit + 2 * delta + KEEP_DELTA
       ) {
         let opacity = 0;
+        let transformY = 0;
+        let blurFilter = 0;
+
         if (scrollY <= upperLimit + delta) {
           opacity = Math.abs(upperLimit - scrollY) / delta;
+          blurFilter = (1 - opacity) * 10;
+          transformY = (1 - opacity) * 100;
         } else if (scrollY >= upperLimit + delta + KEEP_DELTA) {
           opacity =
             Math.abs(upperLimit + 2 * delta + KEEP_DELTA - scrollY) / delta;
+          blurFilter = Math.abs(opacity - 1) * 10;
+          transformY = (opacity - 1) * 100;
         } else {
+          blurFilter = 0;
+          transformY = 0;
           opacity = 1;
         }
+
+        $el.style.position = 'fixed';
         $el.style.opacity = opacity;
+        $el.style.filter = `blur(${blurFilter}px)`;
+        $el.style.transform = `translateY(${transformY - 50}%)`;
       } else {
         $el.style.opacity = 0;
+        $el.style.filter = 'blur(0)';
+        $el.style.position = 'relative';
+        $el.style.transform = 'translateY(0)';
       }
     }
   }
