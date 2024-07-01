@@ -1,5 +1,8 @@
 header
   div.container
+    a(href="./").logo
+      img(src="./assets/images/logo.png", alt="Back to Home")
+
     .menu-button#trigger-menu 
       img(src="./assets/images/menu-button.png", alt="")
     .navigation#navigation 
@@ -8,10 +11,10 @@ header
           a(href="./") Home
         li.menu-item(data-active-page="about-us-page") 
           a(href="./about-us.html") About Us
-        li.menu-item 
-          a(href="#services") Work
+        li.menu-item(data-active-page="work-page") 
+          a(href="./work.html") Work
         li.menu-item 
           a(href="#contact") Contact
 
-      .logo
+      .logo-stamp
         img(src="./assets/images/menu-logo.png", alt="hunt-club")

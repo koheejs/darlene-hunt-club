@@ -3,6 +3,7 @@ $header-padding: 6rem;
 
 body {
   --color-menu-active: #e56916;
+
   &.about-us-page {
     --color-menu-active: #4b93c3;
   }
@@ -30,6 +31,18 @@ header {
   .container {
     display: flex;
     justify-content: flex-end;
+  }
+
+  .logo {
+    position: absolute;
+    left: 4rem;
+    top: 4rem;
+    transform: translateY(50%);
+    display: none;
+
+    img {
+      width: 27rem;
+    }
   }
 
   .menu-button {
@@ -76,13 +89,14 @@ header {
       .active,
       :hover {
         font-weight: 800;
+
         a {
           color: var(--color-menu-active);
         }
       }
     }
 
-    .logo {
+    .logo-stamp {
       padding: 0 4rem 10rem;
       text-align: center;
 
@@ -93,7 +107,7 @@ header {
   }
 }
 
-.logo {
+.logo-stamp {
   img {
     width: 278px;
   }
@@ -147,6 +161,7 @@ footer {
 
       .block {
         margin-bottom: 0;
+
         h3 {
           margin: 2.8rem 0;
         }
