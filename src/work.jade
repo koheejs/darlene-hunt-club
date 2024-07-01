@@ -1,0 +1,75 @@
+extends ./pages/layout/_layout.jade
+
+block variables
+  - var bodyClass = "work-page"
+
+block content
+  section.heading
+    .container
+      h1.page-title Our work
+  section#our-work
+    .container 
+      .block
+        .thumb
+          img(src="./assets/images/our-work-sharing-spaces.png", alt="")
+        .content 
+          h3.title Sharing Spaces
+          p.description Agency, Management &amp; Production Company
+          p.category Web Design |  Responsive HTML, CSS &amp; Java Script | Content Curation | Writing &amp; Editing
+      .block
+        .thumb  
+          img(src="./assets/images/our-work-gifts-foundation.png", alt="")
+        .content 
+          h3.title GIFTS Foundation
+          p.description Nonprofit Charity Organization
+          p.category Web Design |  Responsive HTML, CSS &amp; Java Script | Content Curation | Writing &amp; Editing
+      .block
+        .thumb  
+          img(src="./assets/images/our-work-cybrid.png", alt="")
+        .content 
+          h3.title Cybrid
+          p.description Crypto &amp; Cyber Security
+          p.category Crypto &amp; Cyber Security
+      .block
+        .thumb  
+          img(src="./assets/images/our-work-universall-bogaine.png", alt="")
+        .content 
+          h3.title Universal Ibogaine
+          p.description Addiction Treatment Centres
+      .block
+        .thumb  
+          img(src="./assets/images/our-work-paper-cut.png", alt="")
+        .content 
+          h3.title Papercut
+          p.description Film Industry Accounting Software
+          p.category Branding &amp; Identity | UX Design | Investment Pitch Deck 
+      .block
+        .thumb  
+          img(src="./assets/images/our-work-gr8-tables.png", alt="")
+        .content 
+          h3.title Gr8tables
+          p.description Restaurant POS System
+          p.category Web Design | UX Design
+      .block
+        .thumb  
+          img(src="./assets/images/our-work-everybody.png", alt="")
+        .content 
+          h3.title Everybody
+          p.description Message Therapy Clinic
+          p.category Branding &amp; Identity | Social Media
+      .block
+        .thumb  
+          img(src="./assets/images/our-work-aravalli.png", alt="")
+        .content 
+          h3.title Aravalli
+          p.description Capital Management 
+          p.category Brand &amp; Identity | Pitch Deck | One-Pager | Informational Brochure
+      .block
+        .thumb  
+          img(src="./assets/images/our-work-new-spark.png", alt="")
+        .content 
+          h3.title New Spark.io
+          p.description Video Management Software
+
+  include ./pages/contact-form.jade
+
