@@ -17,76 +17,102 @@ block variables
   - var bodyClass = "home-page"
 
 block content
+  //- Section Hero
   section#hero
-    div(data-bg-effect data-background="./assets/images/bg-home-hero.png", data-bg-parallax)
     .container 
-      .content-wrapper
-        .logo(data-aos="fade-up", data-aos-delay="1000")
-          img(src="./assets/images/logo.png", alt="hunt-club")
-        
-        .intro
-          h1.section-title We are a 
-            strong Creative Production 
-            | Studio
-          
-          p.address based in 
-            span.text-curved Toronto, Saigon &amp; Outer Space 
-  
+      h1.section-title 
+        em LEVEL UP 
+        | YOUR BUSINESS AND SHOWCASE IT TO 
+        em THE WORLD
+      p.section-description We deliver all the content you need to supercharge your marketing.
 
-  section#descriptions(data-scroll-speed="0.6")
+  //- Section Who We Are
+  section#who-we-are
     .container
-      .row
-        .icon
-          img(src="./assets/images/section-description-2.png", alt="")
-        p We are a 
-          strong multi-disciplinary 
-          | team  of producers, designers, strategists, developers, and artists. 
-      .row
-        .icon
-          img(src="./assets/images/section-description-1.png", alt="")
-        p We partner with 
-          strong visionaries
-          | , 
-          strong founders
-          | , and 
-          strong c-suite 
-          | teams focused on propelling their projects and products forward.  
+      .section-tag WHO WE ARE
+      h2.section-title WE ARE A CREATIVE PRODUCTION STUDIO
 
+      .row 
+        .col
+          p.text-body-sm We are a multi-disciplinary team  of producers, designers, strategists, developers, and artists. 
+        .col 
+          p.text-body-sm We partner with visionaries, founders, and c-suite teams focused on propelling their business forward.  
 
-  section#services 
+  //- Section Our Services
+  section#our-services
+    .container
+      .section-tag OUR SERVICES
+      .row
+        h2.section-title 
+          span Brand &amp; Identity Marketing Strategy Content Creation
+          span.highlight Design
+          span Full Stack Development Copywriting Motion Graphics Video &amp; Photography 
+
+  //- Section Our Process
+  section#our-process
+    .container
+      .section-tag OUR PROCESS
+      
+      ul.processes 
+        li.step 
+          .step-number 01
+          .step-content 
+            h4.step-title Discovery
+            p.text-body-sm Book an appointment to discuss your business needs and goals.
+            a.cta SCHEDULE A CALL
+
+        li.step 
+          .step-number 02
+          .step-content 
+            h4.step-title Deep Dive
+            p.text-body-sm We learn about your business inside out to create a customized marketing plan.
+        li.step 
+          .step-number 03
+          .step-content 
+            h4.step-title Execute
+            p.text-body-sm We execute the plan with room for revisions. You can be as involved as you like; we value collaboration but are also adept at independently creating assets that fit your needs.
+        li.step
+          .step-number 04
+          .step-content 
+            h4.step-title Deliver
+            p.text-body-sm Receive all the assets you need to make your business shine and turbo boost your marketing plan.
+        li.step 
+          .step-number ++
+          .step-content 
+            h4.step-title What’s Next?
+            p.text-body-sm Need help managing your new assets? Our team offers social and marketing management services to ensure ongoing success.
+  
+  //- Section Our Location
+  section#our-location
     .container 
-      .heading 
-        button.outline-button.cta(data-aos="fade") OUR SERVICES
-        h2.section-title(data-aos="fade-up") Full Stacked,
-          br
-          strong Full Service.
-      .accordions
-        .accordion-group 
-          +accordion("Marketing Strategy")
-            p
-              - list = [ "Content Strategy", "Research", "Competitive Analysis", "Target Markets", "User Personas", "Multi-Channel", "E-Commerce", "Social Media", "Lead Generation", "Marketing Automation", "Campaign Management", "Messaging"]
-              each item in list
-                span= item
-                br
-          +accordion("Brand & Identity")
-            p Crafting identities that resonate and endure, our branding service is about capturing the essence of your company and translating it into a visual and verbal language that speaks to your audience clearly, boldly, and beautifully
-          +accordion("Design")
-            p We delve deep into your brand's essence to create designs that resonate and engage. Our process is collaborative and iterative, ensuring that what we create reflects your vision and captivates your audience.
-          +accordion("Art direction")
-            p Art direction involves the strategic oversight and creative guidance of the visual elements in a project, ensuring that all aspects of the design and imagery work together cohesively to convey a specific message or feeling.
-          +accordion("Full Stack Development")
-            p Our full-stack development team encompasses both front-end and back-end developers to provide clients with a truly hands-off approach to creating digital solutions (or products). 
-        .accordion-group 
-          +accordion("Copywriting")
-            p Excellent copywriting stands out in a noisy world of generic AI-written content. Which is why we focus on human-centred writing and messaging.  Balancing art and science to craft words in a way that connects, differentiates, persuades and adds value.
-          +accordion("Video & Photography")
-            p Visuals are not only captivating but also memorable. Original photography or a well-crafted video leaves a lasting impression, ensuring your brand remains in the audience's mind long after their initial encounter.
-          +accordion("Motion Graphics")
-            p Breathe life into your visual creations and capture the users’ imagination with motion graphics. From dynamic infographic to interactive website animation we got you covered.
-          +accordion("AI & Tech Consulting")
-            p You know the possibilities are endless when it comes to utilizing tech/AI to supercharge your business,  but you don’t know where to start? We’ll provide actionable strategies that helps you stay future-ready. 
-          +accordion("Data Analytics")
-            p Data Analytics transforms raw data into strategic insights, powering informed decision-making and unveiling opportunities for growth. We use sophisticated analytical tools to interpret trends, patterns, and behaviors, propelling your business towards data-driven success.
-
+      .section-tag WE ARE BASED OUT OF
+      .content.row
+        h2.section-title toronto,
+          em SàiGòn 
+          | &amp; 
+          span outerspace
+          
+        .description
+          p.text-body-sm Yes, the time difference means we work around the clock. Yes, we can get that job you needed done last week, 
+            strong pronto!
+          a.cta LET’S TALK
+  
+  //- Section Case Studies
+  section#case-studies 
+    .container
+      .section-tag CASE STUDIES
+      ul.case-studies
+        li 
+          img(src="./assets/images/home-cs-1.png", alt="Case Study 1")
+        li 
+          img(src="./assets/images/home-cs-2.png", alt="Case Study 2")
+        li
+          img(src="./assets/images/home-cs-3.png", alt="Case Study 3")
+        li
+          img(src="./assets/images/home-cs-4.png", alt="Case Study 4")
+        li 
+          img(src="./assets/images/home-cs-5.png", alt="Case Study 5")
+        li 
+          img(src="./assets/images/home-cs-6.png", alt="Case Study 6")
 
   include ./pages/contact-form.jade

@@ -4,17 +4,15 @@
   --black-color: #{$black-color};
   --dark-color: #{$black-1-color};
   --light-color: #{$light-color};
-  --dark-green-color: #{$dark-green};
-  --light-green-color: #{$light-green};
 
+  --header-top: 4rem;
   --header-height: 10rem;
-  --header-padding: 6rem;
   --header-nav-bottom: 40px;
 }
 
-// .material-symbols-outlined {
-//   font-variation-settings: 'FILL'0, 'wght'400, 'GRAD'0, 'opsz'24;
-// }
+.material-symbols-outlined {
+  font-variation-settings: 'FILL'0, 'wght'400, 'GRAD'0, 'opsz'24;
+}
 
 // Fonts
 @font-face {
@@ -73,13 +71,6 @@
   font-style: normal;
 }
 
-@font-face {
-  font-family: 'DMono';
-  src: url(../assets/fonts/DMMono-Regular.ttf) format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-
 * {
   box-sizing: border-box;
 }
@@ -90,8 +81,6 @@ html {
   // @include breakpoint($breakpoint-sm) {
   //   font-size: 8px;
   // }
-
-  cursor: url("../assets/images/cursor.png") 25 25, auto;
 }
 
 body {
@@ -120,10 +109,6 @@ body {
 
 body.freeze-body {
   overflow: hidden;
-}
-
-main {
-  padding-top: calc(var(--header-height) + var(--header-padding));
 }
 
 a {
@@ -207,29 +192,29 @@ img {
 }
 
 .cta {
-  display: inline-block;
+  // height: 5rem;
   line-height: 4.5;
-  padding: 0 4.4rem;
+  padding: 0 5.2rem;
   border-radius: 5rem;
-  font-size: 1.2rem;
-  font-weight: 500;
-  letter-spacing: 0.33em;
-}
+  font-weight: 700;
 
-.row {
-  display: flex;
+  &.black-button {
+    background-color: var(--black-color);
+  }
+
+  &.outline-button {
+    background-color: transparent;
+    border: 2px solid var(--white-color);
+  }
 }
 
 .section-title {
   font-size: 6rem;
-  font-weight: 800;
-  line-height: 1;
-  letter-spacing: 0em;
-  text-transform: uppercase;
-  text-wrap: balance;
+  line-height: 0.98;
+  font-weight: 400;
 
-  em {
-    font-style: italic;
+  strong {
+    font-weight: 700;
   }
 
   @include breakpoint($breakpoint-sm) {
@@ -238,28 +223,10 @@ img {
   }
 }
 
-.section-description {
-  font-size: 3rem;
-  line-height: 1.2;
-  letter-spacing: 0em;
-  text-wrap: pretty;
-}
-
-.section-tag {
-  font-family: 'DMono';
-  padding: 2rem 0;
-  font-size: 1.5rem;
-}
-
 // Utilities
 .self-center {
   margin-left: auto;
   margin-right: auto;
-}
-
-.text-body-sm {
-  font-size: 1.9rem;
-  line-height: 1.58;
 }
 
 .text-curved {

@@ -5,15 +5,17 @@
 @import './effects/aos';
 @import './effects/background';
 
-@import './sections/home_hero';
-@import './sections/home_descriptions';
-@import './sections/home-services';
-@import './sections/home_headline';
-@import './sections//home_contact_form';
+// @import './sections/home_hero';
+// @import './sections/home_descriptions';
+// @import './sections/home-services';
+// @import './sections/home_headline';
+// @import './sections//home_contact_form';
 
-@import './sections/about_hero';
-@import './sections/about_keywords';
-@import './sections/about_partners';
-@import './sections/about_others';
+// @import './sections/about_hero';
+// @import './sections/about_keywords';
+// @import './sections/about_partners';
+// @import './sections/about_others';
 
-@import './sections/portfolio-heading';
+@import './sections/home.scss';
+@import './sections/portfolio';
+@import './sections/contact_form';

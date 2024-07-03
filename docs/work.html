@@ -14,17 +14,15 @@
   </head>
   <body class="work-page">
     <header>
-      <div class="container"><a href="./" class="logo"><img src="./assets/images/logo.png" alt="Back to Home"></a>
-        <div id="trigger-menu" class="menu-button"> <img src="./assets/images/menu-button.png" alt=""></div>
-        <div id="navigation" class="navigation"> 
+      <div class="container">
+        <div id="navigation" class="navigation"> <a href="./" class="logo"><img src="./assets/images/logo.png" alt="Back to Home"></a>
           <ul> 
-            <li data-active-page="home-page" class="menu-item"> <a href="./">Home</a></li>
-            <li data-active-page="about-us-page" class="menu-item"> <a href="./about-us.html">About Us</a></li>
-            <li data-active-page="work-page" class="menu-item"> <a href="./work.html">Work</a></li>
-            <li class="menu-item"> <a href="#contact">Contact</a></li>
+            <li data-active-page="home-page" data-text="Home" class="menu-item"> <a href="./">Home</a></li>
+            <li data-active-page="about-us-page" data-text="About Us" class="menu-item"> <a href="./about-us.html">About Us</a></li>
+            <li data-active-page="work-page" data-text="Selected Works" class="menu-item"> <a href="./work.html">Selected Works</a></li>
+            <li data-text="Case Studies" class="menu-item"> <a href="#contact">Case Studies</a></li>
           </ul>
-          <div class="logo-stamp"><img src="./assets/images/menu-logo.png" alt="hunt-club"></div>
-        </div>
+        </div><a class="contact">Work With Us</a>
       </div>
     </header>
     <main id="main">
@@ -110,8 +108,7 @@
       <section id="contact-form">
         <div class="container"> 
           <div class="heading"> 
-            <h2 data-aos="short-fade-up" class="section-title">Let's Work Together<br><strong>Reach Out</strong></h2>
-            <button class="cta email">EMAIL US</button>
+            <h2 data-aos="short-fade-up" class="section-title">Reach Out</h2>
           </div>
           <div class="form-wrapper"> 
             <form method="POST" action="/">

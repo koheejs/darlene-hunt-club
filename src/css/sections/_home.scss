@@ -1,0 +1,166 @@
+.home-page {
+  section {
+    padding: 6rem 0;
+  }
+
+  #hero {
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 4rem;
+    }
+
+    text-align: center;
+  }
+
+  #who-we-are {
+    .row {
+      justify-content: space-between;
+
+      .col {
+        max-width: 40rem;
+      }
+
+      p {
+        text-wrap: pretty;
+      }
+    }
+  }
+
+  #our-services {
+    .row {
+      justify-content: center;
+    }
+
+    .section-title {
+      width: fit-content;
+
+      .highlight {
+        font-style: italic;
+        color: var(--primary-color);
+      }
+
+      span {
+        display: block;
+        max-width: 85rem;
+
+        &:not(.highlight) {
+          margin-left: 4rem;
+        }
+      }
+    }
+  }
+
+  #our-process {
+    .processes {
+      display: flex;
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      gap: 10rem;
+      padding: 6rem 0;
+
+
+      // Customize scrollbar with Webkit
+      &::-webkit-scrollbar-track {
+        background: transparent;
+      }
+
+      &::-webkit-scrollbar {
+        width: 22px;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background: #F6AE23;
+      }
+
+      &::-webkit-scrollbar-thumb:hover {
+        background: #F6AE23;
+      }
+
+      .step {
+        flex-shrink: 0;
+        display: flex;
+        gap: 10rem;
+
+        .step-number {
+          font-size: 6rem;
+        }
+
+        .step-title {
+          font-weight: 800;
+          font-size: 6rem;
+          margin-bottom: 4rem;
+        }
+
+        .text-body-sm {
+          font-size: 2.3rem;
+          line-height: 1.8;
+          max-width: 60rem;
+          text-wrap: pretty;
+        }
+
+        &:first-child {
+          .text-body-sm {
+            max-width: 47rem;
+            margin-bottom: 4rem;
+          }
+        }
+
+        .cta {
+          background-color: var(--dark-green-color);
+        }
+      }
+    }
+  }
+
+  #our-location {
+    .section-title {
+      span {
+        letter-spacing: 0.2em;
+      }
+    }
+
+    .description {
+      max-width: 29rem;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+
+      align-items: baseline;
+
+      .text-body-sm {
+        font-size: 1.4rem;
+      }
+    }
+
+    .cta {
+      background-color: var(--dark-green-color);
+    }
+  }
+
+  #case-studies {
+    .case-studies {
+      display: grid;
+      gap: 2rem;
+      grid-template-columns: repeat(3, 1fr);
+
+      @include breakpoint($breakpoint-md) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      @include breakpoint($breakpoint-sm) {
+        grid-template-columns: 1fr;
+      }
+
+      li {
+        background-color: #000000;
+        transition: background-color 0.3s;
+
+        &:hover {
+          background-color: var(--primary-color);
+        }
+      }
+    }
+  }
+}

@@ -8,12 +8,16 @@ $black-color: #0e0e0e;
 $black-1-color: #131313;
 $white-color: #ffffff;
 $light-color: #cbcbcb;
+$dark-green: #064839;
+$light-green: #208218;
 
 $min-height-hero: max(100vh, 600px);
 
 // Functions
 @function hexToRGB($hex) {
-  @return red($hex), green($hex), blue($hex);
+  @return red($hex),
+  green($hex),
+  blue($hex);
 }
 
 // Mixins
@@ -32,6 +36,7 @@ $min-height-hero: max(100vh, 600px);
 @mixin sectionBorderRadius() {
   border-top-left-radius: 10rem;
   border-top-right-radius: 10rem;
+
   @include breakpoint($breakpoint-md) {
     border-top-left-radius: 4rem;
     border-top-right-radius: 4rem;
