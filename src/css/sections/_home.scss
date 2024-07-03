@@ -1,20 +1,36 @@
 .home-page {
-  section {
-    padding: 6rem 0;
-  }
+  background-image: url('../assets/images/bg-new-home.png');
 
-  #hero {
+  section {
+    padding: 10rem 0;
+    display: flex;
+
     .container {
       display: flex;
       flex-direction: column;
+      width: 100%;
+    }
+  }
+
+  #hero {
+    text-align: center;
+    min-height: 760px;
+
+    .container {
       align-items: center;
+      justify-content: center;
       gap: 4rem;
     }
-
-    text-align: center;
   }
 
   #who-we-are {
+    min-height: 760px;
+    background-color: rgba(0, 0, 0, 0.6);
+
+    .container {
+      gap: 5.5rem;
+    }
+
     .row {
       justify-content: space-between;
 
@@ -29,6 +45,11 @@
   }
 
   #our-services {
+    .container {
+      gap: 7rem
+    }
+
+
     .row {
       justify-content: center;
     }
@@ -53,12 +74,16 @@
   }
 
   #our-process {
+    padding-bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: block;
+
     .processes {
       display: flex;
       flex-wrap: nowrap;
       overflow-x: auto;
       gap: 10rem;
-      padding: 6rem 0;
+      padding: 6rem 10rem 10rem;
 
 
       // Customize scrollbar with Webkit
@@ -115,6 +140,13 @@
   }
 
   #our-location {
+    height: 60rem;
+    background-color: rgba(0, 0, 0, 1);
+
+    .container {
+      justify-content: center;
+    }
+
     .section-title {
       span {
         letter-spacing: 0.2em;
@@ -140,6 +172,10 @@
   }
 
   #case-studies {
+    .container {
+      gap: 4rem
+    }
+
     .case-studies {
       display: grid;
       gap: 2rem;

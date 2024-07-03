@@ -102,10 +102,6 @@ body.freeze-body {
   overflow: hidden;
 }
 
-main {
-  padding-top: calc(var(--header-height) + var(--header-padding));
-}
-
 a {
   text-decoration: none;
   color: var(--white-color);
@@ -341,8 +337,7 @@ header .contact {
 
 footer {
   margin-top: -10rem;
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-color: rgba(0, 0, 0, 0.3);
   padding: 12rem 0;
   border-top-left-radius: 10rem;
   border-top-right-radius: 10rem;
@@ -429,17 +424,33 @@ footer .navigation-list li {
   background-position-y: calc(50vh - 50vw);
 }
 
+.home-page {
+  background-image: url("../assets/images/bg-new-home.png");
+}
 .home-page section {
-  padding: 6rem 0;
+  padding: 10rem 0;
+  display: flex;
+}
+.home-page section .container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 .home-page #hero {
   text-align: center;
+  min-height: 760px;
 }
 .home-page #hero .container {
-  display: flex;
-  flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap: 4rem;
+}
+.home-page #who-we-are {
+  min-height: 760px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.home-page #who-we-are .container {
+  gap: 5.5rem;
 }
 .home-page #who-we-are .row {
   justify-content: space-between;
@@ -449,6 +460,9 @@ footer .navigation-list li {
 }
 .home-page #who-we-are .row p {
   text-wrap: pretty;
+}
+.home-page #our-services .container {
+  gap: 7rem;
 }
 .home-page #our-services .row {
   justify-content: center;
@@ -467,12 +481,17 @@ footer .navigation-list li {
 .home-page #our-services .section-title span:not(.highlight) {
   margin-left: 4rem;
 }
+.home-page #our-process {
+  padding-bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: block;
+}
 .home-page #our-process .processes {
   display: flex;
   flex-wrap: nowrap;
   overflow-x: auto;
   gap: 10rem;
-  padding: 6rem 0;
+  padding: 6rem 10rem 10rem;
 }
 .home-page #our-process .processes::-webkit-scrollbar-track {
   background: transparent;
@@ -512,6 +531,13 @@ footer .navigation-list li {
 .home-page #our-process .processes .step .cta {
   background-color: var(--dark-green-color);
 }
+.home-page #our-location {
+  height: 60rem;
+  background-color: rgb(0, 0, 0);
+}
+.home-page #our-location .container {
+  justify-content: center;
+}
 .home-page #our-location .section-title span {
   letter-spacing: 0.2em;
 }
@@ -527,6 +553,9 @@ footer .navigation-list li {
 }
 .home-page #our-location .cta {
   background-color: var(--dark-green-color);
+}
+.home-page #case-studies .container {
+  gap: 4rem;
 }
 .home-page #case-studies .case-studies {
   display: grid;
@@ -684,6 +713,7 @@ section#contact-form {
 }
 section#contact-form .container {
   display: flex;
+  flex-direction: row;
   align-items: center;
   gap: 4rem;
 }
