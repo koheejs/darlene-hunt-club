@@ -1,9 +1,16 @@
 .home-page {
   background-image: url('../assets/images/bg-new-home.png');
+  background-size: 100% auto;
+  background-position-x: center;
+
+  @media only screen and (orientation: portrait) {
+    background-image: url('../assets/images/bg-new-home-mb.png');
+  }
 
   section {
     padding: 10rem 0;
     display: flex;
+    width: 100%;
 
     .container {
       display: flex;
@@ -12,9 +19,20 @@
     }
   }
 
+  // -- Hero Section
   #hero {
     text-align: center;
     min-height: 760px;
+
+    @include breakpoint($breakpoint-md) {
+      text-align: left;
+    }
+
+    @include breakpoint($breakpoint-xs) {
+      .section-title {
+        font-size: 3.2rem;
+      }
+    }
 
     .container {
       align-items: center;
@@ -23,9 +41,16 @@
     }
   }
 
+  // -- Who We Are Section
   #who-we-are {
     min-height: 760px;
     background-color: rgba(0, 0, 0, 0.6);
+
+    @include breakpoint($breakpoint-xs) {
+      .section-title {
+        font-size: 3.2rem;
+      }
+    }
 
     .container {
       gap: 5.5rem;
@@ -33,6 +58,11 @@
 
     .row {
       justify-content: space-between;
+
+      @include breakpoint($breakpoint-md) {
+        flex-direction: column;
+        gap: 4rem;
+      }
 
       .col {
         max-width: 40rem;
@@ -44,6 +74,7 @@
     }
   }
 
+  // -- Our Services Section
   #our-services {
     .container {
       gap: 7rem
@@ -70,9 +101,24 @@
           margin-left: 4rem;
         }
       }
+
+      @include breakpoint($breakpoint-sm) {
+        font-size: 2.8rem;
+        width: 100%;
+
+        span {
+          max-width: none;
+
+          &:not(.highlight) {
+            margin-left: 0;
+          }
+        }
+      }
+
     }
   }
 
+  // -- Our Process Section
   #our-process {
     padding-bottom: 0;
     background-color: rgba(0, 0, 0, 0.6);
@@ -85,6 +131,10 @@
       gap: 10rem;
       padding: 6rem 10rem 10rem;
 
+      @include breakpoint($breakpoint-sm) {
+        gap: 4rem;
+        padding: 4rem 2rem 6rem;
+      }
 
       // Customize scrollbar with Webkit
       &::-webkit-scrollbar-track {
@@ -127,7 +177,7 @@
 
         &:first-child {
           .text-body-sm {
-            max-width: 47rem;
+            max-width: min(100%, 47rem);
             margin-bottom: 4rem;
           }
         }
@@ -135,10 +185,29 @@
         .cta {
           background-color: var(--dark-green-color);
         }
+
+        @include breakpoint($breakpoint-md) {
+          gap: 2.8rem;
+          width: calc(100vw - 4rem);
+
+          .step-number {
+            font-size: 2.8rem;
+          }
+
+          .step-title {
+            font-size: 2.8rem;
+            margin-bottom: 2rem;
+          }
+
+          .text-body-sm {
+            font-size: 1.8rem;
+          }
+        }
       }
     }
   }
 
+  // -- Our Location Section
   #our-location {
     height: 60rem;
     background-color: rgba(0, 0, 0, 1);
@@ -169,8 +238,16 @@
     .cta {
       background-color: var(--dark-green-color);
     }
+
+    @include breakpoint($breakpoint-md) {
+      .row {
+        flex-direction: column;
+        gap: 4rem;
+      }
+    }
   }
 
+  // -- Case Studies Section
   #case-studies {
     .container {
       gap: 4rem

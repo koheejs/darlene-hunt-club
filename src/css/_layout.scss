@@ -21,31 +21,45 @@ header {
     justify-content: space-between;
     align-items: center;
     max-width: 100%;
+    gap: 4rem
   }
 
 
   .menu-button {
     display: none;
+    background-color: var(--primary-color);
+    height: 4rem;
+    line-height: 4rem;
+    padding: 0 2rem;
+    font-weight: bold;
+    border-radius: calc(10rem);
+
+    @include breakpoint($breakpoint-md) {
+      display: block;
+    }
+  }
+
+  .logo {
+    width: 11rem;
+    margin-top: 2px;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
   }
 
   #navigation {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    flex-grow: 1;
     gap: 3rem;
-
-    .logo {
-      width: 11rem;
-      margin-top: 2px;
-
-      img {
-        width: 100%;
-        height: auto;
-      }
-    }
 
     ul {
       display: flex;
       gap: 2rem;
+
 
       li {
         display: flex;
@@ -70,15 +84,43 @@ header {
         }
       }
     }
-  }
 
-  .contact {
-    background-color: var(--primary-color);
-    height: 4rem;
-    line-height: 4rem;
-    padding: 0 2.4rem;
-    font-weight: bold;
-    border-radius: calc(10rem);
+    .contact {
+      background-color: var(--primary-color);
+      height: 4rem;
+      line-height: 4rem;
+      padding: 0 2.4rem;
+      font-weight: bold;
+      border-radius: calc(10rem);
+    }
+
+    @include breakpoint($breakpoint-md) {
+      display: none;
+      position: fixed;
+      background-color: rgba(0, 0, 0, 0.8);
+      inset: 0;
+      padding: 12rem 8rem 0;
+
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-end;
+
+      &.expanded {
+        display: flex;
+      }
+
+      ul {
+        flex-direction: column;
+        align-items: flex-end;
+        font-size: 2.8rem;
+        font-weight: 700;
+      }
+    }
+
+    @include breakpoint($breakpoint-sm) {
+      padding: 12rem 2rem 0;
+    }
+
   }
 }
 

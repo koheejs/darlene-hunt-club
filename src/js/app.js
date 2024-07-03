@@ -18,36 +18,36 @@ import sectionParallax from './modules/feature-parallax.js';
 /**
  * Initializes the menu functionality.
  */
-// (function () {
-//   const body = document.body;
+(function () {
+  const body = document.body;
 
-//   const menuTrigger = document.getElementById('trigger-menu');
-//   const navigation = document.getElementById('navigation');
+  const menuTrigger = document.getElementById('trigger-menu');
+  const navigation = document.getElementById('navigation');
 
-//   const menuItems = navigation.querySelectorAll('.menu-item');
-//   menuItems.forEach((item) => {
-//     const activePage = item.getAttribute('data-active-page');
-//     if (body.classList.contains(activePage)) {
-//       item.classList.add('active');
-//     }
-//   });
+  const menuItems = navigation.querySelectorAll('.menu-item');
+  menuItems.forEach((item) => {
+    const activePage = item.getAttribute('data-active-page');
+    if (body.classList.contains(activePage)) {
+      item.classList.add('active');
+    }
+  });
 
-//   const Classes = {
-//     menuExpanded: 'expanded',
-//   };
+  const Classes = {
+    menuExpanded: 'expanded',
+  };
 
-//   menuTrigger.addEventListener('click', (event) => {
-//     navigation.classList.toggle(Classes.menuExpanded);
-//     menuTrigger.classList.toggle(Classes.menuExpanded);
-//   });
+  menuTrigger.addEventListener('click', (event) => {
+    navigation.classList.toggle(Classes.menuExpanded);
+    menuTrigger.classList.toggle(Classes.menuExpanded);
+  });
 
-//   document.body.addEventListener('click', (event) => {
-//     if (event.target !== menuTrigger && !menuTrigger.contains(event.target)) {
-//       navigation.classList.remove(Classes.menuExpanded);
-//       menuTrigger.classList.remove(Classes.menuExpanded);
-//     }
-//   });
-// })();
+  document.body.addEventListener('click', (event) => {
+    if (event.target !== menuTrigger && !menuTrigger.contains(event.target)) {
+      navigation.classList.remove(Classes.menuExpanded);
+      menuTrigger.classList.remove(Classes.menuExpanded);
+    }
+  });
+})();
 
 /**
  * Initializes the accordion functionality.
