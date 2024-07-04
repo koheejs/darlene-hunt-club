@@ -1,0 +1,67 @@
+section#partners {
+  padding: 6.6rem 0;
+  background-image: url('../assets/images/bg-section-green.png');
+  background-size: cover;
+
+  .partner-list {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    align-items: center;
+    row-gap: 4rem;
+
+    @include breakpoint($breakpoint-sm) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 4rem;
+    }
+
+    .partner {
+      text-align: center;
+
+      img {
+        height: 100%;
+        object-fit: contain;
+      }
+
+      &:first-child {
+        height: 3.5rem;
+      }
+
+      &:nth-child(2) {
+        height: 5rem;
+      }
+
+      &:nth-child(3) {
+        height: 2.6rem;
+      }
+
+      &:nth-child(4) {
+        height: 3.4rem;
+      }
+
+      &:nth-child(5) {
+        height: 6rem;
+      }
+
+      &:nth-child(6) {
+        height: 4rem;
+      }
+
+      &:nth-child(7) {
+        height: 7rem;
+      }
+
+      &:nth-child(8) {
+        height: 7rem;
+      }
+
+      &:nth-child(9) {
+        height: 4rem;
+      }
+
+      &:nth-child(10) {
+        height: 5rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,48 @@
+section#problem-solved,
+section#approach {
+  padding: 20rem 0;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+  }
+
+  h4 {
+    line-height: 1;
+  }
+}
+
+section#problem-solved {
+  p {
+    max-width: 72rem;
+  }
+}
+
+section#approach {
+  background-image: url('../assets/images/bg-section-orange-2.png');
+  background-size: cover;
+  margin-top: -10rem;
+  position: relative;
+
+  @include sectionBorderRadius();
+
+  .approach-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 4rem;
+
+    @include breakpoint($breakpoint-sm) {
+      grid-template-columns: 1fr;
+      row-gap: 4rem;
+    }
+
+    .approach {
+      h4 {
+        font-family: 'Averia';
+        font-size: 3rem;
+        margin-bottom: 3rem;
+      }
+    }
+  }
+}

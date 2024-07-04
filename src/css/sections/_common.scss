@@ -1,0 +1,82 @@
+// -- Our Location Section
+#our-location {
+  height: 60rem;
+  background-color: rgba(0, 0, 0, 1);
+
+  .container {
+    justify-content: center;
+  }
+
+  .section-title {
+    span {
+      letter-spacing: 0.2em;
+    }
+  }
+
+  .description {
+    max-width: 29rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    align-items: baseline;
+
+    .text-body-sm {
+      font-size: 1.4rem;
+    }
+  }
+
+  .cta {
+    background-color: var(--dark-green-color);
+  }
+
+  @include breakpoint($breakpoint-md) {
+    .row {
+      flex-direction: column;
+      gap: 4rem;
+    }
+  }
+}
+
+// -- Case Studies Section
+#case-studies {
+  .container {
+    gap: 4rem
+  }
+
+  .case-studies {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+
+    li {
+      .brand {
+        aspect-ratio: 1;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #000000;
+        transition: background-color 0.3s;
+
+        &:hover {
+          background-color: var(--primary-color);
+        }
+      }
+    }
+
+    @include breakpoint($breakpoint-md) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include breakpoint($breakpoint-sm) {
+      grid-template-columns: 1fr;
+
+      li {
+        .brand {
+          max-width: 34rem;
+        }
+      }
+    }
+  }
+}

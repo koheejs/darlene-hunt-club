@@ -15,47 +15,27 @@
   <body class="about-us-page">
     <header>
       <div class="container"><a href="./" class="logo"><img src="./assets/images/logo.png" alt="Back to Home"></a>
-        <div id="trigger-menu" class="menu-button"> <img src="./assets/images/menu-button.png" alt=""></div>
         <div id="navigation" class="navigation"> 
           <ul> 
-            <li data-active-page="home-page" class="menu-item"> <a href="./">Home</a></li>
-            <li data-active-page="about-us-page" class="menu-item"> <a href="./about-us.html">About Us</a></li>
-            <li data-active-page="work-page" class="menu-item"> <a href="./work.html">Work</a></li>
-            <li class="menu-item"> <a href="#contact">Contact</a></li>
-          </ul>
-          <div class="logo-stamp"><img src="./assets/images/menu-logo.png" alt="hunt-club"></div>
+            <li data-active-page="home-page" data-text="Home" class="menu-item"> <a href="./">Home</a></li>
+            <li data-active-page="about-us-page" data-text="About Us" class="menu-item"> <a href="./about-us.html">About Us</a></li>
+            <li data-active-page="work-page" data-text="Selected Works" class="menu-item"> <a href="./work.html">Selected Works</a></li>
+            <li data-text="Case Studies" class="menu-item"> <a href="#contact">Case Studies</a></li>
+          </ul><a class="contact">Work With Us</a>
         </div>
+        <div id="trigger-menu" class="menu-button cta">MENU</div>
       </div>
     </header>
     <main id="main">
       <section id="about-hero">
         <div class="container"> 
           <div class="content-wrapper">
-            <div data-aos="fade-up" class="logo"><img src="./assets/images/logo.png" alt="hunt-club"></div>
+            <div class="col">
+              <div class="logo"><img src="./assets/images/logo.png" alt="hunt-club"></div>
+              <p class="text-body-sm">Traditional agencies are costly, and managing freelancers is often chaotic. We offer a streamlined, efficient solution to keep your vision on track.</p><a class="cta">LET'S TALK</a>
+            </div>
             <div class="intro">
-              <h2 class="section-title"><strong data-aos="fade-up">We are a </strong><br><span data-aos="fade-up" data-aos-delay="200">Close-Knit, </span><br><strong data-aos="fade-up" data-aos-delay="400">Well Oiled,</strong><br><span data-aos="fade-up" data-aos-delay="600">Multi-Dimensional,</span><br><strong data-aos="fade-up" data-aos-delay="800">Female-Led,</strong><br><span data-aos="fade-up" data-aos-delay="1000">Pizza Loving,</span><br><strong data-aos="fade-up" data-aos-delay="1200">Future Forward,</strong><br><span data-aos="fade-up" data-aos-delay="1400">Results Oriented,</span><br><strong data-aos="fade-up" data-aos-delay="1600">Creative Machine.</strong></h2>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section id="approach" data-scroll-speed="0.6">
-        <div class="container"> 
-          <div>
-            <button class="outline-button cta">OUR APPROACH</button>
-          </div>
-          <h2 data-aos="fade-up" class="section-title"><strong>You Dream it, </strong>We’ll Build It.</h2>
-          <div class="approach-list"> 
-            <div data-aos="fade-up" data-aos-delay="800" class="approach"> 
-              <h4>Strategic Thinking</h4>
-              <p>We lead the exploration and discovery of your brand’s essential narrative, conducting thorough research to strategize how to bring it to market.</p>
-            </div>
-            <div data-aos="fade-up" data-aos-delay="1200" class="approach"> 
-              <h4>Creative Production</h4>
-              <p>Our designers work in tandem with producers and developers to craft functional and beautiful digital products. </p>
-            </div>
-            <div data-aos="fade-up" data-aos-delay="1600" class="approach"> 
-              <h4>Project Management</h4>
-              <p>We maintain momentum  throughout project cycles with efficiency, team synergy, and communication at the center of our  ethos. </p>
+              <h2 class="section-title"><strong>We are a </strong><br><span>Close-Knit, </span><br><strong>Well Oiled,</strong><br><span>Multi-Dimensional,</span><br><strong>Female-Led,</strong><br><span>Pizza Loving,</span><br><strong>Future Forward,</strong><br><span>Results Oriented,</span><br><strong>Creative Machine.</strong></h2>
             </div>
           </div>
         </div>
@@ -63,28 +43,42 @@
       <section id="partners">
         <div class="container"> 
           <div class="partner-list"> 
-            <div class="partner"><img src="./assets/images/logo-shopley.png" alt=""></div>
-            <div class="partner"><img src="./assets/images/logo-flairairlines.png" alt=""></div>
-            <div class="partner"><img src="./assets/images/logo-newspark.png" alt=""></div>
-            <div class="partner"><img src="./assets/images/logo-desjardins.png" alt=""></div>
-            <div class="partner"><img src="./assets/images/logo-ocad.png" alt=""></div>
-            <div class="partner"><img src="./assets/images/logo-gocxm.png" alt=""></div>
-            <div class="partner"><img src="./assets/images/logo-ibogaine.png" alt=""></div>
-            <div class="partner"><img src="./assets/images/logo-manulife.png" alt=""></div>
-            <div class="partner"><img src="./assets/images/logo-sap.png" alt=""></div>
-            <div class="partner"><img src="./assets/images/logo-twb.png" alt=""></div>
+            <div class="partner"><img src="./assets/images/logo-shopley.png" alt=""/></div>
+            <div class="partner"><img src="./assets/images/logo-flairairlines.png" alt=""/></div>
+            <div class="partner"><img src="./assets/images/logo-newspark.png" alt=""/></div>
+            <div class="partner"><img src="./assets/images/logo-desjardins.png" alt=""/></div>
+            <div class="partner"><img src="./assets/images/logo-ocad.png" alt=""/></div>
+            <div class="partner"><img src="./assets/images/logo-gocxm.png" alt=""/></div>
+            <div class="partner"><img src="./assets/images/logo-ibogaine.png" alt=""/></div>
+            <div class="partner"><img src="./assets/images/logo-manulife.png" alt=""/></div>
+            <div class="partner"><img src="./assets/images/logo-sap.png" alt=""/></div>
+            <div class="partner"><img src="./assets/images/logo-twb.png" alt=""/></div>
+          </div>
+          <div class="partner-marquee-container">
+            <div class="marquee marquee-part-1">
+              <div class="partner"><img src="./assets/images/logo-shopley.png" alt=""/></div>
+              <div class="partner"><img src="./assets/images/logo-flairairlines.png" alt=""/></div>
+              <div class="partner"><img src="./assets/images/logo-newspark.png" alt=""/></div>
+              <div class="partner"><img src="./assets/images/logo-desjardins.png" alt=""/></div>
+              <div class="partner"><img src="./assets/images/logo-ocad.png" alt=""/></div>
+              <div class="partner"><img src="./assets/images/logo-gocxm.png" alt=""/></div>
+              <div class="partner"><img src="./assets/images/logo-ibogaine.png" alt=""/></div>
+              <div class="partner"><img src="./assets/images/logo-manulife.png" alt=""/></div>
+              <div class="partner"><img src="./assets/images/logo-sap.png" alt=""/></div>
+              <div class="partner"><img src="./assets/images/logo-twb.png" alt=""/></div>
+            </div>
           </div>
         </div>
       </section>
       <section id="problem-solved">
         <div class="container"> 
-          <h2 data-aos="fade-up" class="section-title">Problems <strong>Solved.</strong></h2>
-          <p data-aos="fade-up" data-aos-delay="800">From websites to UI/UX upgrades and compelling content creation you can count us in on your ambitious goals.  We bring an artful eye to every project and  believe there is no concept too complex or grandiose that we can’t find a solution for.</p>
-          
+          <h2 class="section-title"> <em>PROBLEMS, </em>SOLVED. </h2>
+          <p class="text-body-sm"> We bring an artful eye and pragmatic approach  to every project and  believe there is no concept too complex or grandiose that we can’t find a solution for.</p>
         </div>
       </section>
       <section id="key-words">
         <div class="container"> 
+          <p class="intro">With over 10 years of working together, we have worked on a myriad of projects in these worlds:</p>
           <div class="key-words"> 
             <div class="word">Tech</div>
             <div class="word">Art &amp;Film</div>
@@ -103,11 +97,46 @@
           </div>
         </div>
       </section>
+      <section id="our-location">
+        <div class="container"> 
+          <div class="section-tag">WE ARE BASED OUT OF</div>
+          <div class="content row">
+            <h2 class="section-title">toronto,<em>SàiGòn </em>&amp; <span>outerspace</span></h2>
+            <div class="description">
+              <p class="text-body-sm">Yes, the time difference means we work around the clock. Yes, we can get that job you needed done last week, <strong>pronto!</strong></p><a class="cta">LET’S TALK</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="case-studies"> 
+        <div class="container">
+          <div class="section-tag">CASE STUDIES</div>
+          <ul class="case-studies">
+            <li> 
+              <div class="brand"><img src="./assets/images/home-cs-1.png" alt="Case Study 1"></div>
+            </li>
+            <li> 
+              <div class="brand"><img src="./assets/images/home-cs-2.png" alt="Case Study 2"></div>
+            </li>
+            <li>
+              <div class="brand"><img src="./assets/images/home-cs-3.png" alt="Case Study 3"></div>
+            </li>
+            <li>
+              <div class="brand"><img src="./assets/images/home-cs-4.png" alt="Case Study 4"></div>
+            </li>
+            <li> 
+              <div class="brand"><img src="./assets/images/home-cs-5.png" alt="Case Study 5"></div>
+            </li>
+            <li> 
+              <div class="brand"><img src="./assets/images/home-cs-6.png" alt="Case Study 6"></div>
+            </li>
+          </ul>
+        </div>
+      </section>
       <section id="contact-form">
         <div class="container"> 
           <div class="heading"> 
-            <h2 data-aos="short-fade-up" class="section-title">Let's Work Together<br><strong>Reach Out</strong></h2>
-            <button class="cta email">EMAIL US</button>
+            <h2 data-aos="short-fade-up" class="section-title">Reach Out</h2>
           </div>
           <div class="form-wrapper"> 
             <form method="POST" action="/">
