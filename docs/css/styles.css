@@ -179,7 +179,7 @@ img {
 
 .container {
   padding: 0 8rem;
-  max-width: 1260px;
+  max-width: 1512px;
   margin: 0 auto;
 }
 @media only screen and (max-width: 768px) {
@@ -475,6 +475,70 @@ footer .navigation-list li {
   background-position-y: calc(50vh - 50vw);
 }
 
+#our-location {
+  height: 60rem;
+  background-color: rgb(0, 0, 0);
+}
+#our-location .container {
+  justify-content: center;
+}
+#our-location .section-title span {
+  letter-spacing: 0.2em;
+}
+#our-location .description {
+  max-width: 29rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: baseline;
+}
+#our-location .description .text-body-sm {
+  font-size: 1.4rem;
+}
+#our-location .cta {
+  background-color: var(--dark-green-color);
+}
+@media only screen and (max-width: 992px) {
+  #our-location .row {
+    flex-direction: column;
+    gap: 4rem;
+  }
+}
+
+#case-studies .container {
+  gap: 4rem;
+}
+#case-studies .case-studies {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+#case-studies .case-studies li .brand {
+  aspect-ratio: 1;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000;
+  transition: background-color 0.3s;
+}
+#case-studies .case-studies li .brand:hover {
+  background-color: var(--primary-color);
+}
+@media only screen and (max-width: 992px) {
+  #case-studies .case-studies {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (max-width: 768px) {
+  #case-studies .case-studies {
+    grid-template-columns: 1fr;
+  }
+  #case-studies .case-studies li .brand {
+    max-width: 34rem;
+  }
+}
+
 .home-page {
   background-image: url("../assets/images/bg-new-home.png");
   background-size: 100% auto;
@@ -645,61 +709,281 @@ footer .navigation-list li {
     font-size: 1.8rem;
   }
 }
-.home-page #our-location {
-  height: 60rem;
-  background-color: rgb(0, 0, 0);
+
+.about-us-page {
+  background-image: url("../assets/images/bg-new-home.png");
+  background-size: 100% auto;
+  background-position-x: center;
 }
-.home-page #our-location .container {
-  justify-content: center;
+@media only screen and (orientation: portrait) {
+  .about-us-page {
+    background-image: url("../assets/images/bg-new-home-mb.png");
+  }
 }
-.home-page #our-location .section-title span {
-  letter-spacing: 0.2em;
+.about-us-page section {
+  padding: 10rem 0;
+  display: flex;
+  width: 100%;
 }
-.home-page #our-location .description {
-  max-width: 29rem;
+.about-us-page section .container {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
-  align-items: baseline;
+  width: 100%;
 }
-.home-page #our-location .description .text-body-sm {
-  font-size: 1.4rem;
+.about-us-page section#about-hero {
+  min-height: 760px;
+  padding: 20rem 0 10rem;
 }
-.home-page #our-location .cta {
+.about-us-page section#about-hero .content-wrapper {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 4rem;
+}
+.about-us-page section#about-hero .col {
+  max-width: 35rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.about-us-page section#about-hero .col .logo {
+  max-width: 34rem;
+}
+.about-us-page section#about-hero .col .text-body-sm {
+  text-wrap: pretty;
+  max-width: 28rem;
+}
+.about-us-page section#about-hero .cta {
   background-color: var(--dark-green-color);
+  align-self: flex-start;
+}
+.about-us-page section#about-hero .section-title {
+  font-size: 5rem;
+  line-height: 1.18;
+  letter-spacing: -0.04em;
+  font-weight: 400;
+}
+.about-us-page section#about-hero .section-title strong {
+  font-weight: 700;
+}
+@media only screen and (max-width: 768px) {
+  .about-us-page section#about-hero .section-title {
+    font-size: 3rem;
+  }
 }
 @media only screen and (max-width: 992px) {
-  .home-page #our-location .row {
-    flex-direction: column;
+  .about-us-page section#about-hero {
+    padding: 16rem 0 8rem;
+  }
+  .about-us-page section#about-hero .content-wrapper {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 6rem;
+  }
+  .about-us-page section#about-hero .logo {
+    display: none;
+  }
+  .about-us-page section#about-hero .col {
     gap: 4rem;
   }
 }
-.home-page #case-studies .container {
-  gap: 4rem;
-}
-.home-page #case-studies .case-studies {
-  display: grid;
-  gap: 2rem;
-  grid-template-columns: repeat(3, 1fr);
-}
-@media only screen and (max-width: 992px) {
-  .home-page #case-studies .case-studies {
-    grid-template-columns: repeat(2, 1fr);
-  }
+.about-us-page section#partners {
+  padding: 10rem 0;
+  background-color: rgba(0, 0, 0, 0.45);
 }
 @media only screen and (max-width: 768px) {
-  .home-page #case-studies .case-studies {
-    grid-template-columns: 1fr;
+  .about-us-page section#partners {
+    padding: 6rem 0;
   }
 }
-.home-page #case-studies .case-studies li {
-  background-color: #000000;
+.about-us-page section#partners .partner-marquee-container {
+  display: none;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  height: 10rem;
+  --timeline: 20s;
+}
+@media only screen and (max-width: 768px) {
+  .about-us-page section#partners .partner-marquee-container {
+    display: block;
+  }
+}
+.about-us-page section#partners .partner-marquee-container .marquee {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: fit-content;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4rem;
+  left: 100%;
+}
+.about-us-page section#partners .partner-marquee-container .marquee.marquee-part-1 {
+  animation: marquee var(--timeline) linear infinite;
+}
+.about-us-page section#partners .partner-marquee-container .partner {
+  flex-shrink: 0;
+}
+.about-us-page section#partners .partner-marquee-container .partner:first-child {
+  height: 3.5rem;
+}
+.about-us-page section#partners .partner-marquee-container .partner:nth-child(2) {
+  height: 5rem;
+}
+.about-us-page section#partners .partner-marquee-container .partner:nth-child(3) {
+  height: 2.6rem;
+}
+.about-us-page section#partners .partner-marquee-container .partner:nth-child(4) {
+  height: 3.4rem;
+}
+.about-us-page section#partners .partner-marquee-container .partner:nth-child(5) {
+  height: 6rem;
+}
+.about-us-page section#partners .partner-marquee-container .partner:nth-child(6) {
+  height: 4rem;
+}
+.about-us-page section#partners .partner-marquee-container .partner:nth-child(7) {
+  height: 7rem;
+}
+.about-us-page section#partners .partner-marquee-container .partner:nth-child(8) {
+  height: 7rem;
+}
+.about-us-page section#partners .partner-marquee-container .partner:nth-child(9) {
+  height: 4rem;
+}
+.about-us-page section#partners .partner-marquee-container .partner:nth-child(10) {
+  height: 5rem;
+}
+.about-us-page section#partners .partner-marquee-container .partner img {
+  height: 100%;
+  object-fit: contain;
+}
+.about-us-page section#partners .partner-list {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  align-items: center;
+  row-gap: 4rem;
+}
+@media only screen and (max-width: 768px) {
+  .about-us-page section#partners .partner-list {
+    display: none;
+  }
+}
+.about-us-page section#partners .partner-list .partner {
+  text-align: center;
+}
+.about-us-page section#partners .partner-list .partner:first-child {
+  height: 3.5rem;
+}
+.about-us-page section#partners .partner-list .partner:nth-child(2) {
+  height: 5rem;
+}
+.about-us-page section#partners .partner-list .partner:nth-child(3) {
+  height: 2.6rem;
+}
+.about-us-page section#partners .partner-list .partner:nth-child(4) {
+  height: 3.4rem;
+}
+.about-us-page section#partners .partner-list .partner:nth-child(5) {
+  height: 6rem;
+}
+.about-us-page section#partners .partner-list .partner:nth-child(6) {
+  height: 4rem;
+}
+.about-us-page section#partners .partner-list .partner:nth-child(7) {
+  height: 7rem;
+}
+.about-us-page section#partners .partner-list .partner:nth-child(8) {
+  height: 7rem;
+}
+.about-us-page section#partners .partner-list .partner:nth-child(9) {
+  height: 4rem;
+}
+.about-us-page section#partners .partner-list .partner:nth-child(10) {
+  height: 5rem;
+}
+.about-us-page section#partners .partner-list .partner img {
+  height: 100%;
+  object-fit: contain;
+}
+.about-us-page section#problem-solved {
+  min-height: 600px;
+}
+.about-us-page section#problem-solved .container {
+  gap: 4rem;
+  justify-content: center;
+}
+.about-us-page section#problem-solved p {
+  max-width: 58rem;
+}
+@media only screen and (max-width: 768px) {
+  .about-us-page section#problem-solved p {
+    max-width: 26rem;
+  }
+}
+.about-us-page section#key-words {
+  min-height: 600px;
+  align-items: center;
+}
+.about-us-page section#key-words .container {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 4rem;
+}
+@media only screen and (max-width: 768px) {
+  .about-us-page section#key-words .container {
+    flex-direction: column;
+    gap: 6rem;
+    align-items: flex-start;
+  }
+}
+.about-us-page section#key-words .intro {
+  max-width: 22rem;
+  font-size: 1.4rem;
+}
+.about-us-page section#key-words .key-words {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  max-width: 68rem;
+}
+.about-us-page section#key-words .key-words .word {
+  font-size: 1.9rem;
+  padding: 1rem 2rem;
+  color: var(--white-color);
+  border: 2px solid var(--white-color);
+  border-radius: 999px;
+  cursor: pointer;
   transition: background-color 0.3s;
 }
-.home-page #case-studies .case-studies li:hover {
-  background-color: var(--primary-color);
+.about-us-page section#key-words .key-words .word:hover {
+  background-color: #064839;
+}
+@media only screen and (max-width: 768px) {
+  .about-us-page section#key-words .key-words {
+    max-width: 54rem;
+  }
+  .about-us-page section#key-words .key-words .word {
+    font-size: 1.6rem;
+    padding: 0.5rem 1.2rem;
+  }
 }
 
+/* add delay at the end of animation so you dont start while another div is going */
+@keyframes marquee {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: -1670px;
+  }
+}
 .work-page {
   --category-color: #938383;
   background-color: #070707;

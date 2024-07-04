@@ -1,0 +1,92 @@
+extends ./pages/layout/_layout.jade
+
+mixin chevronIcon
+  img(src="./assets/images/icon-chevron-down.png", alt="")
+
+block variables
+  - var bodyClass = "about-us-page"
+
+block content
+  section#about-hero
+    .container 
+     .content-wrapper
+        .logo(data-aos="fade-up")
+          img(src="./assets/images/logo.png", alt="hunt-club")
+        
+        .intro
+          h2.section-title
+            strong(data-aos="fade-up") We are a 
+            br 
+            span(data-aos="fade-up" data-aos-delay="200") Close-Knit, 
+            br 
+            strong(data-aos="fade-up", data-aos-delay="400") Well Oiled,
+            br 
+            span(data-aos="fade-up", data-aos-delay="600") Multi-Dimensional,
+            br 
+            strong(data-aos="fade-up", data-aos-delay="800") Female-Led,
+            br 
+            span(data-aos="fade-up", data-aos-delay="1000") Pizza Loving,
+            br 
+            strong(data-aos="fade-up", data-aos-delay="1200") Future Forward,
+            br 
+            span(data-aos="fade-up", data-aos-delay="1400") Results Oriented,
+            br 
+            strong(data-aos="fade-up", data-aos-delay="1600") Creative Machine.
+
+
+  section#approach(data-scroll-speed="0.6")
+    .container 
+      div
+        button.outline-button.cta OUR APPROACH
+
+      h2.section-title(data-aos="fade-up")
+        strong You Dream it, 
+        | We’ll Build It.
+      
+      .approach-list 
+        .approach(data-aos="fade-up", data-aos-delay="800") 
+          h4 Strategic Thinking
+          p We lead the exploration and discovery of your brand’s essential narrative, conducting thorough research to strategize how to bring it to market.
+        .approach(data-aos="fade-up", data-aos-delay="1200") 
+          h4 Creative Production
+          p Our designers work in tandem with producers and developers to craft functional and beautiful digital products. 
+        .approach(data-aos="fade-up", data-aos-delay="1600") 
+          h4 Project Management
+          p We maintain momentum  throughout project cycles with efficiency, team synergy, and communication at the center of our  ethos. 
+
+
+  section#partners
+    .container 
+      .partner-list 
+        - list = ['logo-shopley', 'logo-flairairlines', 'logo-newspark', 'logo-desjardins', 'logo-ocad', 'logo-gocxm', 'logo-ibogaine', 'logo-manulife', 'logo-sap', 'logo-twb']
+        each partner in list
+          .partner
+            img(src='./assets/images/' + partner + '.png', alt="")
+
+
+  section#problem-solved
+    .container 
+      h2.section-title(data-aos="fade-up") Problems 
+        strong Solved.
+      p(data-aos="fade-up", data-aos-delay="800") From websites to UI/UX upgrades and compelling content creation you can count us in on your ambitious goals.  We bring an artful eye to every project and  believe there is no concept too complex or grandiose that we can’t find a solution for.
+
+      //- div
+      //-   button.cta(data-aos="fade" data-aos-delay="1600") WORK WITH US
+
+
+  section#key-words
+    .container 
+      //- p.intro With over 10 years of working together, we have worked on a myriad of projects in these worlds:
+
+      .key-words 
+        - list = ["Tech", "Art &Film", "Finance", "Non-Profit", "Animation", "Mergers & Acquisitions", "B2B", "B2C", "Fashion", "Startup", "VFX", "SaaS", "Crypto", "Data"]
+        each word in list
+          .word= word 
+  
+
+  include ./pages/contact-form.jade
+
+    
+  
+
+      

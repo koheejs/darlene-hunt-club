@@ -1,7 +1,13 @@
 extends ./pages/layout/_layout.jade
 
 mixin chevronIcon
-  img(src="./assets/images/icon-chevron-down.png", alt="")
+  img(src="./assets/images/icon-chevron-down.png" alt="")
+
+mixin partners 
+  - list = ['logo-shopley', 'logo-flairairlines', 'logo-newspark', 'logo-desjardins', 'logo-ocad', 'logo-gocxm', 'logo-ibogaine', 'logo-manulife', 'logo-sap', 'logo-twb']
+  each partner in list
+    .partner
+      img(src='./assets/images/' + partner + '.png' alt="") 
 
 block variables
   - var bodyClass = "about-us-page"
@@ -9,84 +15,108 @@ block variables
 block content
   section#about-hero
     .container 
-     .content-wrapper
-        .logo(data-aos="fade-up")
-          img(src="./assets/images/logo.png", alt="hunt-club")
-        
+      .content-wrapper
+        .col
+          .logo
+            img(src="./assets/images/logo.png" alt="hunt-club")
+          p.text-body-sm Traditional agencies are costly, and managing freelancers is often chaotic. We offer a streamlined, efficient solution to keep your vision on track.
+
+          a.cta LET'S TALK
+
         .intro
           h2.section-title
-            strong(data-aos="fade-up") We are a 
+            strong We are a 
             br 
-            span(data-aos="fade-up" data-aos-delay="200") Close-Knit, 
+            span Close-Knit, 
             br 
-            strong(data-aos="fade-up", data-aos-delay="400") Well Oiled,
+            strong Well Oiled,
             br 
-            span(data-aos="fade-up", data-aos-delay="600") Multi-Dimensional,
+            span Multi-Dimensional,
             br 
-            strong(data-aos="fade-up", data-aos-delay="800") Female-Led,
+            strong Female-Led,
             br 
-            span(data-aos="fade-up", data-aos-delay="1000") Pizza Loving,
+            span Pizza Loving,
             br 
-            strong(data-aos="fade-up", data-aos-delay="1200") Future Forward,
+            strong Future Forward,
             br 
-            span(data-aos="fade-up", data-aos-delay="1400") Results Oriented,
+            span Results Oriented,
             br 
-            strong(data-aos="fade-up", data-aos-delay="1600") Creative Machine.
-
-
-  section#approach(data-scroll-speed="0.6")
-    .container 
-      div
-        button.outline-button.cta OUR APPROACH
-
-      h2.section-title(data-aos="fade-up")
-        strong You Dream it, 
-        | We’ll Build It.
-      
-      .approach-list 
-        .approach(data-aos="fade-up", data-aos-delay="800") 
-          h4 Strategic Thinking
-          p We lead the exploration and discovery of your brand’s essential narrative, conducting thorough research to strategize how to bring it to market.
-        .approach(data-aos="fade-up", data-aos-delay="1200") 
-          h4 Creative Production
-          p Our designers work in tandem with producers and developers to craft functional and beautiful digital products. 
-        .approach(data-aos="fade-up", data-aos-delay="1600") 
-          h4 Project Management
-          p We maintain momentum  throughout project cycles with efficiency, team synergy, and communication at the center of our  ethos. 
+            strong Creative Machine.
 
 
   section#partners
     .container 
       .partner-list 
-        - list = ['logo-shopley', 'logo-flairairlines', 'logo-newspark', 'logo-desjardins', 'logo-ocad', 'logo-gocxm', 'logo-ibogaine', 'logo-manulife', 'logo-sap', 'logo-twb']
-        each partner in list
-          .partner
-            img(src='./assets/images/' + partner + '.png', alt="")
+        +partners
 
+      .partner-marquee-container
+        .marquee.marquee-part-1
+          +partners
+        //- .marquee.marquee-part-2
+        //-   +partners
+        //- .marquee.marquee-part-3
+        //-   +partners
+        //- .marquee.marquee-part-4
+        //-   +partners
 
   section#problem-solved
     .container 
-      h2.section-title(data-aos="fade-up") Problems 
-        strong Solved.
-      p(data-aos="fade-up", data-aos-delay="800") From websites to UI/UX upgrades and compelling content creation you can count us in on your ambitious goals.  We bring an artful eye to every project and  believe there is no concept too complex or grandiose that we can’t find a solution for.
-
-      //- div
-      //-   button.cta(data-aos="fade" data-aos-delay="1600") WORK WITH US
+      h2.section-title 
+        em PROBLEMS, 
+        | SOLVED. 
+      p.text-body-sm  We bring an artful eye and pragmatic approach  to every project and  believe there is no concept too complex or grandiose that we can’t find a solution for.
 
 
   section#key-words
     .container 
-      //- p.intro With over 10 years of working together, we have worked on a myriad of projects in these worlds:
+      p.intro With over 10 years of working together, we have worked on a myriad of projects in these worlds:
 
       .key-words 
         - list = ["Tech", "Art &Film", "Finance", "Non-Profit", "Animation", "Mergers & Acquisitions", "B2B", "B2C", "Fashion", "Startup", "VFX", "SaaS", "Crypto", "Data"]
         each word in list
           .word= word 
-  
+
+
+  //- Section Our Location
+  section#our-location
+    .container 
+      .section-tag WE ARE BASED OUT OF
+      .content.row
+        h2.section-title toronto,
+          em SàiGòn 
+          | &amp; 
+          span outerspace
+
+        .description
+          p.text-body-sm Yes, the time difference means we work around the clock. Yes, we can get that job you needed done last week, 
+            strong pronto!
+          a.cta LET’S TALK
+
+  //- Section Case Studies
+  section#case-studies 
+    .container
+      .section-tag CASE STUDIES
+      ul.case-studies
+        li 
+          .brand
+            img(src="./assets/images/home-cs-1.png" alt="Case Study 1")
+        li 
+          .brand
+            img(src="./assets/images/home-cs-2.png" alt="Case Study 2")
+        li
+          .brand
+            img(src="./assets/images/home-cs-3.png" alt="Case Study 3")
+        li
+          .brand
+            img(src="./assets/images/home-cs-4.png" alt="Case Study 4")
+        li 
+          .brand
+            img(src="./assets/images/home-cs-5.png" alt="Case Study 5")
+        li 
+          .brand
+            img(src="./assets/images/home-cs-6.png" alt="Case Study 6")
 
   include ./pages/contact-form.jade
 
-    
-  
 
-      
+

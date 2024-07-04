@@ -1,7 +1,7 @@
 extends ./pages/layout/_layout.jade
 
 mixin chevronIcon
-  img(src="./assets/images/icon-chevron-down.png", alt="")
+  img(src="./assets/images/icon-chevron-down.png" alt="")
 
 mixin accordion(title)
   .accordion(data-accordion) 
@@ -52,7 +52,7 @@ block content
   section#our-process
     .container
       .section-tag OUR PROCESS
-      
+
     ul.processes 
       li.step 
         .step-number 01
@@ -80,7 +80,7 @@ block content
         .step-content 
           h4.step-title What’s Next?
           p.text-body-sm Need help managing your new assets? Our team offers social and marketing management services to ensure ongoing success.
-  
+
   //- Section Our Location
   section#our-location
     .container 
@@ -90,28 +90,34 @@ block content
           em SàiGòn 
           | &amp; 
           span outerspace
-          
+
         .description
           p.text-body-sm Yes, the time difference means we work around the clock. Yes, we can get that job you needed done last week, 
             strong pronto!
           a.cta LET’S TALK
-  
+
   //- Section Case Studies
   section#case-studies 
     .container
       .section-tag CASE STUDIES
       ul.case-studies
         li 
-          img(src="./assets/images/home-cs-1.png", alt="Case Study 1")
+          .brand
+            img(src="./assets/images/home-cs-1.png" alt="Case Study 1")
         li 
-          img(src="./assets/images/home-cs-2.png", alt="Case Study 2")
+          .brand
+            img(src="./assets/images/home-cs-2.png" alt="Case Study 2")
         li
-          img(src="./assets/images/home-cs-3.png", alt="Case Study 3")
+          .brand
+            img(src="./assets/images/home-cs-3.png" alt="Case Study 3")
         li
-          img(src="./assets/images/home-cs-4.png", alt="Case Study 4")
+          .brand
+            img(src="./assets/images/home-cs-4.png" alt="Case Study 4")
         li 
-          img(src="./assets/images/home-cs-5.png", alt="Case Study 5")
+          .brand
+            img(src="./assets/images/home-cs-5.png" alt="Case Study 5")
         li 
-          img(src="./assets/images/home-cs-6.png", alt="Case Study 6")
+          .brand
+            img(src="./assets/images/home-cs-6.png" alt="Case Study 6")
 
   include ./pages/contact-form.jade
