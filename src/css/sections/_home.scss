@@ -58,6 +58,7 @@
 
     .row {
       justify-content: space-between;
+      max-width: 90rem;
 
       @include breakpoint($breakpoint-md) {
         flex-direction: column;
@@ -180,10 +181,6 @@
             max-width: min(100%, 47rem);
             margin-bottom: 4rem;
           }
-        }
-
-        .cta {
-          background-color: var(--dark-green-color);
         }
 
         @include breakpoint($breakpoint-md) {

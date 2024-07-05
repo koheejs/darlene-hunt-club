@@ -30,8 +30,10 @@ header {
     background-color: var(--primary-color);
     height: 4rem;
     line-height: 4rem;
-    padding: 0 2rem;
+    padding: 0 3.8rem;
+    font-size: 1rem;
     font-weight: bold;
+    letter-spacing: 0.16em;
     border-radius: calc(10rem);
 
     @include breakpoint($breakpoint-md) {
@@ -85,12 +87,13 @@ header {
       }
     }
 
-    .contact {
-      background-color: var(--primary-color);
+    .cta {
       height: 4rem;
       line-height: 4rem;
-      padding: 0 2.4rem;
+      padding: 0 3.8rem;
+      font-size: 1rem;
       font-weight: bold;
+      letter-spacing: 0.16em;
       border-radius: calc(10rem);
     }
 

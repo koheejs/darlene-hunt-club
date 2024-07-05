@@ -196,6 +196,25 @@ img {
   font-size: 1.2rem;
   font-weight: 500;
   letter-spacing: 0.33em;
+  transition: background-color 0.3s;
+}
+.cta.cta-green {
+  background-color: var(--dark-green-color);
+}
+.cta.cta-green:hover {
+  background-color: var(--primary-color);
+}
+.cta.cta-light-green {
+  background-color: var(--light-green-color);
+}
+.cta.cta-light-green:hover {
+  background-color: var(--primary-color);
+}
+.cta.cta-primary {
+  background-color: var(--primary-color);
+}
+.cta.cta-primary:hover {
+  background-color: var(--dark-green-color);
 }
 
 .row {
@@ -304,8 +323,10 @@ header .menu-button {
   background-color: var(--primary-color);
   height: 4rem;
   line-height: 4rem;
-  padding: 0 2rem;
+  padding: 0 3.8rem;
+  font-size: 1rem;
   font-weight: bold;
+  letter-spacing: 0.16em;
   border-radius: 10rem;
 }
 @media only screen and (max-width: 992px) {
@@ -351,12 +372,13 @@ header #navigation ul li::after {
   overflow: hidden;
   height: 0;
 }
-header #navigation .contact {
-  background-color: var(--primary-color);
+header #navigation .cta {
   height: 4rem;
   line-height: 4rem;
-  padding: 0 2.4rem;
+  padding: 0 3.8rem;
+  font-size: 1rem;
   font-weight: bold;
+  letter-spacing: 0.16em;
   border-radius: 10rem;
 }
 @media only screen and (max-width: 992px) {
@@ -495,9 +517,6 @@ footer .navigation-list li {
 #our-location .description .text-body-sm {
   font-size: 1.4rem;
 }
-#our-location .cta {
-  background-color: var(--dark-green-color);
-}
 @media only screen and (max-width: 992px) {
   #our-location .row {
     flex-direction: column;
@@ -592,6 +611,7 @@ footer .navigation-list li {
 }
 .home-page #who-we-are .row {
   justify-content: space-between;
+  max-width: 90rem;
 }
 @media only screen and (max-width: 992px) {
   .home-page #who-we-are .row {
@@ -690,9 +710,6 @@ footer .navigation-list li {
   max-width: min(100%, 47rem);
   margin-bottom: 4rem;
 }
-.home-page #our-process .processes .step .cta {
-  background-color: var(--dark-green-color);
-}
 @media only screen and (max-width: 992px) {
   .home-page #our-process .processes .step {
     gap: 2.8rem;
@@ -738,24 +755,25 @@ footer .navigation-list li {
   flex: 1;
   display: flex;
   justify-content: space-between;
-  align-items: stretch;
+  align-items: center;
   gap: 4rem;
 }
 .about-us-page section#about-hero .col {
   max-width: 35rem;
   display: flex;
+  gap: 3rem;
   flex-direction: column;
   justify-content: space-between;
 }
 .about-us-page section#about-hero .col .logo {
+  padding-top: 3rem;
   max-width: 34rem;
 }
 .about-us-page section#about-hero .col .text-body-sm {
   text-wrap: pretty;
-  max-width: 28rem;
+  padding-bottom: 2rem;
 }
 .about-us-page section#about-hero .cta {
-  background-color: var(--dark-green-color);
   align-self: flex-start;
 }
 .about-us-page section#about-hero .section-title {

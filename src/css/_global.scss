@@ -214,6 +214,32 @@ img {
   font-size: 1.2rem;
   font-weight: 500;
   letter-spacing: 0.33em;
+  transition: background-color 0.3s;
+
+  &.cta-green {
+    background-color: var(--dark-green-color);
+
+    &:hover {
+      background-color: var(--primary-color);
+    }
+  }
+
+  &.cta-light-green {
+    background-color: var(--light-green-color);
+
+    &:hover {
+      background-color: var(--primary-color);
+    }
+  }
+
+  &.cta-primary {
+    background-color: var(--primary-color);
+
+    &:hover {
+      background-color: var(--dark-green-color);
+    }
+
+  }
 }
 
 .row {

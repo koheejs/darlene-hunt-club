@@ -69,7 +69,7 @@
       flex: 1;
       display: flex;
       justify-content: space-between;
-      align-items: stretch;
+      align-items: center;
       gap: 4rem;
 
     }
@@ -77,21 +77,23 @@
     .col {
       max-width: 35rem;
       display: flex;
+      gap: 3rem;
       flex-direction: column;
       justify-content: space-between;
 
       .logo {
+        padding-top: 3rem;
         max-width: 34rem;
       }
 
       .text-body-sm {
         text-wrap: pretty;
-        max-width: 28rem;
+        padding-bottom: 2rem;
       }
     }
 
     .cta {
-      background-color: var(--dark-green-color);
+      // background-color: var(--dark-green-color);
       align-self: flex-start;
     }
 
