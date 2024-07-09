@@ -26,10 +26,6 @@
     }
   }
 
-  // .cta {
-  //   background-color: var(--dark-green-color);
-  // }
-
   @include breakpoint($breakpoint-md) {
     .row {
       flex-direction: column;

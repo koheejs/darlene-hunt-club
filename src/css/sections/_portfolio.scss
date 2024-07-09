@@ -34,10 +34,13 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
-      width: 100%;
-      aspect-ratio: 1;
+      // width: 100%;
+      // aspect-ratio: 1;
+      width: 100vh;
+      margin: 0 auto 16rem;
 
       @include breakpoint($breakpoint-md) {
+        width: 100%;
         aspect-ratio: unset;
         margin-bottom: 6rem;
       }
@@ -54,13 +57,13 @@
         background-color: var(--primary-color);
         top: 0;
         right: 0;
-        width: 170px;
-        height: 170px;
+        width: 150px;
+        height: 150px;
         border-radius: 50%;
         position: absolute;
         font-size: 1.3rem;
         font-weight: bold;
-        transform: translate(50px, -87px);
+        transform: translate(50px, -80px);
 
         @include breakpoint($breakpoint-md) {
           width: 120px;
@@ -79,23 +82,23 @@
     }
 
     .content {
-      margin-top: 4rem;
+      margin-top: 2rem;
       letter-spacing: -0.04em;
 
       .title {
-        font-size: 6rem;
-        line-height: 6rem;
-        margin-bottom: 2rem;
+        font-size: 5rem;
+        line-height: 5rem;
+        margin-bottom: 1rem;
       }
 
       .description {
-        font-size: 4rem;
+        font-size: 3rem;
         line-height: 6rem;
       }
 
       .category {
-        font-size: 3rem;
-        line-height: 6rem;
+        font-size: 2.5rem;
+        line-height: 3rem;
         color: var(--category-color);
       }
 
