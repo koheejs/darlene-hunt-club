@@ -1005,9 +1005,9 @@ footer .navigation-list li {
 .work-page {
   --category-color: #938383;
   background-color: #070707;
-  background-image: url("../assets/images/bg-section-orange-3.png");
+  background-image: url("../assets/images/bg-portfolio.png");
   background-size: 100% auto;
-  background-repeat: no-repeat;
+  background-repeat: repeat-y;
 }
 .work-page header .logo {
   display: block;
