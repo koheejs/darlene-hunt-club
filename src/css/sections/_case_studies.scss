@@ -1,0 +1,130 @@
+.case-studies-page {
+  font-size: 1.9rem;
+  line-height: 1.56;
+  letter-spacing: 0.01em;
+
+  .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    max-width: 1520px;
+    margin: auto;
+
+    &.wrapper-no-gap {
+      gap: 0;
+    }
+
+    &.wrapper-between {
+      justify-content: space-between;
+    }
+
+    &.wrapper-right {
+      justify-content: flex-end;
+    }
+
+    &.wrapper-left {
+      justify-content: flex-start;
+    }
+
+    &.wrapper-bottom {
+      align-items: flex-end;
+    }
+
+    &.wrapper-relative {
+      position: relative;
+    }
+  }
+
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  section {
+    padding: 10rem 0;
+  }
+
+
+  #cs-hero {
+    padding: 18rem 0 10rem;
+  }
+
+  #figures {
+    overflow: hidden;
+
+    .wrapper {
+      gap: 0
+    }
+
+    figure {
+      flex: 1;
+
+      &:first-child {
+        flex: 1.5;
+      }
+
+
+      img {
+        object-fit: cover;
+      }
+    }
+  }
+
+  #introduction {
+    .wrapper {
+      justify-content: space-between;
+    }
+
+    .introduction {
+      font-size: 4rem;
+      line-height: 1.5;
+      letter-spacing: 0.01em;
+      max-width: 85rem;
+    }
+
+    .keywords-block {
+      .title {
+        text-transform: uppercase;
+        font-weight: 800;
+        border-bottom: 23px solid #D9D9D9;
+        padding-bottom: 2rem;
+        margin-bottom: 2rem;
+      }
+    }
+  }
+
+  section.design {
+    .wrapper {
+      position: relative;
+    }
+
+    .wrapper-figure-center {
+      max-width: 1269px;
+      margin: auto;
+    }
+
+
+    .description {
+      margin: 9rem 0;
+    }
+  }
+
+  figure {
+    &.space-left {
+      padding-left: 8rem;
+    }
+
+    &.full-width {
+      width: 100%;
+    }
+  }
+
+  .otl-fly-1 {
+    position: absolute;
+    width: 100%;
+    max-width: 60rem;
+    top: 7rem;
+    right: 40%;
+  }
+}
