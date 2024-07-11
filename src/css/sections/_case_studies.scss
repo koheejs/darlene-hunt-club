@@ -11,6 +11,11 @@
     max-width: 1520px;
     margin: auto;
 
+    @include breakpoint($breakpoint-md) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
     &.wrapper-no-gap {
       gap: 0;
     }
@@ -21,6 +26,11 @@
 
     &.wrapper-right {
       justify-content: flex-end;
+
+      @include breakpoint($breakpoint-md) {
+        align-items: flex-end;
+      }
+
     }
 
     &.wrapper-left {
@@ -43,37 +53,36 @@
 
   section {
     padding: 10rem 0;
-  }
 
+    @include breakpoint($breakpoint-md) {
+      padding: 5rem 0;
+    }
+  }
 
   #cs-hero {
     padding: 18rem 0 10rem;
-  }
-
-  #figures {
-    overflow: hidden;
 
     .wrapper {
-      gap: 0
+      gap: 10rem;
+
+      @include breakpoint($breakpoint-md) {
+        gap: 2rem
+      }
     }
 
-    figure {
-      flex: 1;
-
-      &:first-child {
-        flex: 1.5;
-      }
-
-
-      img {
-        object-fit: cover;
-      }
+    @include breakpoint($breakpoint-md) {
+      padding: 16rem 0 5rem;
     }
   }
 
   #introduction {
     .wrapper {
       justify-content: space-between;
+
+      @include breakpoint($breakpoint-md) {
+        flex-direction: column;
+        align-items: flex-start;
+      }
     }
 
     .introduction {
@@ -81,6 +90,15 @@
       line-height: 1.5;
       letter-spacing: 0.01em;
       max-width: 85rem;
+
+      @include breakpoint($breakpoint-md) {
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+      }
+
+      @include breakpoint($breakpoint-sm) {
+        font-size: 1.9rem;
+      }
     }
 
     .keywords-block {
@@ -120,11 +138,146 @@
     }
   }
 
-  .otl-fly-1 {
-    position: absolute;
-    width: 100%;
-    max-width: 60rem;
-    top: 7rem;
-    right: 40%;
+  .mb-4 {
+    margin-bottom: 4rem;
+  }
+
+  .mb-8 {
+    margin-bottom: 8rem;
+  }
+
+
+  #cs-sap-2nd {
+    overflow: hidden;
+
+    .wrapper {
+      gap: 0;
+
+      @include breakpoint($breakpoint-md) {
+        flex-direction: row;
+      }
+
+      @include breakpoint($breakpoint-sm) {
+        flex-direction: column;
+      }
+    }
+
+    figure {
+      flex: 1;
+
+      &:first-child {
+        flex: 1.5;
+      }
+
+
+      img {
+        object-fit: cover;
+      }
+    }
+  }
+
+  section.spacing {
+    .container {
+      height: 20rem;
+    }
+  }
+
+  #cs-otl-7th {
+    @include breakpoint($breakpoint-md) {
+      .wrapper {
+        align-items: center;
+      }
+    }
+
+    .otl-fly-1 {
+      position: absolute;
+      width: min(60rem, 50%);
+      top: 7rem;
+      left: 0rem;
+
+      @include breakpoint($breakpoint-md) {
+        position: static;
+      }
+    }
+  }
+
+  #cs-otl-10th {
+    .group {
+      width: min(90%, 72rem);
+    }
+
+    p {
+      max-width: 62rem;
+      padding-right: 2rem;
+    }
+  }
+
+  #cs-ss-2nd {
+    .wrapper {
+      @include breakpoint($breakpoint-md) {
+        flex-direction: row;
+      }
+
+      @include breakpoint($breakpoint-sm) {
+        flex-direction: column;
+      }
+    }
+  }
+
+  #cs-ss-4th {
+    .wrapper {
+      gap: 6rem;
+      align-items: flex-start;
+    }
+
+    figure.left {
+      flex: 1;
+      padding-top: 12.6rem
+    }
+
+    .group {
+      flex: 1;
+
+      figure {
+        margin-bottom: 10rem;
+
+        @include breakpoint($breakpoint-md) {
+          margin-bottom: 4rem;
+        }
+      }
+    }
+  }
+
+  #cs-ss-8th {
+    .wrapper {
+      @include breakpoint($breakpoint-md) {
+        flex-direction: row;
+        gap: 1rem;
+      }
+    }
+  }
+
+  #cs-wb-7th {
+    .wrapper {
+      @include breakpoint($breakpoint-lg) {
+        padding: 0 8rem;
+      }
+
+      @include breakpoint($breakpoint-sm) {
+        padding: 0 2rem;
+      }
+    }
+  }
+
+  #cs-aw-4th {
+    .wrapper {
+      gap: 9rem;
+    }
+  }
+
+  #cs-aw-7th {
+    .wrapper {
+      gap: 9rem;
+    }
   }
 }
