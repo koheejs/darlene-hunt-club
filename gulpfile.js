@@ -24,7 +24,7 @@ gulp.task('copy-assets', () => {
 // Compile Jade templates to HTML
 gulp.task('jade', () => {
   return gulp
-    .src(paths.jadeSrc)
+    .src([paths.jadeSrc, '!src/**/_*.jade'])
     .pipe(jade({ pretty: true }))
     .pipe(gulp.dest(paths.outputDir))
     .pipe(browserSync.stream()); // Reload browser on changes

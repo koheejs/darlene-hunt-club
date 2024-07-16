@@ -1,7 +1,7 @@
 extends ./pages/layout/_layout.jade
 
 mixin chevronIcon
-  img(src="./assets/images/icon-chevron-down.png", alt="")
+  img(src="./assets/images/icon-chevron-down.png" alt="")
 
 mixin accordion(title)
   .accordion(data-accordion) 
@@ -21,29 +21,29 @@ block content
     div(data-bg-effect data-background="./assets/images/bg-home-hero.png", data-bg-parallax)
     .container 
       .content-wrapper
-        .logo(data-aos="fade-up", data-aos-delay="1000")
-          img(src="./assets/images/logo.png", alt="hunt-club")
-        
+        .logo(data-aos="fade-up" data-aos-delay="1000")
+          img(src="./assets/images/logo.png" alt="hunt-club")
+
         .intro
           h1.section-title We are a 
             strong Creative Production 
             | Studio
-          
+
           p.address based in 
             span.text-curved Toronto, Saigon &amp; Outer Space 
-  
+
 
   section#descriptions(data-scroll-speed="0.6")
     .container
       .row
         .icon
-          img(src="./assets/images/section-description-2.png", alt="")
+          img(src="./assets/images/section-description-2.png" alt="")
         p We are a 
           strong multi-disciplinary 
           | team  of producers, designers, strategists, developers, and artists. 
       .row
         .icon
-          img(src="./assets/images/section-description-1.png", alt="")
+          img(src="./assets/images/section-description-1.png" alt="")
         p We partner with 
           strong visionaries
           | , 
@@ -89,4 +89,4 @@ block content
             p Data Analytics transforms raw data into strategic insights, powering informed decision-making and unveiling opportunities for growth. We use sophisticated analytical tools to interpret trends, patterns, and behaviors, propelling your business towards data-driven success.
 
 
-  include ./pages/contact-form.jade
+  include ./sections/_contact-form.jade
