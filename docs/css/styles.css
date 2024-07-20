@@ -631,29 +631,42 @@ footer .navigation-list li {
 .home-page #our-services .row {
   justify-content: center;
 }
-.home-page #our-services .section-title {
+.home-page #our-services .section-title .line {
+  display: block;
+  position: relative;
   width: fit-content;
 }
-.home-page #our-services .section-title .highlight {
+.home-page #our-services .section-title .text,
+.home-page #our-services .section-title .fix {
+  display: block;
+  max-width: 85rem;
+  margin-left: 4rem;
+}
+.home-page #our-services .section-title .text {
+  top: 0;
+  left: 0;
+  text-wrap: nowrap;
+  width: fit-content;
+  position: absolute;
+  transition: margin-left 0.3s ease;
+}
+.home-page #our-services .section-title .text:hover {
+  margin-left: 0;
   font-style: italic;
   color: var(--primary-color);
 }
-.home-page #our-services .section-title span {
-  display: block;
-  max-width: 85rem;
-}
-.home-page #our-services .section-title span:not(.highlight) {
-  margin-left: 4rem;
+.home-page #our-services .section-title .fix {
+  margin-left: 0;
+  opacity: 0;
 }
 @media only screen and (max-width: 768px) {
   .home-page #our-services .section-title {
     font-size: 2.8rem;
     width: 100%;
   }
-  .home-page #our-services .section-title span {
+  .home-page #our-services .section-title .fix,
+  .home-page #our-services .section-title .text {
     max-width: none;
-  }
-  .home-page #our-services .section-title span:not(.highlight) {
     margin-left: 0;
   }
 }

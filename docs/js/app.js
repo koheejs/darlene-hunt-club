@@ -61,3 +61,37 @@ import sectionParallax from './modules/feature-parallax.js';
     });
   });
 })();
+
+/**
+ * Initializes the Home - Services section scrolling animation effect.
+ * ##our-services > h2 > span, add class highlight to span inner h2 when scroll to center of screen
+ */
+// (function () {
+//   const CLASS_NAME = 'highlight';
+//   const servicesSection = document.getElementById('our-services');
+//   const servicesTitles = servicesSection.querySelectorAll(
+//     '.section-title .text'
+//   );
+
+//   const options = {
+//     root: null, // Use the viewport as the root
+//     rootMargin: '-50% 0px', // Adjust to detect center (vertical adjustment)
+//     threshold: 0, // Trigger as soon as any part is in view
+//   };
+
+//   const callback = (entries) => {
+//     entries.forEach((entry) => {
+//       if (entry.isIntersecting) {
+//         entry.target.classList.add(CLASS_NAME);
+//       } else {
+//         entry.target.classList.remove(CLASS_NAME);
+//       }
+//     });
+//   };
+
+//   const observer = new IntersectionObserver(callback, options);
+
+//   servicesTitles.forEach((title) => {
+//     observer.observe(title);
+//   });
+// })();
