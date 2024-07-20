@@ -1148,6 +1148,7 @@ footer .navigation-list li {
   .case-studies-page .wrapper {
     flex-direction: column;
     align-items: flex-start;
+    gap: 6rem;
   }
 }
 .case-studies-page .wrapper.wrapper-no-gap {
@@ -1250,6 +1251,12 @@ footer .navigation-list li {
 .case-studies-page figure.full-width {
   width: 100%;
 }
+.case-studies-page figure video {
+  width: 100%;
+}
+.case-studies-page figure video.portrait {
+  max-width: 40rem;
+}
 .case-studies-page .mb-4 {
   margin-bottom: 4rem;
 }
@@ -1336,6 +1343,45 @@ footer .navigation-list li {
     margin-bottom: 4rem;
   }
 }
+.case-studies-page #cs-ss-3_1th .group,
+.case-studies-page #cs-ss-6th .group {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.case-studies-page #cs-ss-3_1th .list-title,
+.case-studies-page #cs-ss-6th .list-title {
+  font-family: "DMono";
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+.case-studies-page #cs-ss-3_1th ul,
+.case-studies-page #cs-ss-6th ul {
+  list-style-type: disc;
+}
+.case-studies-page #cs-ss-3_1th ul li,
+.case-studies-page #cs-ss-6th ul li {
+  list-style-position: inside;
+}
+.case-studies-page #cs-ss-3_1th .group {
+  max-width: 53rem;
+}
+.case-studies-page #cs-ss-3_1th .group .noun {
+  color: #938383;
+  font-style: italic;
+}
+.case-studies-page #cs-ss-3_1th .group .small {
+  font-size: 1.5rem;
+}
+.case-studies-page #cs-ss-3_1th .group .group-lv1:nth-child(3) {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.case-studies-page #cs-ss-6th .group {
+  max-width: 53rem;
+}
 @media only screen and (max-width: 992px) {
   .case-studies-page #cs-ss-8th .wrapper {
     flex-direction: row;
@@ -1357,6 +1403,18 @@ footer .navigation-list li {
 }
 .case-studies-page #cs-aw-7th .wrapper {
   gap: 9rem;
+}
+.case-studies-page #cs-bm-4th .yt-wrapper {
+  padding-bottom: 56.25%;
+  width: 100%;
+  position: relative;
+}
+.case-studies-page #cs-bm-4th .yt-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 section#contact-form {
