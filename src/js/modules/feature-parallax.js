@@ -1,3 +1,70 @@
+function sectionParallax(id, expectedHeight = 1000) {
+  if (!id) return;
+  const $section = document.getElementById(id);
+  const $stickyWrapper = $section.querySelector('.sticky-wrapper');
+  const $processesBox = $section.querySelector('.processes');
+  if (!$section) return;
+
+  $section.style.height = `${expectedHeight}px`;
+  const sectionPaddingTop = parseInt(
+    window.getComputedStyle($section).paddingTop
+  );
+
+  const getTopAnchor = () => {
+    return (
+      $section.offsetTop -
+      window.innerHeight / 2 +
+      sectionPaddingTop +
+      $stickyWrapper.offsetHeight / 2
+    );
+  };
+
+  const getBottomAnchor = () => {
+    return (
+      $section.offsetTop +
+      $section.offsetHeight -
+      window.innerHeight +
+      (window.innerHeight - $stickyWrapper.offsetHeight) / 2
+    );
+  };
+
+  const checkScrollOverCenter = () => {
+    return scrollY > getTopAnchor() + $section.offsetHeight / 2;
+  };
+
+  const handleHorizontalScroll = () => {
+    const scrollX = window.scrollY - getTopAnchor();
+    $processesBox.scrollLeft = scrollX;
+  };
+
+  const parallaxSection = () => {
+    const topAnchor = getTopAnchor();
+    const bottomAnchor = getBottomAnchor();
+
+    if (scrollY > topAnchor && scrollY < bottomAnchor) {
+      $section.classList.add('sticky');
+    } else {
+      $section.classList.remove('sticky');
+    }
+
+    if (checkScrollOverCenter()) {
+      $section.classList.add('content-bottom');
+    } else {
+      $section.classList.remove('content-bottom');
+    }
+
+    handleHorizontalScroll();
+  };
+
+  window.addEventListener('scroll', parallaxSection);
+}
+
+/**
+ * Old function
+ * @param {string} id 
+ * @returns void
+ * 
+ * 
 const DELTA_1 = 400;
 const KEEP_DELTA = 1000;
 
@@ -85,6 +152,7 @@ function sectionParallax() {
   window.addEventListener('scroll', () => {
     parallaxRow(row2, upperLimit2, DELTA_1);
   });
-}
+} 
+ */
 
 export default sectionParallax;

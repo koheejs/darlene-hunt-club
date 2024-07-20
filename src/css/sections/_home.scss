@@ -122,6 +122,10 @@
         opacity: 0;
       }
 
+      @include breakpoint($breakpoint-md) {
+        font-size: 4rem;
+      }
+
       @include breakpoint($breakpoint-sm) {
         font-size: 2.8rem;
         width: 100%;
@@ -140,7 +144,33 @@
   #our-process {
     padding-bottom: 0;
     background-color: rgba(0, 0, 0, 0.6);
-    display: block;
+    display: flex;
+    flex-direction: column;
+
+    &.sticky {
+      .sticky-wrapper {
+        position: fixed;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        transform: translateY(-50%);
+      }
+    }
+
+    &.content-bottom {
+      justify-content: flex-end;
+    }
+
+    .processes-wrapper {
+      position: relative;
+
+      &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        inset: 0;
+      }
+    }
 
     .processes {
       display: flex;

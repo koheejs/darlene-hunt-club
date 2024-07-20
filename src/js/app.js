@@ -12,7 +12,7 @@ import sectionParallax from './modules/feature-parallax.js';
   });
 
   backgroundImageEffect();
-  sectionParallax();
+  sectionParallax('our-process', 3600);
 })();
 
 /**
