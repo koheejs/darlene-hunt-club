@@ -230,6 +230,11 @@
           }
         }
 
+        .cta {
+          position: relative;
+          z-index: 2;
+        }
+
         @include breakpoint($breakpoint-md) {
           gap: 2.8rem;
           width: calc(100vw - 4rem);

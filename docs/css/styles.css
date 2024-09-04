@@ -558,6 +558,10 @@ footer .navigation-list li {
   }
 }
 
+.case-studies-root-page #case-studies {
+  padding: 14rem 0 8rem;
+}
+
 .home-page {
   background-image: url("../assets/images/bg-new-home.png");
   background-size: 100% auto;
@@ -747,6 +751,10 @@ footer .navigation-list li {
 .home-page #our-process .processes .step:first-child .text-body-sm {
   max-width: min(100%, 47rem);
   margin-bottom: 4rem;
+}
+.home-page #our-process .processes .step .cta {
+  position: relative;
+  z-index: 2;
 }
 @media only screen and (max-width: 992px) {
   .home-page #our-process .processes .step {
