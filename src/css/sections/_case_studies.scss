@@ -317,6 +317,15 @@
     }
   }
 
+  #cs-wb-6th {
+    p {
+      font-size: 6rem;
+      font-weight: 300;
+      line-height: 1;
+      max-width: 52rem;
+    }
+  }
+
   #cs-wb-7th {
     .wrapper {
       @include breakpoint($breakpoint-lg) {
@@ -327,6 +336,22 @@
         padding: 0 2rem;
       }
     }
+  }
+
+  #cs-wb-9th {
+    .container {
+      max-width: 106rem;
+    }
+
+    p.heading {
+      font-weight: bold;
+      font-size: 5rem;
+      margin-bottom: 6rem;
+    }
+  }
+
+  #cs-wb-10th .group>* {
+    margin-bottom: 8rem;
   }
 
   #cs-aw-4th {
