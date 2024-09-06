@@ -3,23 +3,38 @@ extends ./pages/layout/_layout.jade
 block variables
   - var bodyClass = "case-studies-page"
 
+mixin member(name, role, img, bio)
+  .section.design
+    .container
+      .wrapper 
+        figure
+          img(src=img alt="")
+        .group
+          p= name
+          p= role
+          p= bio
+
+
 block content
   section#cs-hero
     .container
       .wrapper 
         .cs-logo 
           img(src="./assets/images/cs-logo-bach-ma.png" alt="Logo")
-        .cs-intro(style="max-width: 57rem") Aliquam sodales velit eget quam gravida, id lobortis elit posuere. Proin cursus urna aliquam eros tincidunt, vel congue risus maximus. Etiam quam tortor, placerat sit amet ex ac, efficitur bibendum est.
+        .cs-intro(style="max-width: 57rem") Bach Ma is an award-winning short film set in a remote monetary in the mountains of Bach Ma, Vietnam. The film is an audio visual meditation; the aim is for the viewer to slow down and pay attention to the details in both their external and internal worlds. 
 
   section.design
     .wrapper.wrapper-no-gap
-      figure.full-width
-        img(src="./assets/images/cs-bm-img-1.png" alt="")
+      div.yt-wrapper
+        .thumbnail
+          img(src="./assets/images/cs-bm-img-1.png" alt="")
+          button.trigger
+        iframe.hidden(src="https://www.youtube.com/embed/M8VJMGuGcTk?autoplay=1&mute=1" width="800" height="450" frameborder="0")
 
   section#introduction 
     .container 
       .wrapper 
-        p.introduction We champion independent media, providing a dedicated production team for independent journalists. In an era where nuance and connecting with people are crucial, we craft the systems and design elements that bring journalistic stories to life,
+        p.introduction The film was conceived with the monastery’s landscape and characters at its core, forging a unique blend of fiction and documentary, which lead us toward an immersive and realist style. 
         .keywords-block
           .title Service
           ul.keywords
@@ -30,43 +45,138 @@ block content
             li Tech Consultation
             li Photography
 
-  section.design#cs-bm-4th
+  section.design#cs-aw-4th
     .container
+      .wrapper(style="margin-bottom: 6rem")
+        figure(style="max-width: 46rem;")
+          img(src="./assets/images/cs-bm-img-2.1.png" alt="")
       .wrapper
-        div.yt-wrapper
-          iframe(src="https://www.youtube.com/embed/xC5J3rXhDb0?autoplay=1&mute=1" width="800" height="450" frameborder="0")
+        figure(style="max-width: 46rem;")
+          img(src="./assets/images/cs-bm-img-2.2.png" alt="")
 
   section.design#cs-aw-4th
     .container
-    .wrapper
-      figure
-        img(src="./assets/images/cs-bm-img-2.png" alt="")
+      .wrapper
+        figure
+          img(src="./assets/images/cs-bm-img-2.png" alt="")
 
-  section.design#cs-otl-7th
+  section.design
     .container
-      .wrapper.wrapper-right.wrapper-relative
-        img.otl-fly-1(src="./assets/images/cs-otl-img-6.png" alt="")
-        .group
-          img(src="./assets/images/cs-otl-img-7.png" alt="")
-          .description
-            p(style="max-width: 70rem;") Running a mini media conglomerate involves navigating many moving parts, and it’s never a one-size-fits-all situation. For OTL Media, we create a pipeline that ensures all technical aspects from recording to post production flow efficiently across all channels.
+      .group
+        p Character
+        p The Friendly Guide
+        p A delightful and unexpected addition to our production was the monastery dog, Luto. He followed our production everywhere, through the forests and around the mountains. Initially, we tried to keep him out of the shots, but it became clear Luto intuited that both Kim and her character were on a journey and much in need of a guide. He became a cherished character, a statement to how friendship can soften even the most gruelling of endeavors. 
+      figure
+        //- Update image
+        img(src="./assets/images/cs-bm-img-2.png" alt="") 
+
+  section.design
+    .container
+      .group
+        p Process
+        p The Sound of Silence
+        p We recognized the immense value of capturing the essence of the ‘silence’ as a pivotal element in our film. The score and sound of BACH MA is a woven tapestry of the sounds of ethereal chanting, gentle chimes and resonating bells.  We meticulously recorded sounds of flowing water and all the life that exists in the surrounding forests. Every minute detail became vivid and pronounced. The score was purposefully crafted to provide the film with room to breathe and unfold, allowing its essence to resonate in the quietude of the monastery's setting.
+      figure
+        //- Update image
+        img(src="./assets/images/cs-bm-img-1.png" alt="")
+
+  section.design
+    .container
+      .group
+        p Setting
+        p Trúc Lâm Bạch Mã
+        p The monastery's master, a cinephile in his own right, meticulously oversaw the construction of the monastery to transform it into a picturesque masterpiece from every perspective. The symmetrical structures, adorned with intricate detailing, stand in harmonious contrast against the breathtaking backdrop of the natural setting. The beautifully maintained buildings provided an impeccable visual canvas for the film.
+      figure
+        //- Update image
+        img(src="./assets/images/cs-bm-img-1.png" alt="")
+
+  section.design
+    .container
+      .group
+        p Process
+        p Artistic Collaboration
+        p On a time constraint, we grappled with the challenge of executing three scenes in the script, each illustrating the intricate process of carving a wooden Buddha statue from its inception to completion—a task that typically spans several months.The artisans amongst the monks volunteered to have three separate statues crafted for us, each at a different stage of the carving process. This contribution to our film stood as a powerful testament to the way artistic collaboration can transcend the boundaries of language and culture.
+      .wrapper
+        figure
+          //- Update image
+          img(src="./assets/images/cs-bm-img-1.png" alt="")
+        figure
+          //- Update image
+          img(src="./assets/images/cs-bm-img-1.png" alt="")
+
+  section.design#cs-aw-4th
+    .container
+      .wrapper
+        figure
+          //- Update image
+          img(src="./assets/images/cs-bm-img-2.png" alt="")
+
+  //- ----------------------- Team members -----------------------
+  +member('Darlene Huynh', 'Writer, Director', './assets/images/cs-bmmb-darlene.png', 'Darlene Huynh is a full circle creative, driven by curiosity, outlandish ideas and abstract concepts. In her search for aesthetics and unique voices she created HUNTCLUB, a studio & gallery that became an incubator for emerging Toronto talent. It also gave Huynh an outlet for multidisciplinary projects ranging from fine art to film and performance art. Huynh received a BA in Radio and Television Arts from Toronto Metropolitan University and later studied meditation and zen philosophy at Truc Lam Bach Ma monastery.')
+  +member('Kimberly Laferrière', 'Actor', './assets/images/cs-bmmb-kimberly.png', 'Kimberly Laferrière is a graduate of the Neighborhood Playhouse in NYC and the Canadian Film Center in Toronto. She has appeared in successful television series in both French and English in the US and Canada. Her recent work includes the role of Natasha in the popular TV series Fugueuse, which was nominated for a Prix Gémeaux in 2018, as well as ABC\'s In The Dark, Netflix\'s 21 Thunder and the groundbreaking Féminin Féminin by Chloe Robichaud.')
+  +member('Ngoc Bao Phan', 'Producer', './assets/images/cs-bmmb-ngoc.png', 'Ngoc is a Saigon & Toronto based writer/ producer who fell in love with filmmaking by chance and pursued the craft by choice. She has been involved in feature film projects both in developmental roles and production. While working full time as a VFX Producer for film and television at MPC (Moving Picture Company), Ngoc continues to immerse herself in filmmaking via writing and producing for independent short form projects.')
+  +member('Julia Schneider', 'Producer', './assets/images/cs-bmmb-julia.png', 'Julia Schneider began her career in the entertainment business at the age of 13. She worked as an actor for over 10 years, appearing in various TV series and feature films. In between stints as an actor, Julia had the opportunity to work behind the camera as a casting assistant to acclaimed casting director Stephanie Gorin. Shortly thereafter, Julia chose to change her career and in the fall of 2008, she joined Ambition Talent to start her training as talent agent assistant.')
+  +member('Juli Zäll', 'Cinematographer', './assets/images/cs-bmmb-juli.png', 'Juli Zall is a stills and motion photographer based in Toronto, Canada, having studied filmmaking at the University of Copenhagen, in Denmark. Her portfolio consists of short films, documentaries, music videos, and commercial video work for fashion and lifestyle brands. She approaches the moving image with stillness, allowing the scene to unfold in front of the lens. She enjoys shooting on location, where elements and light are challenging to control but offer authentic subtleties to life in motion.')
+  +member('Lodewijk Vos', 'Sound & Score', './assets/images/cs-bmmb-lodewijk.png', 'Lodewijk Vos is an award-winning Music composer for film. Born in the Netherlands, Lodewijk\'s musical career began as a guitarist and keyboard player. He has shared the stage with the likes of Amos Lee, Interpol, N.E.R.D, and KRS-One. After working as an in-house music composer for MTV, Comedy Central, and Nickelodeon, he moved to Toronto in 2009 to focus his career on film composing. In Toronto, Lodewijk started collaborating with local music composer Joseph Murray. Together, they worked on many projects under the name “Menalon.”') 
+  +member('Andres Landau', 'Editor', './assets/images/cs-bmmb-andres.png', 'With over 20 years experience, Argentina-native Andres Landau is an award-winning editor and respected post-production supervisor in Toronto\'s film and television community. Editing credits include The National Parks Project, Sirmilik, the 2012 Genie Award winning short documentary by director Zacharias Kunuk and feature documentary The Stairs by Hugh Gibson, Winner of the 2016 Toronto Film Critics Association for Best Canadian Film. Charles Officer\'s feature documentary, Unarmed Verses produced by The National Film Board of Canada, Winner of the 2017 HotDocs Best Canadian Feature Documentary, 2017 Vancouver International Film Festival and 2018 TIFF Canada\'s Top Ten Audience Award and most recently Akilla\'s Escape, 2020 Toronto International FIlm Festival Selection.') 
+  +member('George Stroumboulopoulos', 'Executive Producer', './assets/images/cs-bmmb-george.png', 'George Stroumboulopoulos is an award-winning broadcaster, producer, filmmaker, actor and humanitarian. Canada\'s biggest newspaper, The Toronto Star stated that George has built "one of the most prestigious broadcasting careers in our nation\'s history". His 30 years in television and radio broadcasting include his roles as host and executive producer of the programs George Stroumboulopoulos Tonight and The Hour on Canada\'s national broadcaster, the CBC. His past work also includes the talk show, Stroumboulopoulos on CNN and his work as the anchor of Canada\'s biggest television show, Hockey Night in Canada. George was also the host and producer of Canada\'s premiere culture show, The New Music. George is a huge supporter of independent film. He has produced several shorts and movies as well has acted in films such as Hobo with a Shotgun and has a role in the upcoming Tim Roth film, Stealing McCloud. George has an Honorary Doctorate of Laws at the University of Calgary and was one of the first three Canadians recognized by the World Economic Forum as a Young Global Leader.')
+  //- ----------------------- Team members -----------------------
 
   section.design 
     .container 
       .wrapper
-        img(src="./assets/images/cs-otl-img-8.png" alt="")
-      .wrapper.wrapper-left.description
-        p(style="max-width: 70rem;") We created assets such as photography, title cards, motion graphics, infographics, for ongoing journalism projects at On the Line Media
+        figure
+          img(src="./assets/images/cs-bm-img-2.png" alt="")
 
-  section.design 
-    .wrapper 
-      figure.full-width
-        img(src="./assets/images/cs-otl-img-10.png" alt="")
+  section 
+    .container
 
-  section.design#cs-otl-10th 
-    .wrapper.wrapper-right 
-      .group
-        figure.mb-8
-          img(src="./assets/images/cs-otl-img-9.png" alt="")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  //- section.design#cs-otl-7th
+  //-   .container
+  //-     .wrapper.wrapper-right.wrapper-relative
+  //-       img.otl-fly-1(src="./assets/images/cs-otl-img-6.png" alt="")
+  //-       .group
+  //-         img(src="./assets/images/cs-otl-img-7.png" alt="")
+  //-         .description
+  //-           p(style="max-width: 70rem;") Running a mini media conglomerate involves navigating many moving parts, and it’s never a one-size-fits-all situation. For OTL Media, we create a pipeline that ensures all technical aspects from recording to post production flow efficiently across all channels.
+
+  //- section.design 
+  //-   .container 
+  //-     .wrapper
+  //-       img(src="./assets/images/cs-otl-img-8.png" alt="")
+  //-     .wrapper.wrapper-left.description
+  //-       p(style="max-width: 70rem;") We created assets such as photography, title cards, motion graphics, infographics, for ongoing journalism projects at On the Line Media
+
+  //- section.design 
+  //-   .wrapper 
+  //-     figure.full-width
+  //-       img(src="./assets/images/cs-otl-img-10.png" alt="")
+
+  //- section.design#cs-otl-10th 
+  //-   .wrapper.wrapper-right 
+  //-     .group
+  //-       figure.mb-8
+  //-         img(src="./assets/images/cs-otl-img-9.png" alt="")
 
   include ./sections/_case_studies.jade

@@ -1,6 +1,7 @@
 function sectionParallax(id, expectedHeight = 1000) {
-  if (!id) return;
-  const $section = document.getElementById(id);
+  const $section = document.getElementById(id ?? '');
+  if (!$section) return;
+
   const $stickyWrapper = $section.querySelector('.sticky-wrapper');
   const $processesBox = $section.querySelector('.processes');
   if (!$section) return;

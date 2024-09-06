@@ -366,20 +366,40 @@
     }
   }
 
-  #cs-bm-4th {
-    .yt-wrapper {
-      padding-bottom: 56.25%;
-      width: 100%;
-      position: relative;
+  .yt-wrapper {
+    padding-bottom: 56.25%;
+    width: 100%;
+    position: relative;
 
-      iframe {
-        // style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"
+    .thumbnail {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+
+      .trigger {
+        display: block;
         position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
+        background-color: transparent;
+        background-image: url('../assets/images/icon-youtube.png');
+        background-size: contain;
+        aspect-ratio: 1;
+        width: 180px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        cursor: pointer;
       }
+    }
+
+    iframe {
+      // style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
     }
   }
 }
