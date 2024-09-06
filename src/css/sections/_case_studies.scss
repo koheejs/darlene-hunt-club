@@ -38,6 +38,10 @@
       justify-content: flex-start;
     }
 
+    &.wrapper-top {
+      align-items: flex-start;
+    }
+
     &.wrapper-bottom {
       align-items: flex-end;
     }
@@ -144,6 +148,11 @@
       &.portrait {
         max-width: 40rem;
       }
+    }
+
+    &.member {
+      flex-shrink: 0;
+      width: 53rem;
     }
   }
 
@@ -363,6 +372,22 @@
   #cs-aw-7th {
     .wrapper {
       gap: 9rem;
+    }
+  }
+
+  .group {
+    &.member {
+      .name {
+        font-size: 4rem;
+        font-family: 'Averia';
+        font-weight: bold;
+        line-height: 1;
+      }
+
+      .role {
+        font-size: 3.6rem;
+        margin-bottom: 6rem;
+      }
     }
   }
 
