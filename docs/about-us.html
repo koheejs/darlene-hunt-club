@@ -11,8 +11,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js" integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="./assets/libs/aos/aos.css">
     <script src="./assets/libs/aos/aos.js"></script>
+    <link rel="stylesheet" href="./assets/libs/locomotive-scroll/locomotive-scroll.min.css">
+    <script src="./assets/libs/locomotive-scroll/locomotive-scroll.min.js"></script>
   </head>
-  <body class="about-us-page">
+  <body data-scroll-container class="about-us-page">
     <header>
       <div class="container"><a href="./" class="logo"><img src="./assets/images/logo.png" alt="Back to Home"></a>
         <div id="navigation" class="navigation"> 
@@ -26,7 +28,7 @@
       </div>
     </header>
     <main id="main">
-      <section id="about-hero">
+      <section id="about-hero" data-scroll-section>
         <div class="container"> 
           <div class="content-wrapper">
             <div class="col">
@@ -40,7 +42,7 @@
           </div>
         </div>
       </section>
-      <section id="partners">
+      <section id="partners" data-scroll-section>
         <div class="container"> 
           <div class="partner-list"> 
             <div class="partner"><img src="./assets/images/logo-shopley.png" alt=""/></div>
@@ -70,13 +72,13 @@
           </div>
         </div>
       </section>
-      <section id="problem-solved">
+      <section id="problem-solved" data-scroll-section>
         <div class="container"> 
           <h2 class="section-title"> <em>PROBLEMS, </em>SOLVED. </h2>
           <p class="text-body-sm"> We bring an artful eye and pragmatic approach  to every project and  believe there is no concept too complex or grandiose that we can’t find a solution for.</p>
         </div>
       </section>
-      <section id="key-words">
+      <section id="key-words" data-scroll-section>
         <div class="container"> 
           <p class="intro">With over 10 years of working together, we have worked on a myriad of projects in these worlds:</p>
           <div class="key-words"> 
@@ -97,7 +99,7 @@
           </div>
         </div>
       </section>
-      <section id="our-location">
+      <section id="our-location" data-scroll-section>
         <div class="container"> 
           <div class="section-tag">WE ARE BASED OUT OF</div>
           <div class="content row">
@@ -108,7 +110,7 @@
           </div>
         </div>
       </section>
-      <section id="case-studies"> 
+      <section id="case-studies" data-scroll-section> 
         <div class="container">
           <div class="section-tag">CASE STUDIES</div>
                 <ul class="case-studies">
@@ -122,7 +124,7 @@
                 </ul>
         </div>
       </section>
-      <section id="contact-form">
+      <section id="contact-form" data-scroll-section>
         <div class="container"> 
           <div class="heading"> 
             <h2 data-aos="short-fade-up" class="section-title">Reach Out</h2>
@@ -155,7 +157,7 @@
           </div>
         </div>
       </section>
-      <footer>
+      <footer data-scroll-section>
         <div class="container">
           <div class="brand"><a href="/" class="logo"><img src="./assets/images/logo.png" alt=""></a></div>
           <div class="navigation"> 

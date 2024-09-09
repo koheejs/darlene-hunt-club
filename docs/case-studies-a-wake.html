@@ -11,8 +11,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js" integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="./assets/libs/aos/aos.css">
     <script src="./assets/libs/aos/aos.js"></script>
+    <link rel="stylesheet" href="./assets/libs/locomotive-scroll/locomotive-scroll.min.css">
+    <script src="./assets/libs/locomotive-scroll/locomotive-scroll.min.js"></script>
   </head>
-  <body class="case-studies-page">
+  <body data-scroll-container class="case-studies-page">
     <header>
       <div class="container"><a href="./" class="logo"><img src="./assets/images/logo.png" alt="Back to Home"></a>
         <div id="navigation" class="navigation"> 
@@ -26,7 +28,7 @@
       </div>
     </header>
     <main id="main">
-      <section id="cs-hero">
+      <section id="cs-hero" data-scroll-section>
         <div class="container">
           <div class="wrapper"> 
             <div class="cs-logo"> <img src="./assets/images/cs-logo-a-wake.png" alt="Logo"></div>
@@ -34,12 +36,12 @@
           </div>
         </div>
       </section>
-      <section class="design">
+      <section data-scroll-section class="design">
         <div class="wrapper wrapper-no-gap">
           <figure class="full-width"><img src="./assets/images/cs-aw-img-1.png" alt=""></figure>
         </div>
       </section>
-      <section id="introduction"> 
+      <section id="introduction" data-scroll-section>
         <div class="container"> 
           <div class="wrapper"> 
             <p class="introduction">Aliquam sodales velit eget quam gravida, id lobortis elit posuere. Proin cursus urna aliquam eros tincidunt, vel congue risus maximus. Etiam quam tortor, placerat sit amet ex ac, efficitur bibendum est.</p>
@@ -54,16 +56,16 @@
           </div>
         </div>
       </section>
-      <section class="spacing">
+      <section data-scroll-section class="spacing">
         <div class="container">&nbsp;</div>
       </section>
-      <section id="cs-aw-4th" class="design">
+      <section id="cs-aw-4th" data-scroll-section class="design">
         <div class="wrapper wrapper-right">
           <figure><img src="./assets/images/cs-aw-img-2.png" alt=""></figure>
           <figure><img src="./assets/images/cs-aw-img-3.png" alt=""></figure>
         </div>
       </section>
-      <section class="design"> 
+      <section data-scroll-section class="design">
         <div class="wrapper mb-8">
           <figure class="full-width"><img src="./assets/images/cs-aw-img-4.png" alt=""></figure>
         </div>
@@ -73,18 +75,18 @@
           </div>
         </div>
       </section>
-      <section class="design"> 
+      <section data-scroll-section class="design">
         <div class="wrapper wrapper-right">
           <figure><img src="./assets/images/cs-aw-img-5.png" alt=""></figure>
         </div>
       </section>
-      <section id="cs-aw-7th" class="design"> 
+      <section id="cs-aw-7th" data-scroll-section class="design">
         <div class="wrapper wrapper-left"> 
           <figure><img src="./assets/images/cs-aw-img-6.png" alt=""></figure>
           <figure><img src="./assets/images/cs-aw-img-7.png" alt=""></figure>
         </div>
       </section>
-      <section id="case-studies"> 
+      <section id="case-studies" data-scroll-section> 
         <div class="container">
           <div class="section-tag">CASE STUDIES</div>
                 <ul class="case-studies">
@@ -98,7 +100,7 @@
                 </ul>
         </div>
       </section>
-      <footer>
+      <footer data-scroll-section>
         <div class="container">
           <div class="brand"><a href="/" class="logo"><img src="./assets/images/logo.png" alt=""></a></div>
           <div class="navigation"> 

@@ -13,7 +13,7 @@ block variables
   - var bodyClass = "about-us-page"
 
 block content
-  section#about-hero
+  section#about-hero(data-scroll-section)
     .container 
       .content-wrapper
         .col
@@ -44,7 +44,7 @@ block content
             strong Creative Machine.
 
 
-  section#partners
+  section#partners(data-scroll-section)
     .container 
       .partner-list 
         +partners
@@ -59,7 +59,7 @@ block content
         //- .marquee.marquee-part-4
         //-   +partners
 
-  section#problem-solved
+  section#problem-solved(data-scroll-section)
     .container 
       h2.section-title 
         em PROBLEMS, 
@@ -67,7 +67,7 @@ block content
       p.text-body-sm  We bring an artful eye and pragmatic approach  to every project and  believe there is no concept too complex or grandiose that we can’t find a solution for.
 
 
-  section#key-words
+  section#key-words(data-scroll-section)
     .container 
       p.intro With over 10 years of working together, we have worked on a myriad of projects in these worlds:
 
@@ -78,7 +78,7 @@ block content
 
 
   //- Section Our Location
-  section#our-location
+  section#our-location(data-scroll-section)
     .container 
       .section-tag WE ARE BASED OUT OF
       .content.row

@@ -18,16 +18,16 @@ block variables
 
 block content
   //- Section Hero
-  section#hero
+  section#hero(data-scroll-section)
     .container 
-      h1.section-title 
+      h1.section-title
         em LEVEL UP 
         | YOUR BUSINESS AND SHOWCASE IT TO 
         em THE WORLD
       p.section-description We deliver all the content you need to supercharge your marketing.
 
   //- Section Who We Are
-  section#who-we-are
+  section#who-we-are(data-scroll-section)
     .container
       .section-tag WHO WE ARE
       h2.section-title WE ARE A 
@@ -43,7 +43,7 @@ block content
           p.text-body-sm We partner with visionaries, founders, and c-suite teams focused on propelling their business forward.  
 
   //- Section Our Services
-  section#our-services
+  section#our-services(data-scroll-section)
     .container
       .section-tag OUR SERVICES
       .row
@@ -77,13 +77,13 @@ block content
             span.text &amp; Photography 
 
   //- Section Our Process
-  section#our-process
-    .sticky-wrapper
+  section#our-process(data-scroll-section)
+    .sticky-wrapper(data-scroll data-scroll-sticky data-scroll-id="our-process" data-scroll-target="#our-process")
       .container
         .section-tag OUR PROCESS
 
       .processes-wrapper
-        ul.processes 
+        ul.processes(data-scroll) 
           li.step 
             .step-number 01
             .step-content 
@@ -112,7 +112,7 @@ block content
               p.text-body-sm Need help managing your new assets? Our team offers social and marketing management services to ensure ongoing success.
 
   //- Section Our Location
-  section#our-location
+  section#our-location(data-scroll-section)
     .container 
       .section-tag WE ARE BASED OUT OF
       .content.row
