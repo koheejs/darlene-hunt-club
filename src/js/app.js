@@ -1,5 +1,6 @@
 import backgroundImageEffect from './modules/feature-background-effect.js';
 import sectionParallax from './modules/feature-parallax.js';
+import initSmoothScrollEffects from './modules/feature-smooth-scroll.js';
 
 (function () {
   // Initialize AOS library
@@ -16,39 +17,7 @@ import sectionParallax from './modules/feature-parallax.js';
 })();
 
 (function () {
-  const appliedPageClasses = [
-    'home-page',
-    'about-us-page',
-    'work-page',
-    'case-studies-root-page',
-    'case-studies-page',
-  ];
-  const body = document.body;
-  let isApplySmoothScroll = false;
-
-  appliedPageClasses.forEach((pageClass) => {
-    if (body.classList.contains(pageClass)) {
-      isApplySmoothScroll = true;
-    }
-  });
-
-  if (!isApplySmoothScroll) {
-    return;
-  }
-
-  const scrollInstant = new LocomotiveScroll({
-    el: document.querySelector('[data-scroll-container]'),
-    smooth: true,
-  });
-
-  scrollInstant.on('scroll', (event) => {
-    const currentElements = event.currentElements;
-    const targetElement = currentElements['our-process'];
-    if (!targetElement) return;
-    const el = targetElement.el;
-    const processesEl = el.querySelector('ul.processes');
-    processesEl.scrollLeft = targetElement.progress * processesEl.scrollWidth;
-  });
+  initSmoothScrollEffects();
 })();
 
 /**

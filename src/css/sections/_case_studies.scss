@@ -457,4 +457,16 @@
       height: 100%;
     }
   }
+
+
+  .scroll-highlight-by-word {
+    span {
+      transition: color 0.4s ease-out;
+    }
+
+    .highlight {
+      color: var(--primary-color);
+    }
+  }
+
 }
