@@ -16,6 +16,7 @@ header {
   left: 0;
   z-index: 999;
   padding: $header-padding 0;
+  backdrop-filter: blur(10px);
 
   .container {
     display: flex;
