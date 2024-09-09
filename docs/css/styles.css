@@ -585,7 +585,7 @@ footer .navigation-list li {
 }
 .home-page #hero {
   text-align: center;
-  min-height: 760px;
+  min-height: max(100vh, 760px);
 }
 @media only screen and (max-width: 992px) {
   .home-page #hero {

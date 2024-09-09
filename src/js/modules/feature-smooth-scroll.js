@@ -61,13 +61,6 @@ function configScrollEffectByWordAttribute() {
   });
 }
 
-function handleOurProcessEffect(targetElement) {
-  if (!targetElement) return;
-  const el = targetElement.el;
-  const processesEl = el.querySelector('ul.processes');
-  processesEl.scrollLeft = targetElement.progress * processesEl.scrollWidth;
-}
-
 function handleScrollHighlightEffect(targetElement) {
   if (!targetElement) return;
   const scrollProgress = targetElement.progress;
@@ -94,4 +87,11 @@ function handleScrollHighlightEffect(targetElement) {
       word.classList.remove('highlight');
     }
   });
+}
+
+function handleOurProcessEffect(targetElement) {
+  if (!targetElement) return;
+  const el = targetElement.el;
+  const processesEl = el.querySelector('ul.processes');
+  processesEl.scrollLeft = targetElement.progress * processesEl.scrollWidth;
 }
