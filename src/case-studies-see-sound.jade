@@ -4,21 +4,21 @@ block variables
   - var bodyClass = "case-studies-page"
 
 block content
-  section#cs-hero
+  section(data-scroll-section)#cs-hero
     .container
       .wrapper 
         .cs-logo 
           img(src="./assets/images/cs-logo-see-sound.png" alt="Logo")
         .cs-intro(style="max-width: 57rem") SEESOUND is a premium Vietnamese coffee company based in Toronto, Canada. They offer sustainably grown and ethically sourced beans from family-owned farms in Buôn Mê Thuột, Dak Lak. 
 
-  section.design#cs-ss-2nd
+  section(data-scroll-section).design#cs-ss-2nd
     .wrapper.wrapper-no-gap
       figure.full-width
         img(src="./assets/images/cs-ss-img-1.png" alt="")
       figure.full-width
         img(src="./assets/images/cs-ss-img-2.png" alt="")
 
-  section#introduction 
+  section(data-scroll-section)#introduction 
     .container 
       .wrapper 
         p.introduction Recognizing the need to stand out in a competitive market, we aimed to create a unique brand identity that highlights the coffee’s premium quality and connects with coffee enthusiasts worldwide.
@@ -33,16 +33,7 @@ block content
             li Video Editing
             li Photography
 
-  //- section.design
-  //-   .wrapper.wrapper-between.wrapper-bottom
-  //-     figure(style="flex: 1;")
-  //-       img(src="./assets/images/cs-ss-img-3.png" alt="")
-  //-     .group(style="flex: 1;")  
-  //-       figure
-  //-         img(src="./assets/images/cs-ss-img-4.png" alt="")
-  //-       p(style="padding: 3rem 0;") Aliquam sodales velit eget quam gravida, id lobortis elit posuere. Proin cursus urna aliquam eros tincidunt, vel congue risus maximus. Etiam quam tortor, placerat sit amet ex ac, efficitur bibendum est.
-
-  section.design#cs-ss-3_1th 
+  section(data-scroll-section).design#cs-ss-3_1th 
     .container 
       .wrapper.wrapper-between 
         .group 
@@ -59,7 +50,7 @@ block content
         figure 
           video(src="./assets/videos/video-ss.mov" autoplay loop muted playsinline)
 
-  section.design#cs-ss-4th
+  section(data-scroll-section).design#cs-ss-4th
     .container 
       .wrapper 
         figure.left
@@ -67,14 +58,14 @@ block content
         .group
           figure
             img(src="./assets/images/cs-ss-img-4.png" alt="")
-          p Aliquam sodales velit eget quam gravida, id lobortis elit posuere. Proin cursus urna aliquam eros tincidunt, vel congue risus maximus. Etiam quam tortor, placerat sit amet ex ac, efficitur bibendum est.
+          p The scope included creating visually striking packaging that would standout at events and on shelves of retail stores.
 
-  section.design 
+  section(data-scroll-section).design 
     .wrapper 
       figure.full-width
         img(src="./assets/images/cs-ss-img-10.png" alt="")
 
-  section.design#cs-ss-6th 
+  section(data-scroll-section).design#cs-ss-6th 
     .container 
       .wrapper.wrapper-between  
         .group 
@@ -94,13 +85,13 @@ block content
         figure 
           video.portrait(src="./assets/videos/video-ss-2.mov" autoplay loop muted playsinline)
 
-  section.design 
+  section(data-scroll-section).design 
     .container 
       .wrapper 
         figure
           img(src="./assets/images/cs-ss-img-5.png" alt="")
 
-  section.design#cs-ss-8th 
+  section(data-scroll-section).design#cs-ss-8th 
     .container
       .wrapper 
         figure
@@ -110,7 +101,7 @@ block content
         figure
           img(src="./assets/images/cs-ss-img-8.png" alt="")
 
-  section.design 
+  section(data-scroll-section).design 
     .container 
       .wrapper
         img(src="./assets/images/cs-ss-img-9.png" alt="")

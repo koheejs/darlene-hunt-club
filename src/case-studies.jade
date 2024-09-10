@@ -1,0 +1,12 @@
+include ./mixins/_case_studies_mixins.jade
+extends ./pages/layout/_layout.jade
+
+block variables
+  - var bodyClass = "case-studies-root-page"
+
+block content
+  section#case-studies(data-scroll-section) 
+    .container
+      +caseStudiesList
+
+  include ./sections/_contact-form.jade

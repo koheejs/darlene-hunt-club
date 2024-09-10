@@ -309,7 +309,9 @@ header {
   top: 0;
   right: 0;
   left: 0;
+  z-index: 999;
   padding: 6rem 0;
+  backdrop-filter: blur(10px);
 }
 header .container {
   display: flex;
@@ -558,6 +560,10 @@ footer .navigation-list li {
   }
 }
 
+.case-studies-root-page #case-studies {
+  padding: 14rem 0 8rem;
+}
+
 .home-page {
   background-image: url("../assets/images/bg-new-home.png");
   background-size: 100% auto;
@@ -580,7 +586,7 @@ footer .navigation-list li {
 }
 .home-page #hero {
   text-align: center;
-  min-height: 760px;
+  min-height: max(100vh, 760px);
 }
 @media only screen and (max-width: 992px) {
   .home-page #hero {
@@ -676,7 +682,7 @@ footer .navigation-list li {
   }
 }
 .home-page #our-process {
-  padding-bottom: 0;
+  padding: 200px 0 0;
   background-color: rgba(0, 0, 0, 0.6);
   display: flex;
   flex-direction: column;
@@ -747,6 +753,10 @@ footer .navigation-list li {
 .home-page #our-process .processes .step:first-child .text-body-sm {
   max-width: min(100%, 47rem);
   margin-bottom: 4rem;
+}
+.home-page #our-process .processes .step .cta {
+  position: relative;
+  z-index: 2;
 }
 @media only screen and (max-width: 992px) {
   .home-page #our-process .processes .step {
@@ -1206,6 +1216,9 @@ footer .navigation-list li {
 .case-studies-page .wrapper.wrapper-left {
   justify-content: flex-start;
 }
+.case-studies-page .wrapper.wrapper-top {
+  align-items: flex-start;
+}
 .case-studies-page .wrapper.wrapper-bottom {
   align-items: flex-end;
 }
@@ -1223,6 +1236,29 @@ footer .navigation-list li {
   .case-studies-page section {
     padding: 5rem 0;
   }
+}
+.case-studies-page section .container.text-container {
+  max-width: 100rem;
+}
+.case-studies-page section .title-1,
+.case-studies-page section .title-2 {
+  font-size: 4rem;
+  line-height: 1.5;
+}
+.case-studies-page section .title-1 {
+  font-weight: 300;
+  letter-spacing: -0.01em;
+}
+.case-studies-page section .title-2 {
+  font-weight: bold;
+  font-family: "Averia";
+  letter-spacing: 0.06em;
+  margin-bottom: 4rem;
+}
+.case-studies-page section .paragraph {
+  font-weight: 500;
+  font-size: 2rem;
+  margin-bottom: 3rem;
 }
 .case-studies-page #cs-hero {
   padding: 18rem 0 10rem;
@@ -1294,6 +1330,10 @@ footer .navigation-list li {
 }
 .case-studies-page figure video.portrait {
   max-width: 40rem;
+}
+.case-studies-page figure.member {
+  flex-shrink: 0;
+  width: 53rem;
 }
 .case-studies-page .mb-4 {
   margin-bottom: 4rem;
@@ -1426,6 +1466,12 @@ footer .navigation-list li {
     gap: 1rem;
   }
 }
+.case-studies-page #cs-wb-6th p {
+  font-size: 6rem;
+  font-weight: 300;
+  line-height: 1;
+  max-width: 52rem;
+}
 @media only screen and (max-width: 1200px) {
   .case-studies-page #cs-wb-7th .wrapper {
     padding: 0 8rem;
@@ -1436,23 +1482,70 @@ footer .navigation-list li {
     padding: 0 2rem;
   }
 }
+.case-studies-page #cs-wb-9th .container {
+  max-width: 106rem;
+}
+.case-studies-page #cs-wb-9th p.heading {
+  font-weight: bold;
+  font-size: 5rem;
+  margin-bottom: 6rem;
+}
+.case-studies-page #cs-wb-10th .group > * {
+  margin-bottom: 8rem;
+}
 .case-studies-page #cs-aw-4th .wrapper {
   gap: 9rem;
 }
 .case-studies-page #cs-aw-7th .wrapper {
   gap: 9rem;
 }
-.case-studies-page #cs-bm-4th .yt-wrapper {
+.case-studies-page .group.member .name {
+  font-size: 4rem;
+  font-family: "Averia";
+  font-weight: bold;
+  line-height: 1;
+}
+.case-studies-page .group.member .role {
+  font-size: 3.6rem;
+  margin-bottom: 6rem;
+}
+.case-studies-page .yt-wrapper {
   padding-bottom: 56.25%;
   width: 100%;
   position: relative;
 }
-.case-studies-page #cs-bm-4th .yt-wrapper iframe {
+.case-studies-page .yt-wrapper .thumbnail {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
+}
+.case-studies-page .yt-wrapper .thumbnail .trigger {
+  display: block;
+  position: absolute;
+  background-color: transparent;
+  background-image: url("../assets/images/icon-youtube.png");
+  background-size: contain;
+  aspect-ratio: 1;
+  width: 180px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+.case-studies-page .yt-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.case-studies-page .scroll-highlight-by-word span {
+  transition: color 0.4s ease-out;
+}
+.case-studies-page .scroll-highlight-by-word .highlight {
+  color: var(--primary-color);
 }
 
 section#contact-form {

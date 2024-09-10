@@ -1,5 +1,6 @@
 import backgroundImageEffect from './modules/feature-background-effect.js';
 import sectionParallax from './modules/feature-parallax.js';
+import initSmoothScrollEffects from './modules/feature-smooth-scroll.js';
 
 (function () {
   // Initialize AOS library
@@ -13,6 +14,10 @@ import sectionParallax from './modules/feature-parallax.js';
 
   backgroundImageEffect();
   sectionParallax('our-process', 3600);
+})();
+
+(function () {
+  initSmoothScrollEffects();
 })();
 
 /**
@@ -58,6 +63,29 @@ import sectionParallax from './modules/feature-parallax.js';
     const title = accordion.querySelector('.accordion-title');
     title.addEventListener('click', () => {
       accordion.classList.toggle('expanded');
+    });
+  });
+})();
+
+/**
+ * Initialize the youtube video player trigger.
+ */
+(function () {
+  const ytPlayerWrappers = document.querySelectorAll('.yt-wrapper');
+
+  ytPlayerWrappers.forEach((wrapper) => {
+    const videoThumbnail = wrapper.querySelector('.thumbnail');
+    const triggerButton = wrapper.querySelector('.trigger');
+    const videoIframe = wrapper.querySelector('iframe');
+
+    if (!triggerButton || !videoIframe) {
+      return;
+    }
+
+    triggerButton.addEventListener('click', () => {
+      videoThumbnail.classList.add('hidden');
+      videoIframe.classList.remove('hidden');
+      videoIframe.src += '?autoplay=1';
     });
   });
 })();

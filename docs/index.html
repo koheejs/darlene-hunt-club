@@ -11,28 +11,30 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js" integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="./assets/libs/aos/aos.css">
     <script src="./assets/libs/aos/aos.js"></script>
+    <link rel="stylesheet" href="./assets/libs/locomotive-scroll/locomotive-scroll.min.css">
+    <script src="./assets/libs/locomotive-scroll/locomotive-scroll.min.js"></script>
   </head>
-  <body class="home-page">
+  <body data-scroll-container class="home-page">
     <header>
       <div class="container"><a href="./" class="logo"><img src="./assets/images/logo.png" alt="Back to Home"></a>
         <div id="navigation" class="navigation"> 
           <ul> 
             <li data-active-page="about-us-page" data-text="About Us" class="menu-item"> <a href="./about-us.html">About Us</a></li>
             <li data-active-page="work-page" data-text="Selected Works" class="menu-item"> <a href="./work.html">Selected Works</a></li>
-            <li data-text="Case Studies" class="menu-item"> <a href="#contact">Case Studies</a></li>
+            <li data-text="Case Studies" class="menu-item"> <a href="./case-studies.html">Case Studies</a></li>
           </ul><a href="https://calendly.com/huntclubstudio" target="_blank" class="cta cta-primary">WORK WITH US</a>
         </div>
         <div id="trigger-menu" class="menu-button cta">MENU</div>
       </div>
     </header>
     <main id="main">
-      <section id="hero">
+      <section id="hero" data-scroll-section>
         <div class="container"> 
-          <h1 class="section-title"> <em>LEVEL UP </em>YOUR BUSINESS AND SHOWCASE IT TO <em>THE WORLD</em></h1>
+          <h1 class="section-title"><em>LEVEL UP </em>YOUR BUSINESS AND SHOWCASE IT TO <em>THE WORLD</em></h1>
           <p class="section-description">We deliver all the content you need to supercharge your marketing.</p>
         </div>
       </section>
-      <section id="who-we-are">
+      <section id="who-we-are" data-scroll-section>
         <div class="container">
           <div class="section-tag">WHO WE ARE</div>
           <h2 class="section-title">WE ARE A <em>CREATIVE </em><br><em>PRODUCTION </em>STUDIO</h2>
@@ -46,26 +48,26 @@
           </div>
         </div>
       </section>
-      <section id="our-services">
+      <section id="our-services" data-scroll-section>
         <div class="container">
           <div class="section-tag">OUR SERVICES</div>
           <div class="row">
-            <h2 class="section-title"> <span class="line"><span class="fix">Brand &amp; Identity </span><span class="text">Brand &amp; Identity </span></span><span class="line"><span class="fix">Marketing Strategy </span><span class="text">Marketing Strategy </span></span><span class="line"><span class="fix">Content Creation</span><span class="text">Content Creation</span></span><span class="line"><span class="fix">Design</span><span class="text">Design</span></span><span class="line"><span class="fix">Full Stack Development </span><span class="text">Full Stack Development </span></span><span class="line"><span class="fix">Copywriting Motion </span><span class="text">Copywriting Motion </span></span><span class="line"><span class="fix">Graphics Video </span><span class="text">Graphics Video </span></span><span class="line"><span class="fix">&amp; Photography </span><span class="text">&amp; Photography </span></span></h2>
+            <h2 class="section-title"> <span class="line"><span class="fix">Brand &amp; Identity </span><span class="text">Brand &amp; Identity </span></span><span class="line"><span class="fix">Marketing Strategy </span><span class="text">Marketing Strategy </span></span><span class="line"><span class="fix">Content Creation</span><span class="text">Content Creation</span></span><span class="line"><span class="fix">Design</span><span class="text">Design</span></span><span class="line"><span class="fix">Full Stack Development</span><span class="text">Full Stack Development</span></span><span class="line"><span class="fix">Copywriting</span><span class="text">Copywriting</span></span><span class="line"><span class="fix">Motion Graphics</span><span class="text">Motion Graphics</span></span><span class="line"><span class="fix">Videography</span><span class="text">Videography</span></span><span class="line"><span class="fix">&amp; Photography </span><span class="text">&amp; Photography </span></span></h2>
           </div>
         </div>
       </section>
-      <section id="our-process">
-        <div class="sticky-wrapper">
+      <section id="our-process" data-scroll-section>
+        <div data-scroll data-scroll-sticky data-scroll-id="our-process" data-scroll-target="#our-process" class="sticky-wrapper">
           <div class="container">
             <div class="section-tag">OUR PROCESS</div>
           </div>
           <div class="processes-wrapper">
-            <ul class="processes"> 
+            <ul data-scroll class="processes"> 
               <li class="step"> 
                 <div class="step-number">01</div>
                 <div class="step-content"> 
                   <h4 class="step-title">Discovery</h4>
-                  <p class="text-body-sm">Book an appointment to discuss your business needs and goals.</p><a class="cta cta-green">SCHEDULE A CALL</a>
+                  <p class="text-body-sm">Book an appointment to discuss your business needs and goals.</p><a href="https://calendly.com/huntclubstudio" target="_blank" class="cta cta-green">SCHEDULE A CALL</a>
                 </div>
               </li>
               <li class="step"> 
@@ -100,33 +102,32 @@
           </div>
         </div>
       </section>
-      <section id="our-location">
+      <section id="our-location" data-scroll-section>
         <div class="container"> 
           <div class="section-tag">WE ARE BASED OUT OF</div>
           <div class="content row">
             <h2 class="section-title">toronto,<em>SàiGòn </em>&amp; <span>outerspace</span></h2>
             <div class="description">
-              <p class="text-body-sm">Yes, the time difference means we work around the clock. Yes, we can get that job you needed done last week, <strong>pronto!</strong></p><a class="cta cta-green">LET’S TALK</a>
+              <p class="text-body-sm">Yes, the time difference means we work around the clock. Yes, we can get that job you needed done last week, <strong>pronto!</strong></p><a href="https://calendly.com/huntclubstudio" target="_blank" class="cta cta-green">LET’S TALK</a>
             </div>
           </div>
         </div>
       </section>
-      <section id="case-studies"> 
+      <section id="case-studies" data-scroll-section> 
         <div class="container">
           <div class="section-tag">CASE STUDIES</div>
-          <ul class="case-studies">
-            <li> <a href="./case-studies-sap.html" class="brand"><img src="./assets/images/home-cs-1.png" alt="Case Study 1"></a></li>
-            <li> <a href="./case-studies-wealthy-barber.html" class="brand"><img src="./assets/images/home-cs-2.png" alt="Case Study 2"></a></li>
-            <li><a href="./case-studies-on-the-line.html" class="brand"><img src="./assets/images/home-cs-3.png" alt="Case Study 3"></a></li>
-            <li> <a href="./case-studies-see-sound.html" class="brand"><img src="./assets/images/home-cs-5.png" alt="Case Study 5"></a></li>
-            <li class="disabled"><a href="#" onclick="return false;" class="brand"><img src="./assets/images/home-cs-4.png" alt="Case Study 4"></a>
-            </li>
-            <li class="disabled"> <a href="#" onclick="return false;" class="brand"><img src="./assets/images/home-cs-6.png" alt="Case Study 6"></a>
-            </li>
-          </ul>
+                <ul class="case-studies">
+                  <li> <a href="./case-studies-sap.html" class="brand"><img src="./assets/images/home-cs-1.png" alt="Case Study 1"></a></li>
+                  <li> <a href="./case-studies-wealthy-barber.html" class="brand"><img src="./assets/images/home-cs-2.png" alt="Case Study 2"></a></li>
+                  <li><a href="./case-studies-on-the-line.html" class="brand"><img src="./assets/images/home-cs-3.png" alt="Case Study 3"></a></li>
+                  <li> <a href="./case-studies-see-sound.html" class="brand"><img src="./assets/images/home-cs-5.png" alt="Case Study 5"></a></li>
+                  <li class="disabled"><a href="./case-studies-bach-ma.html" class="brand"><img src="./assets/images/home-cs-4.png" alt="Case Study 4"></a></li>
+                  <li class="disabled"> <a href="#" onclick="return false;" class="brand"><img src="./assets/images/home-cs-6.png" alt="Case Study 6"></a>
+                  </li>
+                </ul>
         </div>
       </section>
-      <section id="contact-form">
+      <section id="contact-form" data-scroll-section>
         <div class="container"> 
           <div class="heading"> 
             <h2 data-aos="short-fade-up" class="section-title">Reach Out</h2>
@@ -159,7 +160,7 @@
           </div>
         </div>
       </section>
-      <footer>
+      <footer data-scroll-section>
         <div class="container">
           <div class="brand"><a href="/" class="logo"><img src="./assets/images/logo.png" alt=""></a></div>
           <div class="navigation"> 

@@ -22,7 +22,7 @@
   // -- Hero Section
   #hero {
     text-align: center;
-    min-height: 760px;
+    min-height: max(100vh, 760px);
 
     @include breakpoint($breakpoint-md) {
       text-align: left;
@@ -142,7 +142,7 @@
 
   // -- Our Process Section
   #our-process {
-    padding-bottom: 0;
+    padding: 200px 0 0;
     background-color: rgba(0, 0, 0, 0.6);
     display: flex;
     flex-direction: column;
@@ -228,6 +228,11 @@
             max-width: min(100%, 47rem);
             margin-bottom: 4rem;
           }
+        }
+
+        .cta {
+          position: relative;
+          z-index: 2;
         }
 
         @include breakpoint($breakpoint-md) {

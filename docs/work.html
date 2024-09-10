@@ -11,27 +11,29 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js" integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="./assets/libs/aos/aos.css">
     <script src="./assets/libs/aos/aos.js"></script>
+    <link rel="stylesheet" href="./assets/libs/locomotive-scroll/locomotive-scroll.min.css">
+    <script src="./assets/libs/locomotive-scroll/locomotive-scroll.min.js"></script>
   </head>
-  <body class="work-page">
+  <body data-scroll-container class="work-page">
     <header>
       <div class="container"><a href="./" class="logo"><img src="./assets/images/logo.png" alt="Back to Home"></a>
         <div id="navigation" class="navigation"> 
           <ul> 
             <li data-active-page="about-us-page" data-text="About Us" class="menu-item"> <a href="./about-us.html">About Us</a></li>
             <li data-active-page="work-page" data-text="Selected Works" class="menu-item"> <a href="./work.html">Selected Works</a></li>
-            <li data-text="Case Studies" class="menu-item"> <a href="#contact">Case Studies</a></li>
+            <li data-text="Case Studies" class="menu-item"> <a href="./case-studies.html">Case Studies</a></li>
           </ul><a href="https://calendly.com/huntclubstudio" target="_blank" class="cta cta-primary">WORK WITH US</a>
         </div>
         <div id="trigger-menu" class="menu-button cta">MENU</div>
       </div>
     </header>
     <main id="main">
-      <section class="heading">
+      <section data-scroll-section class="heading">
         <div class="container">
           <h1 class="page-title">Our work</h1>
         </div>
       </section>
-      <section id="our-work">
+      <section id="our-work" data-scroll-section>
         <div class="container"> 
           <div class="block">
             <div class="thumb"><img src="./assets/images/our-work-sharing-spaces.png" alt=""></div>
@@ -105,7 +107,7 @@
           </div>
         </div>
       </section>
-      <section id="contact-form">
+      <section id="contact-form" data-scroll-section>
         <div class="container"> 
           <div class="heading"> 
             <h2 data-aos="short-fade-up" class="section-title">Reach Out</h2>
@@ -138,7 +140,7 @@
           </div>
         </div>
       </section>
-      <footer>
+      <footer data-scroll-section>
         <div class="container">
           <div class="brand"><a href="/" class="logo"><img src="./assets/images/logo.png" alt=""></a></div>
           <div class="navigation"> 

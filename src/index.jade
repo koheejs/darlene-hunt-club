@@ -18,16 +18,16 @@ block variables
 
 block content
   //- Section Hero
-  section#hero
+  section#hero(data-scroll-section)
     .container 
-      h1.section-title 
+      h1.section-title
         em LEVEL UP 
         | YOUR BUSINESS AND SHOWCASE IT TO 
         em THE WORLD
       p.section-description We deliver all the content you need to supercharge your marketing.
 
   //- Section Who We Are
-  section#who-we-are
+  section#who-we-are(data-scroll-section)
     .container
       .section-tag WHO WE ARE
       h2.section-title WE ARE A 
@@ -43,7 +43,7 @@ block content
           p.text-body-sm We partner with visionaries, founders, and c-suite teams focused on propelling their business forward.  
 
   //- Section Our Services
-  section#our-services
+  section#our-services(data-scroll-section)
     .container
       .section-tag OUR SERVICES
       .row
@@ -61,32 +61,35 @@ block content
             span.fix Design
             span.text Design
           span.line
-            span.fix Full Stack Development 
-            span.text Full Stack Development 
+            span.fix Full Stack Development
+            span.text Full Stack Development
           span.line
-            span.fix Copywriting Motion 
-            span.text Copywriting Motion 
+            span.fix Copywriting
+            span.text Copywriting
           span.line
-            span.fix Graphics Video 
-            span.text Graphics Video 
+            span.fix Motion Graphics
+            span.text Motion Graphics
+          span.line
+            span.fix Videography
+            span.text Videography
           span.line
             span.fix &amp; Photography 
             span.text &amp; Photography 
 
   //- Section Our Process
-  section#our-process
-    .sticky-wrapper
+  section#our-process(data-scroll-section)
+    .sticky-wrapper(data-scroll data-scroll-sticky data-scroll-id="our-process" data-scroll-target="#our-process")
       .container
         .section-tag OUR PROCESS
 
       .processes-wrapper
-        ul.processes 
+        ul.processes(data-scroll) 
           li.step 
             .step-number 01
             .step-content 
               h4.step-title Discovery
               p.text-body-sm Book an appointment to discuss your business needs and goals.
-              a.cta.cta-green SCHEDULE A CALL
+              a.cta.cta-green(href="https://calendly.com/huntclubstudio" target="_blank") SCHEDULE A CALL
           li.step 
             .step-number 02
             .step-content 
@@ -109,7 +112,7 @@ block content
               p.text-body-sm Need help managing your new assets? Our team offers social and marketing management services to ensure ongoing success.
 
   //- Section Our Location
-  section#our-location
+  section#our-location(data-scroll-section)
     .container 
       .section-tag WE ARE BASED OUT OF
       .content.row
@@ -121,7 +124,7 @@ block content
         .description
           p.text-body-sm Yes, the time difference means we work around the clock. Yes, we can get that job you needed done last week, 
             strong pronto!
-          a.cta.cta-green LET’S TALK
+          a.cta.cta-green(href="https://calendly.com/huntclubstudio" target="_blank") LET’S TALK
 
   include ./sections/_case_studies.jade
 

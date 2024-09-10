@@ -11,38 +11,45 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js" integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="./assets/libs/aos/aos.css">
     <script src="./assets/libs/aos/aos.js"></script>
+    <link rel="stylesheet" href="./assets/libs/locomotive-scroll/locomotive-scroll.min.css">
+    <script src="./assets/libs/locomotive-scroll/locomotive-scroll.min.js"></script>
   </head>
-  <body class="case-studies-page">
+  <body data-scroll-container class="case-studies-page">
     <header>
       <div class="container"><a href="./" class="logo"><img src="./assets/images/logo.png" alt="Back to Home"></a>
         <div id="navigation" class="navigation"> 
           <ul> 
             <li data-active-page="about-us-page" data-text="About Us" class="menu-item"> <a href="./about-us.html">About Us</a></li>
             <li data-active-page="work-page" data-text="Selected Works" class="menu-item"> <a href="./work.html">Selected Works</a></li>
-            <li data-text="Case Studies" class="menu-item"> <a href="#contact">Case Studies</a></li>
+            <li data-text="Case Studies" class="menu-item"> <a href="./case-studies.html">Case Studies</a></li>
           </ul><a href="https://calendly.com/huntclubstudio" target="_blank" class="cta cta-primary">WORK WITH US</a>
         </div>
         <div id="trigger-menu" class="menu-button cta">MENU</div>
       </div>
     </header>
     <main id="main">
-      <section id="cs-hero">
+      <section id="cs-hero" data-scroll-section>
         <div class="container">
           <div class="wrapper"> 
             <div class="cs-logo"> <img src="./assets/images/cs-logo-bach-ma.png" alt="Logo"></div>
-            <div style="max-width: 57rem" class="cs-intro">Aliquam sodales velit eget quam gravida, id lobortis elit posuere. Proin cursus urna aliquam eros tincidunt, vel congue risus maximus. Etiam quam tortor, placerat sit amet ex ac, efficitur bibendum est.</div>
+            <div style="max-width: 57rem" class="cs-intro">Bach Ma is an award-winning short film set in a remote monetary in the mountains of Bach Ma, Vietnam. The film is an audio visual meditation; the aim is for the viewer to slow down and pay attention to the details in both their external and internal worlds. </div>
           </div>
         </div>
       </section>
-      <section class="design">
+      <section data-scroll-section class="design">
         <div class="wrapper wrapper-no-gap">
-          <figure class="full-width"><img src="./assets/images/cs-bm-img-1.png" alt=""></figure>
+          <div class="yt-wrapper">
+            <div class="thumbnail"><img src="./assets/images/cs-bm-img-1.png" alt="">
+              <button class="trigger"></button>
+            </div>
+            <iframe src="https://www.youtube.com/embed/xC5J3rXhDb0?autoplay=1&amp;mute=1" width="800" height="450" frameborder="0" class="hidden"></iframe>
+          </div>
         </div>
       </section>
-      <section id="introduction"> 
+      <section id="introduction" data-scroll-section>
         <div class="container"> 
           <div class="wrapper"> 
-            <p class="introduction">We champion independent media, providing a dedicated production team for independent journalists. In an era where nuance and connecting with people are crucial, we craft the systems and design elements that bring journalistic stories to life,</p>
+            <p class="introduction">The film was conceived with the monastery’s landscape and characters at its core, forging a unique blend of fiction and documentary, which lead us toward an immersive and realist style. </p>
             <div class="keywords-block">
               <div class="title">Service</div>
               <ul class="keywords">
@@ -57,68 +64,281 @@
           </div>
         </div>
       </section>
-      <section id="cs-bm-4th" class="design">
+      <section id="cs-aw-4th" data-scroll-section class="design">
+        <div class="container">
+          <div style="margin-bottom: 6rem" class="wrapper">
+            <figure style="max-width: 46rem;"><img src="./assets/images/cs-bm-img-2.1.png" alt=""></figure>
+          </div>
+          <div class="wrapper">
+            <figure style="max-width: 46rem;"><img src="./assets/images/cs-bm-img-2.2.png" alt=""></figure>
+          </div>
+        </div>
+      </section>
+      <section id="cs-aw-4th" data-scroll-section class="design">
         <div class="container">
           <div class="wrapper">
-            <div class="yt-wrapper">
-              <iframe src="https://www.youtube.com/embed/xC5J3rXhDb0?autoplay=1&amp;mute=1" width="800" height="450" frameborder="0"></iframe>
-            </div>
+            <figure><img src="./assets/images/cs-bm-img-2.png" alt=""></figure>
           </div>
         </div>
       </section>
-      <section id="cs-aw-4th" class="design">
-        <div class="container"></div>
-        <div class="wrapper">
-          <figure><img src="./assets/images/cs-bm-img-2.png" alt=""></figure>
+      <section data-scroll-section class="design">
+        <div class="container text-container">
+          <p class="title-1">Director Statement</p>
+          <p class="title-2">Art as meditation</p>
+          <p class="paragraph">When I first arrived at Bach Ma Monastery I documented my learnings in essays and photographs, thoughts on the universal human experience of longing and grief.  I captured every angle of the place at a pace so deliberately slow and methodical, it became a meditative act. </p>
+          <p class="paragraph">Visual metaphors could be seen in the very fabric of the monastery’s way of life and its mise en scene. It became clear to me that the most effective medium to convey the story of this place was through film. After a spirited conversation about cinema with the master monk, we were granted permission to film in this idyllic and sacred setting. </p>
+          <p class="paragraph">The script inherits a layman’s point of view— touching upon themes such as the passing of time and what can be unearthed when we are stripped of our modern distractions and go deep into ourselves.  The storyline is based on true experience, while the visual abstractions invite reflection and contemplation of foundational Zen philosophies.</p>
         </div>
       </section>
-      <section id="cs-otl-7th" class="design">
-        <div class="container">
-          <div class="wrapper wrapper-right wrapper-relative"><img src="./assets/images/cs-otl-img-6.png" alt="" class="otl-fly-1">
-            <div class="group"><img src="./assets/images/cs-otl-img-7.png" alt="">
-              <div class="description">
-                <p style="max-width: 70rem;">Running a mini media conglomerate involves navigating many moving parts, and it’s never a one-size-fits-all situation. For OTL Media, we create a pipeline that ensures all technical aspects from recording to post production flow efficiently across all channels.</p>
-              </div>
-            </div>
-          </div>
+      <section data-scroll-section class="design">
+        <figure> <img src="./assets/images/cs-bm-img-3.png" alt=""></figure>
+      </section>
+      <section data-scroll-section class="design">
+        <div class="container text-container"> 
+          <p class="title-2">Logline</p>
+          <p class="paragraph">A woman decides to step out of her modern life and journeys to a remote monastery deep in the Bach Ma mountains of Vietnam, where she lives with a group of monks. Her silent struggle to adapt to the stoic and peculiar setting leads her to a wholehearted search for serenity. </p>
         </div>
       </section>
-      <section class="design"> 
+      <section data-scroll-section class="design">
         <div class="container"> 
-          <div class="wrapper"><img src="./assets/images/cs-otl-img-8.png" alt=""></div>
-          <div class="wrapper wrapper-left description">
-            <p style="max-width: 70rem;">We created assets such as photography, title cards, motion graphics, infographics, for ongoing journalism projects at On the Line Media</p>
+          <div class="wrapper">
+            <figure style="max-width: 52rem;"> <img src="./assets/images/cs-bm-img-4.png" alt=""></figure>
           </div>
         </div>
       </section>
-      <section class="design"> 
-        <div class="wrapper"> 
-          <figure class="full-width"><img src="./assets/images/cs-otl-img-10.png" alt=""></figure>
+      <section data-scroll-section class="design">
+        <div class="container text-container"> 
+          <p class="title-1">Process</p>
+          <p class="title-2">Fiction vs Documentary</p>
+          <p class="paragraph">The film was conceived with the monastery's landscape and characters at its core, forging a unique blend of fiction and documentary, which lead us toward an immersive and realist style. As the monks maintained their daily rituals, we meticulously adjusted our schedules to work around theirs, ensuring an unfiltered portrayal of their authentic lives. Our approach was to integrate our lead actress into their world, casting her as a fictional character who would live in the very real world that is Bach Ma Monastery.</p>
         </div>
       </section>
-      <section id="cs-otl-10th" class="design"> 
-        <div class="wrapper wrapper-right"> 
+      <section data-scroll-section class="design">
+        <div class="container"> 
+          <div class="wrapper">
+            <figure style="max-width: 89rem;"><img src="./assets/images/cs-bm-img-5.png" alt=""></figure>
+          </div>
+        </div>
+      </section>
+      <section data-scroll-section class="design">
+        <div class="container text-container">
+          <p class="paragraph">This approach meant our script and filming had to be adaptable, responding to the conditions and opportunities that arose within this unique environment. As a mark of deep respect and commitment to preserving the monks' undisturbed routines, we frequently rehearsed and blocked scenes during the night and on off-hours. For group scenes, we captured the monks in their authentic moments, taking advantage of their regimented and repetitive schedules  to streamline our own production schedule.  </p>
+          <p class="paragraph">We operated with utmost reverence, often communicating through whispers and hand signals.  Our all-female crew lived alongside the female monks in their serene convent, and participated in their daily routines. These routines centered around meditation, cooking, gardening, philosophical discourse, and chanting.  Through a minimalist lens and collaborative approach, we were fully immersing ourselves in the unique world we were dedicated to portraying on screen.  </p>
+        </div>
+      </section>
+      <section data-scroll-section class="design">
+        <figure> <img src="./assets/images/cs-bm-img-6.png" alt=""></figure>
+      </section>
+      <section data-scroll-section class="design">
+        <div class="container">
+          <div class="wrapper">
+            <figure style="max-width: 100rem;"><img src="./assets/images/cs-bm-img-7.png" alt=""></figure>
+          </div>
+        </div>
+      </section>
+      <section data-scroll-section class="design">
+        <div class="container text-container">
+          <p class="title-1">Character</p>
+          <p class="title-2">Blurring The Lines</p>
+          <p class="paragraph">The monks' unwavering commitment to their spiritual practice rendered them ideal background actors, seemingly undisturbed by the crew's presence. Their collective essence, marked by a methodical silence and stoic poise, enveloped the set to such an extent that our lead actor seamlessly immersed herself into the scene, both on and off camera, resulting in a method-like approach that brought authenticity and depth to her performance. </p>
+        </div>
+      </section>
+      <section data-scroll-section class="design">
+        <figure> <img src="./assets/images/cs-bm-img-1.png" alt=""></figure>
+      </section>
+      <section data-scroll-section class="design">
+        <div class="container text-container"> 
           <div class="group">
-            <figure class="mb-8"><img src="./assets/images/cs-otl-img-9.png" alt=""></figure>
+            <p class="title-1">Character</p>
+            <p class="title-2">The Friendly Guide</p>
+            <p class="paragraph">A delightful and unexpected addition to our production was the monastery dog, Luto. He followed our production everywhere, through the forests and around the mountains. Initially, we tried to keep him out of the shots, but it became clear Luto intuited that both Kim and her character were on a journey and much in need of a guide. He became a cherished character, a statement to how friendship can soften even the most gruelling of endeavors. </p>
           </div>
         </div>
       </section>
-      <section id="case-studies"> 
+      <section data-scroll-section class="design">
+        <div class="container">
+          <div class="wrapper">
+            <figure style="max-width: 90rem;"><img src="./assets/images/cs-bm-img-8.png" alt=""></figure>
+          </div>
+        </div>
+      </section>
+      <section data-scroll-section class="design">
+        <div class="container text-container">
+          <div class="group">
+            <p class="title-1">Process</p>
+            <p class="title-2">The Sound of Silence</p>
+            <p class="paragraph">We recognized the immense value of capturing the essence of the ‘silence’ as a pivotal element in our film. The score and sound of BACH MA is a woven tapestry of the sounds of ethereal chanting, gentle chimes and resonating bells.  We meticulously recorded sounds of flowing water and all the life that exists in the surrounding forests. Every minute detail became vivid and pronounced. The score was purposefully crafted to provide the film with room to breathe and unfold, allowing its essence to resonate in the quietude of the monastery's setting.</p>
+          </div>
+        </div>
+      </section>
+      <section data-scroll-section class="design">
+        <figure><img src="./assets/images/cs-bm-img-9.png" alt=""></figure>
+      </section>
+      <section data-scroll-section class="design">
+        <div class="container text-container">
+          <div class="group">
+            <p class="title-1">Setting</p>
+            <p class="title-2">Trúc Lâm Bạch Mã</p>
+            <p class="paragraph">The monastery's master, a cinephile in his own right, meticulously oversaw the construction of the monastery to transform it into a picturesque masterpiece from every perspective. The symmetrical structures, adorned with intricate detailing, stand in harmonious contrast against the breathtaking backdrop of the natural setting. The beautifully maintained buildings provided an impeccable visual canvas for the film.</p>
+          </div>
+        </div>
+      </section>
+      <section data-scroll-section class="design">
+        <div class="container">
+          <div class="wrapper">
+            <figure style="max-width: 99rem;"><img src="./assets/images/cs-bm-img-10.png" alt=""></figure>
+          </div>
+        </div>
+      </section>
+      <section data-scroll-section class="design">
+        <div class="container text-container">
+          <div class="group">
+            <p class="title-1">Process</p>
+            <p class="title-2">Artistic Collaboration</p>
+            <p class="paragraph">On a time constraint, we grappled with the challenge of executing three scenes in the script, each illustrating the intricate process of carving a wooden Buddha statue from its inception to completion—a task that typically spans several months.The artisans amongst the monks volunteered to have three separate statues crafted for us, each at a different stage of the carving process. This contribution to our film stood as a powerful testament to the way artistic collaboration can transcend the boundaries of language and culture.</p>
+          </div>
+        </div>
+      </section>
+      <section data-scroll-section class="design">
+        <div class="container">
+          <div class="wrapper">
+            <figure><img src="./assets/images/cs-bm-img-11.png" alt=""></figure>
+            <figure><img src="./assets/images/cs-bm-img-12.png" alt=""></figure>
+          </div>
+        </div>
+      </section>
+      <section id="cs-aw-4th" data-scroll-section class="design">
+        <div class="container">
+          <div class="wrapper">
+            <figure><img src="./assets/images/cs-bm-img-13.png" alt=""></figure>
+          </div>
+        </div>
+      </section>
+      <section data-scroll-section="data-scroll-section" class="design">
+        <div class="container">
+          <div class="wrapper wrapper-between wrapper-top"> 
+            <figure class="member"><img src="./assets/images/cs-bmmb-darlene.png" alt=""/></figure>
+            <div style="max-width: 66rem;" class="group member">
+              <p class="name">Darlene Huynh</p>
+              <p class="role">Writer, Director</p>
+              <p>Darlene Huynh is a full circle creative, driven by curiosity, outlandish ideas and abstract concepts. In her search for aesthetics and unique voices she created HUNTCLUB, a studio &amp; gallery that became an incubator for emerging Toronto talent. It also gave Huynh an outlet for multidisciplinary projects ranging from fine art to film and performance art. Huynh received a BA in Radio and Television Arts from Toronto Metropolitan University and later studied meditation and zen philosophy at Truc Lam Bach Ma monastery.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section data-scroll-section="data-scroll-section" class="design">
+        <div class="container">
+          <div class="wrapper wrapper-between wrapper-top"> 
+            <figure class="member"><img src="./assets/images/cs-bmmb-kimberly.png" alt=""/></figure>
+            <div style="max-width: 66rem;" class="group member">
+              <p class="name">Kimberly Laferrière</p>
+              <p class="role">Actor</p>
+              <p>Kimberly Laferrière is a graduate of the Neighborhood Playhouse in NYC and the Canadian Film Center in Toronto. She has appeared in successful television series in both French and English in the US and Canada. Her recent work includes the role of Natasha in the popular TV series Fugueuse, which was nominated for a Prix Gémeaux in 2018, as well as ABC's In The Dark, Netflix's 21 Thunder and the groundbreaking Féminin Féminin by Chloe Robichaud.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section data-scroll-section="data-scroll-section" class="design">
+        <div class="container">
+          <div class="wrapper wrapper-between wrapper-top"> 
+            <figure class="member"><img src="./assets/images/cs-bmmb-ngoc.png" alt=""/></figure>
+            <div style="max-width: 66rem;" class="group member">
+              <p class="name">Ngoc Bao Phan</p>
+              <p class="role">Producer</p>
+              <p>Ngoc is a Saigon &amp; Toronto based writer/ producer who fell in love with filmmaking by chance and pursued the craft by choice. She has been involved in feature film projects both in developmental roles and production. While working full time as a VFX Producer for film and television at MPC (Moving Picture Company), Ngoc continues to immerse herself in filmmaking via writing and producing for independent short form projects.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section data-scroll-section="data-scroll-section" class="design">
+        <div class="container">
+          <div class="wrapper wrapper-between wrapper-top"> 
+            <figure class="member"><img src="./assets/images/cs-bmmb-julia.png" alt=""/></figure>
+            <div style="max-width: 66rem;" class="group member">
+              <p class="name">Julia Schneider</p>
+              <p class="role">Producer</p>
+              <p>Julia Schneider began her career in the entertainment business at the age of 13. She worked as an actor for over 10 years, appearing in various TV series and feature films. In between stints as an actor, Julia had the opportunity to work behind the camera as a casting assistant to acclaimed casting director Stephanie Gorin. Shortly thereafter, Julia chose to change her career and in the fall of 2008, she joined Ambition Talent to start her training as talent agent assistant.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section data-scroll-section="data-scroll-section" class="design">
+        <div class="container">
+          <div class="wrapper wrapper-between wrapper-top"> 
+            <figure class="member"><img src="./assets/images/cs-bmmb-juli.png" alt=""/></figure>
+            <div style="max-width: 66rem;" class="group member">
+              <p class="name">Juli Zäll</p>
+              <p class="role">Cinematographer</p>
+              <p>Juli Zall is a stills and motion photographer based in Toronto, Canada, having studied filmmaking at the University of Copenhagen, in Denmark. Her portfolio consists of short films, documentaries, music videos, and commercial video work for fashion and lifestyle brands. She approaches the moving image with stillness, allowing the scene to unfold in front of the lens. She enjoys shooting on location, where elements and light are challenging to control but offer authentic subtleties to life in motion.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section data-scroll-section="data-scroll-section" class="design">
+        <div class="container">
+          <div class="wrapper wrapper-between wrapper-top"> 
+            <figure class="member"><img src="./assets/images/cs-bmmb-lodewijk.png" alt=""/></figure>
+            <div style="max-width: 66rem;" class="group member">
+              <p class="name">Lodewijk Vos</p>
+              <p class="role">Sound &amp; Score</p>
+              <p>Lodewijk Vos is an award-winning Music composer for film. Born in the Netherlands, Lodewijk's musical career began as a guitarist and keyboard player. He has shared the stage with the likes of Amos Lee, Interpol, N.E.R.D, and KRS-One. After working as an in-house music composer for MTV, Comedy Central, and Nickelodeon, he moved to Toronto in 2009 to focus his career on film composing. In Toronto, Lodewijk started collaborating with local music composer Joseph Murray. Together, they worked on many projects under the name “Menalon.”</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section data-scroll-section="data-scroll-section" class="design">
+        <div class="container">
+          <div class="wrapper wrapper-between wrapper-top"> 
+            <figure class="member"><img src="./assets/images/cs-bmmb-andres.png" alt=""/></figure>
+            <div style="max-width: 66rem;" class="group member">
+              <p class="name">Andres Landau</p>
+              <p class="role">Editor</p>
+              <p>With over 20 years experience, Argentina-native Andres Landau is an award-winning editor and respected post-production supervisor in Toronto's film and television community. Editing credits include The National Parks Project, Sirmilik, the 2012 Genie Award winning short documentary by director Zacharias Kunuk and feature documentary The Stairs by Hugh Gibson, Winner of the 2016 Toronto Film Critics Association for Best Canadian Film. Charles Officer's feature documentary, Unarmed Verses produced by The National Film Board of Canada, Winner of the 2017 HotDocs Best Canadian Feature Documentary, 2017 Vancouver International Film Festival and 2018 TIFF Canada's Top Ten Audience Award and most recently Akilla's Escape, 2020 Toronto International FIlm Festival Selection.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section data-scroll-section="data-scroll-section" class="design">
+        <div class="container">
+          <div class="wrapper wrapper-between wrapper-top"> 
+            <figure class="member"><img src="./assets/images/cs-bmmb-george.png" alt=""/></figure>
+            <div style="max-width: 66rem;" class="group member">
+              <p class="name">George Stroumboulopoulos</p>
+              <p class="role">Executive Producer</p>
+              <p>George Stroumboulopoulos is an award-winning broadcaster, producer, filmmaker, actor and humanitarian. Canada's biggest newspaper, The Toronto Star stated that George has built &quot;one of the most prestigious broadcasting careers in our nation's history&quot;. His 30 years in television and radio broadcasting include his roles as host and executive producer of the programs George Stroumboulopoulos Tonight and The Hour on Canada's national broadcaster, the CBC. His past work also includes the talk show, Stroumboulopoulos on CNN and his work as the anchor of Canada's biggest television show, Hockey Night in Canada. George was also the host and producer of Canada's premiere culture show, The New Music. George is a huge supporter of independent film. He has produced several shorts and movies as well has acted in films such as Hobo with a Shotgun and has a role in the upcoming Tim Roth film, Stealing McCloud. George has an Honorary Doctorate of Laws at the University of Calgary and was one of the first three Canadians recognized by the World Economic Forum as a Young Global Leader.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section data-scroll-section class="design">
+        <div class="container"> 
+          <div class="wrapper">
+            <figure style="max-width: 80rem;"><img src="./assets/images/cs-bm-img-14.png" alt=""></figure>
+          </div>
+        </div>
+      </section>
+      <section data-scroll-section>
+        <div class="container">
+          <div class="wrapper"> 
+            <figure style="max-width: 96rem;"><img src="./assets/images/cs-bm-img-15.png" alt=""></figure>
+          </div>
+        </div>
+      </section>
+      <section id="case-studies" data-scroll-section> 
         <div class="container">
           <div class="section-tag">CASE STUDIES</div>
-          <ul class="case-studies">
-            <li> <a href="./case-studies-sap.html" class="brand"><img src="./assets/images/home-cs-1.png" alt="Case Study 1"></a></li>
-            <li> <a href="./case-studies-wealthy-barber.html" class="brand"><img src="./assets/images/home-cs-2.png" alt="Case Study 2"></a></li>
-            <li><a href="./case-studies-on-the-line.html" class="brand"><img src="./assets/images/home-cs-3.png" alt="Case Study 3"></a></li>
-            <li> <a href="./case-studies-see-sound.html" class="brand"><img src="./assets/images/home-cs-5.png" alt="Case Study 5"></a></li>
-            <li class="disabled"><a href="#" onclick="return false;" class="brand"><img src="./assets/images/home-cs-4.png" alt="Case Study 4"></a>
-            </li>
-            <li class="disabled"> <a href="#" onclick="return false;" class="brand"><img src="./assets/images/home-cs-6.png" alt="Case Study 6"></a>
-            </li>
-          </ul>
+                <ul class="case-studies">
+                  <li> <a href="./case-studies-sap.html" class="brand"><img src="./assets/images/home-cs-1.png" alt="Case Study 1"></a></li>
+                  <li> <a href="./case-studies-wealthy-barber.html" class="brand"><img src="./assets/images/home-cs-2.png" alt="Case Study 2"></a></li>
+                  <li><a href="./case-studies-on-the-line.html" class="brand"><img src="./assets/images/home-cs-3.png" alt="Case Study 3"></a></li>
+                  <li> <a href="./case-studies-see-sound.html" class="brand"><img src="./assets/images/home-cs-5.png" alt="Case Study 5"></a></li>
+                  <li class="disabled"><a href="./case-studies-bach-ma.html" class="brand"><img src="./assets/images/home-cs-4.png" alt="Case Study 4"></a></li>
+                  <li class="disabled"> <a href="#" onclick="return false;" class="brand"><img src="./assets/images/home-cs-6.png" alt="Case Study 6"></a>
+                  </li>
+                </ul>
         </div>
       </section>
-      <footer>
+      <footer data-scroll-section>
         <div class="container">
           <div class="brand"><a href="/" class="logo"><img src="./assets/images/logo.png" alt=""></a></div>
           <div class="navigation"> 

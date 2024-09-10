@@ -11,22 +11,24 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js" integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="./assets/libs/aos/aos.css">
     <script src="./assets/libs/aos/aos.js"></script>
+    <link rel="stylesheet" href="./assets/libs/locomotive-scroll/locomotive-scroll.min.css">
+    <script src="./assets/libs/locomotive-scroll/locomotive-scroll.min.js"></script>
   </head>
-  <body class="about-us-page">
+  <body data-scroll-container class="about-us-page">
     <header>
       <div class="container"><a href="./" class="logo"><img src="./assets/images/logo.png" alt="Back to Home"></a>
         <div id="navigation" class="navigation"> 
           <ul> 
             <li data-active-page="about-us-page" data-text="About Us" class="menu-item"> <a href="./about-us.html">About Us</a></li>
             <li data-active-page="work-page" data-text="Selected Works" class="menu-item"> <a href="./work.html">Selected Works</a></li>
-            <li data-text="Case Studies" class="menu-item"> <a href="#contact">Case Studies</a></li>
+            <li data-text="Case Studies" class="menu-item"> <a href="./case-studies.html">Case Studies</a></li>
           </ul><a href="https://calendly.com/huntclubstudio" target="_blank" class="cta cta-primary">WORK WITH US</a>
         </div>
         <div id="trigger-menu" class="menu-button cta">MENU</div>
       </div>
     </header>
     <main id="main">
-      <section id="about-hero">
+      <section id="about-hero" data-scroll-section>
         <div class="container"> 
           <div class="content-wrapper">
             <div class="col">
@@ -34,13 +36,12 @@
               <p class="text-body-sm">Traditional agencies are costly, and managing freelancers is often chaotic. We offer a streamlined, efficient solution to keep your vision on track.</p><a class="cta cta-green">LET'S TALK</a>
             </div>
             <div class="intro">
-              <h2 class="section-title"><strong>We are a </strong><br><span>Close-Knit, </span><br><strong>Well Oiled,</strong><br><span>Multi-Dimensional,</span><br><strong>Future Forward,</strong><br><span>Results Oriented,</span><br><strong>Creative Machine.</strong>
-              </h2>
+              <h2 data-aos="fade-up" class="section-title"><strong data-aos="fade-up">We are a </strong><br><span data-aos="fade-up" data-aos-delay="200">Close-Knit, </span><br><strong data-aos="fade-up" data-aos-delay="400">Well Oiled,</strong><br><span data-aos="fade-up" data-aos-delay="600">Multi-Dimensional,</span><br><strong data-aos="fade-up" data-aos-delay="800">Future Forward,</strong><br><span data-aos="fade-up" data-aos-delay="1000">Results Oriented,</span><br><strong data-aos="fade-up" data-aos-delay="1200">Creative Machine.</strong></h2>
             </div>
           </div>
         </div>
       </section>
-      <section id="partners">
+      <section id="partners" data-scroll-section>
         <div class="container"> 
           <div class="partner-list"> 
             <div class="partner"><img src="./assets/images/logo-shopley.png" alt=""/></div>
@@ -70,13 +71,13 @@
           </div>
         </div>
       </section>
-      <section id="problem-solved">
+      <section id="problem-solved" data-scroll-section>
         <div class="container"> 
           <h2 class="section-title"> <em>PROBLEMS, </em>SOLVED. </h2>
           <p class="text-body-sm"> We bring an artful eye and pragmatic approach  to every project and  believe there is no concept too complex or grandiose that we can’t find a solution for.</p>
         </div>
       </section>
-      <section id="key-words">
+      <section id="key-words" data-scroll-section>
         <div class="container"> 
           <p class="intro">With over 10 years of working together, we have worked on a myriad of projects in these worlds:</p>
           <div class="key-words"> 
@@ -97,7 +98,7 @@
           </div>
         </div>
       </section>
-      <section id="our-location">
+      <section id="our-location" data-scroll-section>
         <div class="container"> 
           <div class="section-tag">WE ARE BASED OUT OF</div>
           <div class="content row">
@@ -108,22 +109,21 @@
           </div>
         </div>
       </section>
-      <section id="case-studies"> 
+      <section id="case-studies" data-scroll-section> 
         <div class="container">
           <div class="section-tag">CASE STUDIES</div>
-          <ul class="case-studies">
-            <li> <a href="./case-studies-sap.html" class="brand"><img src="./assets/images/home-cs-1.png" alt="Case Study 1"></a></li>
-            <li> <a href="./case-studies-wealthy-barber.html" class="brand"><img src="./assets/images/home-cs-2.png" alt="Case Study 2"></a></li>
-            <li><a href="./case-studies-on-the-line.html" class="brand"><img src="./assets/images/home-cs-3.png" alt="Case Study 3"></a></li>
-            <li> <a href="./case-studies-see-sound.html" class="brand"><img src="./assets/images/home-cs-5.png" alt="Case Study 5"></a></li>
-            <li class="disabled"><a href="#" onclick="return false;" class="brand"><img src="./assets/images/home-cs-4.png" alt="Case Study 4"></a>
-            </li>
-            <li class="disabled"> <a href="#" onclick="return false;" class="brand"><img src="./assets/images/home-cs-6.png" alt="Case Study 6"></a>
-            </li>
-          </ul>
+                <ul class="case-studies">
+                  <li> <a href="./case-studies-sap.html" class="brand"><img src="./assets/images/home-cs-1.png" alt="Case Study 1"></a></li>
+                  <li> <a href="./case-studies-wealthy-barber.html" class="brand"><img src="./assets/images/home-cs-2.png" alt="Case Study 2"></a></li>
+                  <li><a href="./case-studies-on-the-line.html" class="brand"><img src="./assets/images/home-cs-3.png" alt="Case Study 3"></a></li>
+                  <li> <a href="./case-studies-see-sound.html" class="brand"><img src="./assets/images/home-cs-5.png" alt="Case Study 5"></a></li>
+                  <li class="disabled"><a href="./case-studies-bach-ma.html" class="brand"><img src="./assets/images/home-cs-4.png" alt="Case Study 4"></a></li>
+                  <li class="disabled"> <a href="#" onclick="return false;" class="brand"><img src="./assets/images/home-cs-6.png" alt="Case Study 6"></a>
+                  </li>
+                </ul>
         </div>
       </section>
-      <section id="contact-form">
+      <section id="contact-form" data-scroll-section>
         <div class="container"> 
           <div class="heading"> 
             <h2 data-aos="short-fade-up" class="section-title">Reach Out</h2>
@@ -156,7 +156,7 @@
           </div>
         </div>
       </section>
-      <footer>
+      <footer data-scroll-section>
         <div class="container">
           <div class="brand"><a href="/" class="logo"><img src="./assets/images/logo.png" alt=""></a></div>
           <div class="navigation"> 

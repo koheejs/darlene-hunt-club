@@ -13,7 +13,7 @@ block variables
   - var bodyClass = "about-us-page"
 
 block content
-  section#about-hero
+  section#about-hero(data-scroll-section)
     .container 
       .content-wrapper
         .col
@@ -24,27 +24,23 @@ block content
           a.cta.cta-green LET'S TALK
 
         .intro
-          h2.section-title
-            strong We are a 
+          h2.section-title(data-aos="fade-up")
+            strong(data-aos="fade-up") We are a 
             br 
-            span Close-Knit, 
+            span(data-aos="fade-up" data-aos-delay="200") Close-Knit, 
             br 
-            strong Well Oiled,
+            strong(data-aos="fade-up" data-aos-delay="400") Well Oiled,
             br 
-            span Multi-Dimensional,
-            //- br 
-            //- strong Female-Led,
-            //- br 
-            //- span Pizza Loving,
+            span(data-aos="fade-up" data-aos-delay="600") Multi-Dimensional,
             br 
-            strong Future Forward,
+            strong(data-aos="fade-up" data-aos-delay="800") Future Forward,
             br 
-            span Results Oriented,
+            span(data-aos="fade-up" data-aos-delay="1000") Results Oriented,
             br 
-            strong Creative Machine.
+            strong(data-aos="fade-up" data-aos-delay="1200") Creative Machine.
 
 
-  section#partners
+  section#partners(data-scroll-section)
     .container 
       .partner-list 
         +partners
@@ -59,7 +55,7 @@ block content
         //- .marquee.marquee-part-4
         //-   +partners
 
-  section#problem-solved
+  section#problem-solved(data-scroll-section)
     .container 
       h2.section-title 
         em PROBLEMS, 
@@ -67,7 +63,7 @@ block content
       p.text-body-sm  We bring an artful eye and pragmatic approach  to every project and  believe there is no concept too complex or grandiose that we can’t find a solution for.
 
 
-  section#key-words
+  section#key-words(data-scroll-section)
     .container 
       p.intro With over 10 years of working together, we have worked on a myriad of projects in these worlds:
 
@@ -78,7 +74,7 @@ block content
 
 
   //- Section Our Location
-  section#our-location
+  section#our-location(data-scroll-section)
     .container 
       .section-tag WE ARE BASED OUT OF
       .content.row

@@ -11,38 +11,40 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js" integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="./assets/libs/aos/aos.css">
     <script src="./assets/libs/aos/aos.js"></script>
+    <link rel="stylesheet" href="./assets/libs/locomotive-scroll/locomotive-scroll.min.css">
+    <script src="./assets/libs/locomotive-scroll/locomotive-scroll.min.js"></script>
   </head>
-  <body class="case-studies-page">
+  <body data-scroll-container class="case-studies-page">
     <header>
       <div class="container"><a href="./" class="logo"><img src="./assets/images/logo.png" alt="Back to Home"></a>
         <div id="navigation" class="navigation"> 
           <ul> 
             <li data-active-page="about-us-page" data-text="About Us" class="menu-item"> <a href="./about-us.html">About Us</a></li>
             <li data-active-page="work-page" data-text="Selected Works" class="menu-item"> <a href="./work.html">Selected Works</a></li>
-            <li data-text="Case Studies" class="menu-item"> <a href="#contact">Case Studies</a></li>
+            <li data-text="Case Studies" class="menu-item"> <a href="./case-studies.html">Case Studies</a></li>
           </ul><a href="https://calendly.com/huntclubstudio" target="_blank" class="cta cta-primary">WORK WITH US</a>
         </div>
         <div id="trigger-menu" class="menu-button cta">MENU</div>
       </div>
     </header>
     <main id="main">
-      <section id="cs-hero">
+      <section data-scroll-section id="cs-hero">
         <div class="container">
           <div class="wrapper"> 
             <div class="cs-logo"> <img src="./assets/images/cs-logo-wealthy-barber.png" alt="Logo"></div>
-            <div style="max-width: 57rem" class="cs-intro">Aliquam sodales velit eget quam gravida, id lobortis elit posuere. Proin cursus urna aliquam eros tincidunt, vel congue risus maximus. Etiam quam tortor, placerat sit amet ex ac, efficitur bibendum est.</div>
+            <div style="max-width: 57rem" class="cs-intro">The Wealthy Barber creates approachable, entertaining and free personal-finance content to help Canadians manage their money better. Through entertaining and approachable teachings, Dave has demystified the world of personal finance for over 35 years. </div>
           </div>
         </div>
       </section>
-      <section class="design">
+      <section data-scroll-section class="design">
         <div class="wrapper wrapper-no-gap">
           <figure class="full-width"><img src="./assets/images/cs-wb-img-1.png" alt=""></figure>
         </div>
       </section>
-      <section id="introduction"> 
+      <section data-scroll-section id="introduction"> 
         <div class="container"> 
           <div class="wrapper"> 
-            <p class="introduction">Aliquam sodales velit eget quam gravida, id lobortis elit posuere. Proin cursus urna aliquam eros tincidunt, vel congue risus maximus. Etiam quam tortor, placerat sit amet ex ac, efficitur bibendum est.</p>
+            <p class="introduction">We set out to create a thoughtful design system that is adaptive to “The Wealthy Barber” and its evolving needs. It's an incorporation of intuitive layouts,  stylish subtleties, and spaciousness; designed with user comprehension and learning in mind. </p>
             <div class="keywords-block">
               <div class="title">Service</div>
               <ul class="keywords">
@@ -55,62 +57,75 @@
           </div>
         </div>
       </section>
-      <section class="design">
+      <section data-scroll-section class="design">
         <div class="wrapper">
           <figure class="full-width"><img src="./assets/images/cs-wb-img-2.png" alt=""></figure>
         </div>
       </section>
-      <section class="design"> 
-        <div class="wrapper wrapper-left"> 
+      <section data-scroll-section class="design"> 
+        <div class="wrapper wrapper-between"> 
           <figure><img src="./assets/images/cs-wb-img-3.png" alt=""></figure>
+          <div class="wrapper">
+            <p style="max-width: 43rem">Former Dragon on CBC’s “Dragons’ Den” and best-selling author of “The Wealthy Barber” and “The Wealthy Barber Returns,” David Chilton has helped millions of Canadians to better manage their money. </p>
+          </div>
         </div>
       </section>
-      <section class="design"> 
-        <div class="container">
-          <div class="wrapper"> 
-            <p style="max-width: 60rem">Aliquam sodales velit eget quam gravida, id lobortis elit posuere. Proin cursus urna aliquam eros tincidunt, vel congue risus maximus. Etiam quam tortor, placerat sit amet ex ac, efficitur bibendum est.</p>
+      <section data-scroll-section id="cs-wb-6th" class="design"> 
+        <div data-scroll data-scroll-id="scroll-highlight-effect" style="max-width: 117rem;" class="container">
+          <div class="wrapper wrapper-between">
+            <p class="scroll-highlight-by-word"><span>Each </span><span>component </span><span>we </span><span>created </span><span>was </span><span>thoughtfully </span><span>curated </span><span>to </span><span>prioritize </span><span>usability, </span><span>clarity, </span><span>and </span><span>confident </span><span>style. </span></p>
             <figure><img src="./assets/images/cs-wb-img-4.png" alt=""></figure>
           </div>
         </div>
       </section>
-      <section id="cs-wb-7th" class="design"> 
+      <section data-scroll-section id="cs-wb-7th" class="design"> 
         <div class="wrapper wrapper-right"> 
-          <div style="max-width: 100rem;" class="group"> <img src="./assets/images/cs-wb-img-5.png" alt="" class="mb-8">
-            <p style="max-width: 70rem">Aliquam sodales velit eget quam gravida, id lobortis elit posuere. Proin cursus urna aliquam eros tincidunt, vel congue risus maximus. Etiam quam tortor, placerat sit amet ex ac, efficitur bibendum est.</p>
-          </div>
+          <div style="max-width: 100rem;" class="group"> <img src="./assets/images/cs-wb-img-5.png" alt="" class="mb-8"></div>
         </div>
       </section>
-      <section class="design">
+      <section data-scroll-section class="design">
         <div class="wrapper">
           <figure class="full-width"><img src="./assets/images/cs-wb-img-6.png" alt=""></figure>
         </div>
       </section>
-      <section class="design">
+      <section data-scroll-section id="cs-wb-9th" class="design"> 
+        <div class="container"> 
+          <div class="wrapper">
+            <div style="max-width: 60rem;" class="group">
+              <p class="heading">Logo Design</p>
+              <p>Prioritizing scalability and modernity, we interpreted the ‘barber pole’ by stripping back the details. What remains is a bold, strong, yet whimsical emblem.  The expressive wavy form gives  movement to the ‘barber pole’ stripes - the upward direction lending to the aspirational feel we are looking to instill in the brand. We stuck with a serifed font - instantly recognized as astute & professional.</p>
+            </div>
+            <div class="wrapper">
+              <figure style="max-width: 18rem;"><img src="./assets/images/cs-wb-img-8.png" alt=""></figure>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section data-scroll-section id="cs-wb-10th" class="design">
         <div class="container">
           <div class="wrapper">
-            <div class="group"> <img src="./assets/images/cs-wb-img-7.png" alt="" class="mb-4">
+            <div style="max-width: 90rem;" class="group"><img src="./assets/images/cs-wb-img-7.png" alt="" class="mb-4">
               <h2 class="mb-4">Colour Pallet</h2>
               <p class="mb-8">“The Wealthy Barber” colour scheme needed an update from the traditional barber pole red and blue, we went for tones that felt sophisticated, approachable and would appeal to a wide range of demographics. </p>
             </div>
           </div>
         </div>
       </section>
-      <section id="case-studies"> 
+      <section id="case-studies" data-scroll-section> 
         <div class="container">
           <div class="section-tag">CASE STUDIES</div>
-          <ul class="case-studies">
-            <li> <a href="./case-studies-sap.html" class="brand"><img src="./assets/images/home-cs-1.png" alt="Case Study 1"></a></li>
-            <li> <a href="./case-studies-wealthy-barber.html" class="brand"><img src="./assets/images/home-cs-2.png" alt="Case Study 2"></a></li>
-            <li><a href="./case-studies-on-the-line.html" class="brand"><img src="./assets/images/home-cs-3.png" alt="Case Study 3"></a></li>
-            <li> <a href="./case-studies-see-sound.html" class="brand"><img src="./assets/images/home-cs-5.png" alt="Case Study 5"></a></li>
-            <li class="disabled"><a href="#" onclick="return false;" class="brand"><img src="./assets/images/home-cs-4.png" alt="Case Study 4"></a>
-            </li>
-            <li class="disabled"> <a href="#" onclick="return false;" class="brand"><img src="./assets/images/home-cs-6.png" alt="Case Study 6"></a>
-            </li>
-          </ul>
+                <ul class="case-studies">
+                  <li> <a href="./case-studies-sap.html" class="brand"><img src="./assets/images/home-cs-1.png" alt="Case Study 1"></a></li>
+                  <li> <a href="./case-studies-wealthy-barber.html" class="brand"><img src="./assets/images/home-cs-2.png" alt="Case Study 2"></a></li>
+                  <li><a href="./case-studies-on-the-line.html" class="brand"><img src="./assets/images/home-cs-3.png" alt="Case Study 3"></a></li>
+                  <li> <a href="./case-studies-see-sound.html" class="brand"><img src="./assets/images/home-cs-5.png" alt="Case Study 5"></a></li>
+                  <li class="disabled"><a href="./case-studies-bach-ma.html" class="brand"><img src="./assets/images/home-cs-4.png" alt="Case Study 4"></a></li>
+                  <li class="disabled"> <a href="#" onclick="return false;" class="brand"><img src="./assets/images/home-cs-6.png" alt="Case Study 6"></a>
+                  </li>
+                </ul>
         </div>
       </section>
-      <footer>
+      <footer data-scroll-section>
         <div class="container">
           <div class="brand"><a href="/" class="logo"><img src="./assets/images/logo.png" alt=""></a></div>
           <div class="navigation"> 

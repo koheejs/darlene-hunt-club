@@ -1,0 +1,22 @@
+
+mixin caseStudiesList
+  ul.case-studies
+    li 
+      a.brand(href="./case-studies-sap.html")
+        img(src="./assets/images/home-cs-1.png" alt="Case Study 1")
+    li 
+      a.brand(href="./case-studies-wealthy-barber.html")
+        img(src="./assets/images/home-cs-2.png" alt="Case Study 2")
+    li
+      a.brand(href="./case-studies-on-the-line.html")
+        img(src="./assets/images/home-cs-3.png" alt="Case Study 3")
+    li 
+      a.brand(href="./case-studies-see-sound.html")
+        img(src="./assets/images/home-cs-5.png" alt="Case Study 5")
+    li.disabled
+      a.brand(href="./case-studies-bach-ma.html")
+        img(src="./assets/images/home-cs-4.png" alt="Case Study 4")
+    li.disabled 
+      //- a.brand(href="./case-studies-a-wake.html")
+      a.brand(href="#" onclick="return false;")
+        img(src="./assets/images/home-cs-6.png" alt="Case Study 6")

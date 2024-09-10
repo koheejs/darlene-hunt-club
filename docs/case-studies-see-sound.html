@@ -11,22 +11,24 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js" integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="./assets/libs/aos/aos.css">
     <script src="./assets/libs/aos/aos.js"></script>
+    <link rel="stylesheet" href="./assets/libs/locomotive-scroll/locomotive-scroll.min.css">
+    <script src="./assets/libs/locomotive-scroll/locomotive-scroll.min.js"></script>
   </head>
-  <body class="case-studies-page">
+  <body data-scroll-container class="case-studies-page">
     <header>
       <div class="container"><a href="./" class="logo"><img src="./assets/images/logo.png" alt="Back to Home"></a>
         <div id="navigation" class="navigation"> 
           <ul> 
             <li data-active-page="about-us-page" data-text="About Us" class="menu-item"> <a href="./about-us.html">About Us</a></li>
             <li data-active-page="work-page" data-text="Selected Works" class="menu-item"> <a href="./work.html">Selected Works</a></li>
-            <li data-text="Case Studies" class="menu-item"> <a href="#contact">Case Studies</a></li>
+            <li data-text="Case Studies" class="menu-item"> <a href="./case-studies.html">Case Studies</a></li>
           </ul><a href="https://calendly.com/huntclubstudio" target="_blank" class="cta cta-primary">WORK WITH US</a>
         </div>
         <div id="trigger-menu" class="menu-button cta">MENU</div>
       </div>
     </header>
     <main id="main">
-      <section id="cs-hero">
+      <section data-scroll-section id="cs-hero">
         <div class="container">
           <div class="wrapper"> 
             <div class="cs-logo"> <img src="./assets/images/cs-logo-see-sound.png" alt="Logo"></div>
@@ -34,13 +36,13 @@
           </div>
         </div>
       </section>
-      <section id="cs-ss-2nd" class="design">
+      <section data-scroll-section id="cs-ss-2nd" class="design">
         <div class="wrapper wrapper-no-gap">
           <figure class="full-width"><img src="./assets/images/cs-ss-img-1.png" alt=""></figure>
           <figure class="full-width"><img src="./assets/images/cs-ss-img-2.png" alt=""></figure>
         </div>
       </section>
-      <section id="introduction"> 
+      <section data-scroll-section id="introduction"> 
         <div class="container"> 
           <div class="wrapper"> 
             <p class="introduction">Recognizing the need to stand out in a competitive market, we aimed to create a unique brand identity that highlights the coffee’s premium quality and connects with coffee enthusiasts worldwide.</p>
@@ -59,7 +61,7 @@
           </div>
         </div>
       </section>
-      <section id="cs-ss-3_1th" class="design"> 
+      <section data-scroll-section id="cs-ss-3_1th" class="design"> 
         <div class="container"> 
           <div class="wrapper wrapper-between"> 
             <div class="group"> 
@@ -79,23 +81,23 @@
           </div>
         </div>
       </section>
-      <section id="cs-ss-4th" class="design">
+      <section data-scroll-section id="cs-ss-4th" class="design">
         <div class="container"> 
           <div class="wrapper"> 
             <figure class="left"><img src="./assets/images/cs-ss-img-3.png" alt=""></figure>
             <div class="group">
               <figure><img src="./assets/images/cs-ss-img-4.png" alt=""></figure>
-              <p>Aliquam sodales velit eget quam gravida, id lobortis elit posuere. Proin cursus urna aliquam eros tincidunt, vel congue risus maximus. Etiam quam tortor, placerat sit amet ex ac, efficitur bibendum est.</p>
+              <p>The scope included creating visually striking packaging that would standout at events and on shelves of retail stores.</p>
             </div>
           </div>
         </div>
       </section>
-      <section class="design"> 
+      <section data-scroll-section class="design"> 
         <div class="wrapper"> 
           <figure class="full-width"><img src="./assets/images/cs-ss-img-10.png" alt=""></figure>
         </div>
       </section>
-      <section id="cs-ss-6th" class="design"> 
+      <section data-scroll-section id="cs-ss-6th" class="design"> 
         <div class="container"> 
           <div class="wrapper wrapper-between"> 
             <div class="group"> 
@@ -119,14 +121,14 @@
           </div>
         </div>
       </section>
-      <section class="design"> 
+      <section data-scroll-section class="design"> 
         <div class="container"> 
           <div class="wrapper"> 
             <figure><img src="./assets/images/cs-ss-img-5.png" alt=""></figure>
           </div>
         </div>
       </section>
-      <section id="cs-ss-8th" class="design"> 
+      <section data-scroll-section id="cs-ss-8th" class="design"> 
         <div class="container">
           <div class="wrapper"> 
             <figure><img src="./assets/images/cs-ss-img-6.png" alt=""></figure>
@@ -135,27 +137,26 @@
           </div>
         </div>
       </section>
-      <section class="design"> 
+      <section data-scroll-section class="design"> 
         <div class="container"> 
           <div class="wrapper"><img src="./assets/images/cs-ss-img-9.png" alt=""></div>
         </div>
       </section>
-      <section id="case-studies"> 
+      <section id="case-studies" data-scroll-section> 
         <div class="container">
           <div class="section-tag">CASE STUDIES</div>
-          <ul class="case-studies">
-            <li> <a href="./case-studies-sap.html" class="brand"><img src="./assets/images/home-cs-1.png" alt="Case Study 1"></a></li>
-            <li> <a href="./case-studies-wealthy-barber.html" class="brand"><img src="./assets/images/home-cs-2.png" alt="Case Study 2"></a></li>
-            <li><a href="./case-studies-on-the-line.html" class="brand"><img src="./assets/images/home-cs-3.png" alt="Case Study 3"></a></li>
-            <li> <a href="./case-studies-see-sound.html" class="brand"><img src="./assets/images/home-cs-5.png" alt="Case Study 5"></a></li>
-            <li class="disabled"><a href="#" onclick="return false;" class="brand"><img src="./assets/images/home-cs-4.png" alt="Case Study 4"></a>
-            </li>
-            <li class="disabled"> <a href="#" onclick="return false;" class="brand"><img src="./assets/images/home-cs-6.png" alt="Case Study 6"></a>
-            </li>
-          </ul>
+                <ul class="case-studies">
+                  <li> <a href="./case-studies-sap.html" class="brand"><img src="./assets/images/home-cs-1.png" alt="Case Study 1"></a></li>
+                  <li> <a href="./case-studies-wealthy-barber.html" class="brand"><img src="./assets/images/home-cs-2.png" alt="Case Study 2"></a></li>
+                  <li><a href="./case-studies-on-the-line.html" class="brand"><img src="./assets/images/home-cs-3.png" alt="Case Study 3"></a></li>
+                  <li> <a href="./case-studies-see-sound.html" class="brand"><img src="./assets/images/home-cs-5.png" alt="Case Study 5"></a></li>
+                  <li class="disabled"><a href="./case-studies-bach-ma.html" class="brand"><img src="./assets/images/home-cs-4.png" alt="Case Study 4"></a></li>
+                  <li class="disabled"> <a href="#" onclick="return false;" class="brand"><img src="./assets/images/home-cs-6.png" alt="Case Study 6"></a>
+                  </li>
+                </ul>
         </div>
       </section>
-      <footer>
+      <footer data-scroll-section>
         <div class="container">
           <div class="brand"><a href="/" class="logo"><img src="./assets/images/logo.png" alt=""></a></div>
           <div class="navigation"> 
