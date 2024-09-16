@@ -3,12 +3,13 @@ extends ./pages/layout/_layout.jade
 block variables
   - var bodyClass = "case-studies-page"
 
-mixin member(name, role, img, bio)
+mixin member(name, role, img, bio, ratio)
   section.design(data-scroll-section)
     .container
       .wrapper.wrapper-between.wrapper-top 
         figure.member
-          img(src=img alt="")
+          img(src=img alt="" style="aspect-ratio: #{ratio}")
+          //- img(src=img alt="")
         .group.member(style="max-width: 66rem;")
           p.name= name
           p.role= role
@@ -20,14 +21,14 @@ block content
     .container
       .wrapper 
         .cs-logo 
-          img(src="./assets/images/cs-logo-bach-ma.png" alt="Logo")
+          img(src="./assets/images/cs-logo-bach-ma.png" alt="Logo" style="aspect-ratio: 301/44")
         .cs-intro(style="max-width: 57rem") Bach Ma is an award-winning short film set in a remote monetary in the mountains of Bach Ma, Vietnam. The film is an audio visual meditation; the aim is for the viewer to slow down and pay attention to the details in both their external and internal worlds. 
 
   section.design(data-scroll-section)
     .wrapper.wrapper-no-gap
       div.yt-wrapper
         .thumbnail
-          img(src="./assets/images/cs-bm-img-1.png" alt="")
+          img(src="./assets/images/cs-bm-img-1.png" alt="" style="aspect-ratio: 1435/780")
           button.trigger
         iframe.hidden(src="https://www.youtube.com/embed/xC5J3rXhDb0?autoplay=1&mute=1" width="800" height="450" frameborder="0")
 
@@ -49,16 +50,16 @@ block content
     .container
       .wrapper(style="margin-bottom: 6rem")
         figure(style="max-width: 46rem;")
-          img(src="./assets/images/cs-bm-img-2.1.png" alt="")
+          img(src="./assets/images/cs-bm-img-2.1.png" alt="" style="aspect-ratio: 702/504")
       .wrapper
         figure(style="max-width: 46rem;")
-          img(src="./assets/images/cs-bm-img-2.2.png" alt="")
+          img(src="./assets/images/cs-bm-img-2.2.png" alt="" style="aspect-ratio: 702/458")
 
   section.design#cs-aw-4th(data-scroll-section)
     .container
       .wrapper
         figure
-          img(src="./assets/images/cs-bm-img-2.png" alt="")
+          img(src="./assets/images/cs-bm-img-2.png" alt="" style="aspect-ratio: 896/1194")
 
   //- =======================================
   section.design(data-scroll-section)
@@ -71,7 +72,7 @@ block content
 
   section.design(data-scroll-section)
     figure 
-      img(src="./assets/images/cs-bm-img-3.png" alt="")
+      img(src="./assets/images/cs-bm-img-3.png" alt="" style="aspect-ratio: 1439/783")
 
   section.design(data-scroll-section)
     .container.text-container 
@@ -82,7 +83,7 @@ block content
     .container 
       .wrapper
         figure(style="max-width: 52rem;") 
-          img(src="./assets/images/cs-bm-img-4.png" alt="")
+          img(src="./assets/images/cs-bm-img-4.png" alt="" style="aspect-ratio: 520/333")
 
   section.design(data-scroll-section)
     .container.text-container 
@@ -94,7 +95,7 @@ block content
     .container 
       .wrapper
         figure(style="max-width: 89rem;")
-          img(src="./assets/images/cs-bm-img-5.png" alt="")
+          img(src="./assets/images/cs-bm-img-5.png" alt="" style="aspect-ratio: 896/1213")
 
   section.design(data-scroll-section)
     .container.text-container
@@ -103,13 +104,13 @@ block content
 
   section.design(data-scroll-section)
     figure 
-      img(src="./assets/images/cs-bm-img-6.png" alt="")
+      img(src="./assets/images/cs-bm-img-6.png" alt="" style="aspect-ratio: 1439/1111")
 
   section.design(data-scroll-section)
     .container
       .wrapper
         figure(style="max-width: 100rem;")
-          img(src="./assets/images/cs-bm-img-7.png" alt="")
+          img(src="./assets/images/cs-bm-img-7.png" alt="" style="aspect-ratio: 1004/560")
 
   section.design(data-scroll-section)
     .container.text-container
@@ -119,7 +120,7 @@ block content
 
   section.design(data-scroll-section)
     figure 
-      img(src="./assets/images/cs-bm-img-1.png" alt="")
+      img(src="./assets/images/cs-bm-img-1.png" alt="" style="aspect-ratio: 1435/780")
 
   section.design(data-scroll-section)
     .container.text-container 
@@ -132,7 +133,7 @@ block content
     .container
       .wrapper
         figure(style="max-width: 90rem;")
-          img(src="./assets/images/cs-bm-img-8.png" alt="") 
+          img(src="./assets/images/cs-bm-img-8.png" alt="" style="aspect-ratio: 1355/689") 
 
   section.design(data-scroll-section)
     .container.text-container
@@ -143,7 +144,7 @@ block content
 
   section.design(data-scroll-section)
     figure
-      img(src="./assets/images/cs-bm-img-9.png" alt="")
+      img(src="./assets/images/cs-bm-img-9.png" alt="" style="aspect-ratio: 1439/1011")
 
   section.design(data-scroll-section)
     .container.text-container
@@ -156,7 +157,7 @@ block content
     .container
       .wrapper
         figure(style="max-width: 99rem;")
-          img(src="./assets/images/cs-bm-img-10.png" alt="")
+          img(src="./assets/images/cs-bm-img-10.png" alt="" style="aspect-ratio: 992/792")
 
   section.design(data-scroll-section)
     .container.text-container
@@ -169,38 +170,47 @@ block content
     .container
       .wrapper
         figure
-          img(src="./assets/images/cs-bm-img-11.png" alt="")
+          img(src="./assets/images/cs-bm-img-11.png" alt="" style="aspect-ratio: 623/351")
         figure
-          img(src="./assets/images/cs-bm-img-12.png" alt="")
+          img(src="./assets/images/cs-bm-img-12.png" alt="" style="aspect-ratio: 626/351")
 
   section.design#cs-aw-4th(data-scroll-section)
     .container
       .wrapper
         figure
-          img(src="./assets/images/cs-bm-img-13.png" alt="")
+          img(src="./assets/images/cs-bm-img-13.png" alt="" style="aspect-ratio: 960/540")
+
+  //- src/assets/images/cs-bmmb-andres.png - 804/830
+  //- src/assets/images/cs-bmmb-darlene.png - 804/722 
+  //- src/assets/images/cs-bmmb-george.png - 804/1214
+  //- src/assets/images/cs-bmmb-juli.png - 804/764
+  //- src/assets/images/cs-bmmb-julia.png - 804/663
+  //- src/assets/images/cs-bmmb-kimberly.png - 804/918  
+  //- src/assets/images/cs-bmmb-lodewijk.png - 804/764
+  //- src/assets/images/cs-bmmb-ngoc.png - 804/852
 
   //- ----------------------- Team members -----------------------
-  +member('Darlene Huynh', 'Writer, Director', './assets/images/cs-bmmb-darlene.png', 'Darlene Huynh is a full circle creative, driven by curiosity, outlandish ideas and abstract concepts. In her search for aesthetics and unique voices she created HUNTCLUB, a studio & gallery that became an incubator for emerging Toronto talent. It also gave Huynh an outlet for multidisciplinary projects ranging from fine art to film and performance art. Huynh received a BA in Radio and Television Arts from Toronto Metropolitan University and later studied meditation and zen philosophy at Truc Lam Bach Ma monastery.')
-  +member('Kimberly Laferrière', 'Actor', './assets/images/cs-bmmb-kimberly.png', 'Kimberly Laferrière is a graduate of the Neighborhood Playhouse in NYC and the Canadian Film Center in Toronto. She has appeared in successful television series in both French and English in the US and Canada. Her recent work includes the role of Natasha in the popular TV series Fugueuse, which was nominated for a Prix Gémeaux in 2018, as well as ABC\'s In The Dark, Netflix\'s 21 Thunder and the groundbreaking Féminin Féminin by Chloe Robichaud.')
-  +member('Ngoc Bao Phan', 'Producer', './assets/images/cs-bmmb-ngoc.png', 'Ngoc is a Saigon & Toronto based writer/ producer who fell in love with filmmaking by chance and pursued the craft by choice. She has been involved in feature film projects both in developmental roles and production. While working full time as a VFX Producer for film and television at MPC (Moving Picture Company), Ngoc continues to immerse herself in filmmaking via writing and producing for independent short form projects.')
-  +member('Julia Schneider', 'Producer', './assets/images/cs-bmmb-julia.png', 'Julia Schneider began her career in the entertainment business at the age of 13. She worked as an actor for over 10 years, appearing in various TV series and feature films. In between stints as an actor, Julia had the opportunity to work behind the camera as a casting assistant to acclaimed casting director Stephanie Gorin. Shortly thereafter, Julia chose to change her career and in the fall of 2008, she joined Ambition Talent to start her training as talent agent assistant.')
-  +member('Juli Zäll', 'Cinematographer', './assets/images/cs-bmmb-juli.png', 'Juli Zall is a stills and motion photographer based in Toronto, Canada, having studied filmmaking at the University of Copenhagen, in Denmark. Her portfolio consists of short films, documentaries, music videos, and commercial video work for fashion and lifestyle brands. She approaches the moving image with stillness, allowing the scene to unfold in front of the lens. She enjoys shooting on location, where elements and light are challenging to control but offer authentic subtleties to life in motion.')
-  +member('Lodewijk Vos', 'Sound & Score', './assets/images/cs-bmmb-lodewijk.png', 'Lodewijk Vos is an award-winning Music composer for film. Born in the Netherlands, Lodewijk\'s musical career began as a guitarist and keyboard player. He has shared the stage with the likes of Amos Lee, Interpol, N.E.R.D, and KRS-One. After working as an in-house music composer for MTV, Comedy Central, and Nickelodeon, he moved to Toronto in 2009 to focus his career on film composing. In Toronto, Lodewijk started collaborating with local music composer Joseph Murray. Together, they worked on many projects under the name “Menalon.”') 
-  +member('Andres Landau', 'Editor', './assets/images/cs-bmmb-andres.png', 'With over 20 years experience, Argentina-native Andres Landau is an award-winning editor and respected post-production supervisor in Toronto\'s film and television community. Editing credits include The National Parks Project, Sirmilik, the 2012 Genie Award winning short documentary by director Zacharias Kunuk and feature documentary The Stairs by Hugh Gibson, Winner of the 2016 Toronto Film Critics Association for Best Canadian Film. Charles Officer\'s feature documentary, Unarmed Verses produced by The National Film Board of Canada, Winner of the 2017 HotDocs Best Canadian Feature Documentary, 2017 Vancouver International Film Festival and 2018 TIFF Canada\'s Top Ten Audience Award and most recently Akilla\'s Escape, 2020 Toronto International FIlm Festival Selection.') 
-  +member('George Stroumboulopoulos', 'Executive Producer', './assets/images/cs-bmmb-george.png', 'George Stroumboulopoulos is an award-winning broadcaster, producer, filmmaker, actor and humanitarian. Canada\'s biggest newspaper, The Toronto Star stated that George has built "one of the most prestigious broadcasting careers in our nation\'s history". His 30 years in television and radio broadcasting include his roles as host and executive producer of the programs George Stroumboulopoulos Tonight and The Hour on Canada\'s national broadcaster, the CBC. His past work also includes the talk show, Stroumboulopoulos on CNN and his work as the anchor of Canada\'s biggest television show, Hockey Night in Canada. George was also the host and producer of Canada\'s premiere culture show, The New Music. George is a huge supporter of independent film. He has produced several shorts and movies as well has acted in films such as Hobo with a Shotgun and has a role in the upcoming Tim Roth film, Stealing McCloud. George has an Honorary Doctorate of Laws at the University of Calgary and was one of the first three Canadians recognized by the World Economic Forum as a Young Global Leader.')
+  +member('Darlene Huynh', 'Writer, Director', './assets/images/cs-bmmb-darlene.png', 'Darlene Huynh is a full circle creative, driven by curiosity, outlandish ideas and abstract concepts. In her search for aesthetics and unique voices she created HUNTCLUB, a studio & gallery that became an incubator for emerging Toronto talent. It also gave Huynh an outlet for multidisciplinary projects ranging from fine art to film and performance art. Huynh received a BA in Radio and Television Arts from Toronto Metropolitan University and later studied meditation and zen philosophy at Truc Lam Bach Ma monastery.', '804/722')
+  +member('Kimberly Laferrière', 'Actor', './assets/images/cs-bmmb-kimberly.png', 'Kimberly Laferrière is a graduate of the Neighborhood Playhouse in NYC and the Canadian Film Center in Toronto. She has appeared in successful television series in both French and English in the US and Canada. Her recent work includes the role of Natasha in the popular TV series Fugueuse, which was nominated for a Prix Gémeaux in 2018, as well as ABC\'s In The Dark, Netflix\'s 21 Thunder and the groundbreaking Féminin Féminin by Chloe Robichaud.', '804/918')
+  +member('Ngoc Bao Phan', 'Producer', './assets/images/cs-bmmb-ngoc.png', 'Ngoc is a Saigon & Toronto based writer/ producer who fell in love with filmmaking by chance and pursued the craft by choice. She has been involved in feature film projects both in developmental roles and production. While working full time as a VFX Producer for film and television at MPC (Moving Picture Company), Ngoc continues to immerse herself in filmmaking via writing and producing for independent short form projects.', '804/852')
+  +member('Julia Schneider', 'Producer', './assets/images/cs-bmmb-julia.png', 'Julia Schneider began her career in the entertainment business at the age of 13. She worked as an actor for over 10 years, appearing in various TV series and feature films. In between stints as an actor, Julia had the opportunity to work behind the camera as a casting assistant to acclaimed casting director Stephanie Gorin. Shortly thereafter, Julia chose to change her career and in the fall of 2008, she joined Ambition Talent to start her training as talent agent assistant.', '804/863')
+  +member('Juli Zäll', 'Cinematographer', './assets/images/cs-bmmb-juli.png', 'Juli Zall is a stills and motion photographer based in Toronto, Canada, having studied filmmaking at the University of Copenhagen, in Denmark. Her portfolio consists of short films, documentaries, music videos, and commercial video work for fashion and lifestyle brands. She approaches the moving image with stillness, allowing the scene to unfold in front of the lens. She enjoys shooting on location, where elements and light are challenging to control but offer authentic subtleties to life in motion.', '804/764')
+  +member('Lodewijk Vos', 'Sound & Score', './assets/images/cs-bmmb-lodewijk.png', 'Lodewijk Vos is an award-winning Music composer for film. Born in the Netherlands, Lodewijk\'s musical career began as a guitarist and keyboard player. He has shared the stage with the likes of Amos Lee, Interpol, N.E.R.D, and KRS-One. After working as an in-house music composer for MTV, Comedy Central, and Nickelodeon, he moved to Toronto in 2009 to focus his career on film composing. In Toronto, Lodewijk started collaborating with local music composer Joseph Murray. Together, they worked on many projects under the name “Menalon.”', '804/764')
+  +member('Andres Landau', 'Editor', './assets/images/cs-bmmb-andres.png', 'With over 20 years experience, Argentina-native Andres Landau is an award-winning editor and respected post-production supervisor in Toronto\'s film and television community. Editing credits include The National Parks Project, Sirmilik, the 2012 Genie Award winning short documentary by director Zacharias Kunuk and feature documentary The Stairs by Hugh Gibson, Winner of the 2016 Toronto Film Critics Association for Best Canadian Film. Charles Officer\'s feature documentary, Unarmed Verses produced by The National Film Board of Canada, Winner of the 2017 HotDocs Best Canadian Feature Documentary, 2017 Vancouver International Film Festival and 2018 TIFF Canada\'s Top Ten Audience Award and most recently Akilla\'s Escape, 2020 Toronto International FIlm Festival Selection.', '804/830') 
+  +member('George Stroumboulopoulos', 'Executive Producer', './assets/images/cs-bmmb-george.png', 'George Stroumboulopoulos is an award-winning broadcaster, producer, filmmaker, actor and humanitarian. Canada\'s biggest newspaper, The Toronto Star stated that George has built "one of the most prestigious broadcasting careers in our nation\'s history". His 30 years in television and radio broadcasting include his roles as host and executive producer of the programs George Stroumboulopoulos Tonight and The Hour on Canada\'s national broadcaster, the CBC. His past work also includes the talk show, Stroumboulopoulos on CNN and his work as the anchor of Canada\'s biggest television show, Hockey Night in Canada. George was also the host and producer of Canada\'s premiere culture show, The New Music. George is a huge supporter of independent film. He has produced several shorts and movies as well has acted in films such as Hobo with a Shotgun and has a role in the upcoming Tim Roth film, Stealing McCloud. George has an Honorary Doctorate of Laws at the University of Calgary and was one of the first three Canadians recognized by the World Economic Forum as a Young Global Leader.', '804/1214')
   //- ----------------------- Team members -----------------------
 
   section.design(data-scroll-section)
     .container 
       .wrapper
         figure(style="max-width: 80rem;")
-          img(src="./assets/images/cs-bm-img-14.png" alt="")
+          img(src="./assets/images/cs-bm-img-14.png" alt="" style="aspect-ratio: 799/1068")
 
   section(data-scroll-section)
     .container
       .wrapper 
         figure(style="max-width: 96rem;")
-          img(src="./assets/images/cs-bm-img-15.png" alt="")
+          img(src="./assets/images/cs-bm-img-15.png" alt="" style="aspect-ratio: 1920/1080")
 
 
 

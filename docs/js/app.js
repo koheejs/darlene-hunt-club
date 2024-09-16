@@ -18,6 +18,23 @@ import initSmoothScrollEffects from './modules/feature-smooth-scroll.js';
 
 (function () {
   initSmoothScrollEffects();
+
+  // TODO: check aspect ratio of images equal to it intrinsic ratio
+  // const images = document.querySelectorAll('img');
+  // images.forEach((image) => {
+  //   const src = image.src;
+  //   const name = src.split('/').pop();
+  //   const width = image.naturalWidth;
+  //   const height = image.naturalHeight;
+  //   if (height === 0) return;
+
+  //   const aspectRatio = `${width}/${height}`;
+  //   const inlineStyle = image.style.aspectRatio.replace(/ /g, '');
+  //   // console.log(`${name} - ${aspectRatio} - ${inlineStyle}`);
+  //   if (aspectRatio !== inlineStyle) {
+  //     console.log(`🚨 ${name} - ${aspectRatio}`);
+  //   }
+  // });
 })();
 
 /**
