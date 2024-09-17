@@ -1,0 +1,26 @@
+@property --anim-delay {
+  syntax: "<time>";
+  inherits: false;
+  initial-value: 0ms;
+}
+
+[data-scroll-call^="anim-fade-in"] {
+  opacity: 0;
+}
+
+.fade-in {
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-delay: var(--anim-delay);
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

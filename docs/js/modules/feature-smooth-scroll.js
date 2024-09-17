@@ -24,6 +24,18 @@ function initSmoothScrollEffects() {
     handleScrollHighlightEffect(currentElements['scroll-highlight-effect']);
   });
 
+  scrollInstant.on('call', (animEffect) => {
+    const [animPart, animIdPart] = animEffect.split(' ');
+    const animId = animIdPart.replace('anim-id-', '');
+    const animName = animPart.replace('anim-', '');
+    const animElement = document.querySelector(`[anim-id="${animId}"]`);
+    const animDelay = animElement.getAttribute('anim-delay');
+    if (animDelay) {
+      animElement.style.setProperty('--anim-delay', `${animDelay}ms`);
+    }
+    animElement.classList.add(animName);
+  });
+
   configScrollEffectByWordAttribute();
 }
 
