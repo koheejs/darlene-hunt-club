@@ -3,6 +3,29 @@ extends ./pages/layout/_layout.jade
 mixin chevronIcon
   img(src="./assets/images/icon-chevron-down.png" alt="")
 
+mixin partners 
+  ul.partners-wrapper
+    .partner
+      img(src='./assets/images/logo-shopley.png' alt="Shopley" style="--max-size: 160px;") 
+    .partner
+      img(src='./assets/images/logo-flairairlines.png' alt="Flair Airlines" style="--max-size: 130px;") 
+    .partner
+      img(src='./assets/images/logo-newspark.png' alt="NewSpark" style="--max-size: 185px;") 
+    .partner
+      img(src='./assets/images/logo-desjardins.png' alt="Desjardins" style="--max-size: 188px;") 
+    .partner
+      img(src='./assets/images/logo-ocad.png' alt="OCAD" style="--max-size: 90px;")
+    .partner
+      img(src='./assets/images/logo-gocxm.png' alt="Gocxm" style="--max-size: 146px;")
+    .partner
+      img(src='./assets/images/logo-ibogaine.png' alt="Ibo Gaine" style="--max-size: 225px;")
+    .partner
+      img(src='./assets/images/logo-manulife.png' alt="Manulife" style="--max-size: 175px;")
+    .partner
+      img(src='./assets/images/logo-sap.png' alt="SAP" style="--max-size: 100px;")
+    .partner
+      img(src='./assets/images/logo-twb.png' alt="TWB" style="--max-size: 110px;")
+
 mixin accordion(title)
   .accordion(data-accordion) 
     .accordion-title 
@@ -25,6 +48,12 @@ block content
         | YOUR BUSINESS AND SHOWCASE IT TO 
         em THE WORLD
       p.section-description We deliver all the content you need to supercharge your marketing.
+
+  section#partners(data-scroll-section)
+    .container
+      +partners
+      //- The duplicate of the above
+      +partners
 
   //- Section Who We Are
   section#who-we-are(data-scroll-section)

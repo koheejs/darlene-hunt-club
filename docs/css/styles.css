@@ -627,6 +627,36 @@ footer .navigation-list li {
   justify-content: center;
   gap: 4rem;
 }
+.home-page #partners {
+  display: block;
+  background-color: var(--primary-color);
+}
+@property --max-size {
+  .home-page #partners {
+    syntax: "<length>";
+    inherits: true;
+    initial-value: 10px;
+  }
+}
+.home-page #partners .container {
+  display: flex;
+  flex-direction: row;
+  gap: 4rem;
+  overflow: hidden;
+}
+.home-page #partners .partners-wrapper {
+  height: 12rem;
+  flex-shrink: 0;
+  gap: 4rem;
+  display: inline-flex;
+  align-items: center;
+  animation: marquee-home 30s linear infinite;
+}
+.home-page #partners .partners-wrapper .partner img {
+  width: var(--max-size);
+  height: var(--max-size);
+  object-fit: contain;
+}
 .home-page #who-we-are {
   min-height: 760px;
   background-color: rgba(0, 0, 0, 0.6);
@@ -799,6 +829,14 @@ footer .navigation-list li {
   }
 }
 
+@keyframes marquee-home {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
 .about-us-page {
   background-image: url("../assets/images/bg-new-home.png");
   background-size: 100% auto;

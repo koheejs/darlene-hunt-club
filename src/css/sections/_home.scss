@@ -41,6 +41,43 @@
     }
   }
 
+  // -- Partners Section
+  #partners {
+    @property --max-size {
+      syntax: "<length>";
+      inherits: true;
+      initial-value: 10px;
+    }
+
+    display: block;
+    background-color: var(--primary-color);
+
+    .container {
+      display: flex;
+      flex-direction: row;
+      gap: 4rem;
+      overflow: hidden;
+    }
+
+    .partners-wrapper {
+      height: 12rem;
+      flex-shrink: 0;
+      gap: 4rem;
+      display: inline-flex;
+      align-items: center;
+      animation: marquee-home 30s linear infinite;
+
+      .partner {
+        img {
+          width: var(--max-size);
+          height: var(--max-size);
+          object-fit: contain;
+        }
+
+      }
+    }
+  }
+
   // -- Who We Are Section
   #who-we-are {
     min-height: 760px;
@@ -257,4 +294,14 @@
   }
 
 
+}
+
+@keyframes marquee-home {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
 }
