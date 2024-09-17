@@ -11,6 +11,10 @@
     max-width: 1520px;
     margin: auto;
 
+    figure {
+      width: 100%;
+    }
+
     @include breakpoint($breakpoint-md) {
       flex-direction: column;
       align-items: flex-start;
